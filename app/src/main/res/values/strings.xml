@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">FirstProject</string>
+    <string name="java" translatable="false">Java</string>
+    <string name="android" translatable="false">Android</string>
+    <string name="kotlin" translatable="false">Kotlin</string>
+    <string name="javascript" translatable="false">Javascript</string>
+
+
+</resources>
