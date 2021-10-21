@@ -4,6 +4,20 @@
     <string name="android" translatable="false">Android</string>
     <string name="kotlin" translatable="false">Kotlin</string>
     <string name="javascript" translatable="false">Javascript</string>
+    <string name="desc_text" translatable="false" >Souphattra Hotel
+                located next to the UNESCO World Heritage town in Luang
+                Prabang,Souphattra Hotel radiates all the understated
+                elegance and charm of a colonial-era mansion,luxuriously
+                appointed with refined furnishings throughout.Guests will
+                enjoy its  excellent facilities and authentic Lao hospitality.
+    </string>
+    <string name="description" translatable="false">Description</string>
+    <string name="telephone_number" translatable="false">+ 856 21211222</string>
+    <string name="Luang_Prabang_Laos" translatable="false">Luang,Prabang Laos</string>
+    <string name="current_password" translatable="false">Current password</string>
+    <string name="new_password" translatable="false">New password</string>
+    <string name="confirm_password" translatable="false">Confirm password</string>
+    <string name="save" translatable="false">SAVE</string>
 
 
 </resources>
