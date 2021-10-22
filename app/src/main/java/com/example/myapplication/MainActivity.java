@@ -16,16 +16,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.change_password);
+        setContentView(R.layout.description_relative);
 
-        AppCompatTextView newPassword = findViewById(R.id.new_password);
+       /* AppCompatTextView newPassword = findViewById(R.id.new_password);
         newPassword.setText("New password");
         newPassword.setTextColor(ContextCompat.getColor(this,R.color.black));
 
         AppCompatButton saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(view -> Toast.makeText(MainActivity.this,"Your password has changed ",
                 Toast.LENGTH_LONG).show());
-
+*/
 
 
 
