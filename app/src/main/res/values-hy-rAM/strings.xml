@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Առաջին ծրագիր</string>
+    <string name="tesak">տեսակ</string>
+    <string name="addings">հավելում</string>
+    <string name="cheese1">պանտի 1 շերտ</string>
 </resources>

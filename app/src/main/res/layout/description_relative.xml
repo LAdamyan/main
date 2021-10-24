@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="@string/description"
         android:fontFamily="@font/chunk_five_print"
-        android:textSize="@dimen/smallestSize"
+        android:textSize="@dimen/twenty_five_dp"
         android:textColor="@color/light_blue"
         android:layout_marginStart="@dimen/fifty_dp"
         android:layout_marginTop="@dimen/fifty_dp">
@@ -50,7 +50,7 @@
         android:layout_marginTop="26dp"
         android:text="@string/telephone_number"
         android:textColor="@color/light_blue"
-        android:textSize="@dimen/smallestSize">
+        android:textSize="@dimen/twenty_five_dp">
 
     </androidx.appcompat.widget.AppCompatTextView>
 
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Luang_Prabang_Laos"
         android:textColor="@color/light_blue"
-        android:textSize="@dimen/smallestSize"
+        android:textSize="@dimen/twenty_five_dp"
         android:fontFamily="@font/chunk_five_print"
         android:layout_below="@+id/telephone_number_relative"
         android:layout_marginTop="@dimen/thirty_dp"

@@ -18,6 +18,31 @@
     <string name="new_password" translatable="false">New password</string>
     <string name="confirm_password" translatable="false">Confirm password</string>
     <string name="save" translatable="false">SAVE</string>
-
+    <string name="android_studio">Android Studio</string>
+    <string name="kfc_mashtots">KFC Mashtots</string>
+    <string name="twister">Twister</string>
+    <string name="_1150">1150</string>
+    <string name="_amd">amd</string>
+    <string name="twenty_sp">20sp</string>
+    <string name="_1">- | 1 | +</string>
+    <string name="row1">Row 1</string>
+    <string name="Row2">Row 2 column1</string>
+    <string name="Row3">Row3 column 2</string>
+    <string name="Row2_2">Row2 column2</string>
+    <string name="row2_1">Row2 column1</string>
+    <string name="row2_2">Row2 column2</string>
+    <string name="row2_3">Row2 column3</string>
+    <string name="row3_1">Row3 column1</string>
+    <string name="row3_2">Row3 column2</string>
+    <string name="twister_text">Tender pieces of chicken fillet with crispy spicy or original bread crumbs,juicy lettuce,slices of tomato, tender sauce wrapped in a wheat loshik and fried in toast</string>
+    <string name="tesak" translatable="false">տեսակ</string>
+    <string name="spicy">spicy</string>
+    <string name="original">original</string>
+    <string name="addings">հավելում</string>
+    <string name="cheese1">պանտի 1 շերտ</string>
+    <string name="cheese2">պանրի 2 շերտ</string>
+    <string name="cheese3">պանրի 3 շերտ</string>
+    <string name="comments">Your comments to the order</string>
+    <string name="add_to_card">ADD TO CARD</string>
 
 </resources>
