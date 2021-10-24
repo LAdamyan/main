@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="3"
+    android:columnCount="2"
+     >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/autumn1"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_200dp"
+        android:src="@drawable/autumn1"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/autumn2"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_200dp"
+        android:src="@drawable/autumn2"
+
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/autumn3"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_200dp"
+        android:src="@drawable/autumn3" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/autumn4"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_200dp"
+        android:src="@drawable/autumn4" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/autumn5"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_200dp"
+        android:src="@drawable/autumn5" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/autumn6"
+        android:layout_width="@dimen/_200dp"
+        android:layout_height="@dimen/_200dp"
+        android:src="@drawable/autumn6"
+
+        />
+
+</GridLayout>

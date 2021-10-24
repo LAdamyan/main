@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/row1"
+        android:textSize="50sp"
+        android:paddingTop="20dp"
+        android:fontFamily="@font/chunk_five_print"
+        android:textColor="@color/light_blue"
+        />
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row2_11"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:text="@string/row2_1"
+            android:paddingTop="40dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/chunk_five_print"
+            android:textColor="@color/light_blue"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/row2_2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="@string/row2_2"
+            android:paddingTop="40dp"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/chunk_five_print"
+            android:textColor="@color/light_blue"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row2_3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingTop="40dp"
+            android:text="@string/row2_3"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/chunk_five_print"
+            android:textColor="@color/light_blue"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row3_1"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:text="@string/row3_1"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:fontFamily="@font/chunk_five_print"
+            android:textColor="@color/light_blue"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row3_2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:text="@string/row3_2"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:fontFamily="@font/chunk_five_print"
+            android:textColor="@color/light_blue"/>
+    </TableRow>
+
+
+
+</TableLayout>
