@@ -10,9 +10,9 @@
         android:id="@+id/cardView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="10dp"
+        android:layout_marginStart="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        app:cardCornerRadius="@dimen/ten_dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -20,17 +20,17 @@
             android:id="@+id/twister_photo"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
             android:src="@drawable/twister"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="@dimen/_200dp"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/ten_dp"
             android:src="@drawable/twister"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,21 +39,21 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/kfc_cardView"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="10dp"
+        android:layout_width="@dimen/eighty_dp"
+        android:layout_height="@dimen/thirty_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        app:cardCornerRadius="@dimen/ten_dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="140dp"
+        android:layout_marginEnd="@dimen/_140dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="10dp"
+            android:layout_width="@dimen/eighty_dp"
+            android:layout_height="@dimen/thirty_dp"
+            android:layout_marginStart="@dimen/ten_dp"
             android:layout_marginTop="0dp"
             android:src="@drawable/kfc_logo"
-            android:paddingEnd="20dp"
+            android:paddingEnd="@dimen/twenty_dp"
             android:paddingStart="0dp"
             android:layout_gravity="center"
             app:layout_constraintStart_toStartOf="@id/kfc_cardView"
@@ -65,22 +65,22 @@
         android:id="@+id/appCompatTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/twenty_dp"
         android:text="@string/kfc_mashtots"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="@dimen/fifteen_sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/kfc_cardView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/twister"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="120dp"
+        android:layout_width="@dimen/hundred_dp"
+        android:layout_height="@dimen/thirty_dp"
+        android:layout_marginEnd="@dimen/_120dp"
         android:text="@string/twister"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/twenty_sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kfc_cardView"
@@ -90,12 +90,12 @@
         android:id="@+id/twister_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
         android:text="@string/twister_text"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="@dimen/fifteen_sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
@@ -109,17 +109,17 @@
         android:layout_height="wrap_content"
         android:text="@string/tesak"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/twenty_sp"
         app:layout_constraintTop_toBottomOf="@id/twister_text"
         app:layout_constraintStart_toStartOf="parent"
 
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="@dimen/ten_dp"/>
 
     <RadioGroup
         android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="@dimen/twenty_dp"
         app:layout_constraintTop_toBottomOf="@id/twister_type"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -129,7 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/spicy"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_sp"
             android:textColor="@color/white"/>
 
         <RadioButton
@@ -137,7 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/original"
-            android:textSize="15sp"
+            android:textSize="@dimen/fifteen_sp"
             android:textColor="@color/white"/>
 
     </RadioGroup>
@@ -148,19 +148,19 @@
         android:layout_height="wrap_content"
         android:text="@string/addings"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/twenty_sp"
         app:layout_constraintTop_toBottomOf="@id/radio_group"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="@dimen/ten_dp"/>
 
     <CheckBox
         android:id="@+id/checkbox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cheese1"
-        android:textSize="15sp"
+        android:textSize="@dimen/fifteen_sp"
         android:textColor="@color/white"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="@dimen/twenty_dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/adding"
         />
@@ -169,9 +169,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cheese2"
-        android:textSize="15sp"
+        android:textSize="@dimen/fifteen_sp"
         android:textColor="@color/white"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="@dimen/twenty_dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkbox1"
         />
@@ -180,21 +180,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cheese3"
-        android:textSize="15sp"
+        android:textSize="@dimen/fifteen_sp"
         android:textColor="@color/white"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="@dimen/twenty_dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkbox2"
         />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/message_cardView"
-        android:layout_width="369dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="@dimen/_370dp"
+        android:layout_height="@dimen/_95dp"
+        android:layout_marginStart="@dimen/eighty_dp"
+        android:layout_marginEnd="@dimen/twenty_dp"
         app:cardBackgroundColor="@color/light_black1"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="@dimen/ten_dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -204,9 +204,9 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/thirty_dp"
             android:layout_gravity="start"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/ten_dp"
             android:text="@string/comments"
             android:textColor="@color/grey"
             app:layout_constraintStart_toStartOf="parent"
@@ -215,14 +215,14 @@
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/add_to_card_cardView"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/fifty_dp"
 
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="@dimen/fifty_dp"
+        android:layout_marginEnd="@dimen/fifty_dp"
         app:cardBackgroundColor="@color/light_red"
-        app:cardCornerRadius="10dp"
-        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/hundred_dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -232,12 +232,12 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/add_to_car_textView"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/thirty_dp"
             android:layout_gravity="center"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="@dimen/sixty_dp"
             android:text="@string/add_to_card"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="@dimen/twenty_sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/add_to_card_cardView" />
 
