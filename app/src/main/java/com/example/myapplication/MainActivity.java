@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings);
+        setContentView(R.layout.kfc_menu);
 
-        SwitchCompat switchPin = findViewById(R.id.switch_pin);
+      /*  SwitchCompat switchPin = findViewById(R.id.switch_pin);
         SwitchCompat closeBlock = findViewById(R.id.block);
         switchPin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"Block is off",Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });*/
 
 
         /*RadioButton spicy = findViewById(R.id.radioButton1);

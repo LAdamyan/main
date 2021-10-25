@@ -189,8 +189,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/message_cardView"
-        android:layout_width="@dimen/_370dp"
-        android:layout_height="@dimen/_95dp"
+        android:layout_width="@dimen/_350dp"
+        android:layout_height="@dimen/eighty_dp"
         android:layout_marginStart="@dimen/eighty_dp"
         android:layout_marginEnd="@dimen/twenty_dp"
         app:cardBackgroundColor="@color/light_black1"
@@ -216,12 +216,13 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/add_to_card_cardView"
         android:layout_width="@dimen/_300dp"
-        android:layout_height="@dimen/fifty_dp"
+        android:layout_height="@dimen/forty_dp"
 
         android:layout_marginStart="@dimen/fifty_dp"
         android:layout_marginEnd="@dimen/fifty_dp"
         app:cardBackgroundColor="@color/light_red"
         app:cardCornerRadius="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/hundred_dp"
         android:layout_marginBottom="@dimen/hundred_dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
