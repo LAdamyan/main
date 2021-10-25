@@ -44,5 +44,9 @@
     <string name="cheese3">պանրի 3 շերտ</string>
     <string name="comments">Your comments to the order</string>
     <string name="add_to_card">ADD TO CARD</string>
+    <string name="change_password">Փոխել գաղտնաբառը</string>
+    <string name="enter_pin">Սահմանել PIN կոդ մուտք գործելու համար</string>
+    <string name="blocking">Փակելիս բլոկավորել</string>
+    <string name="change_language">Փոխել լեզուն</string>
 
 </resources>

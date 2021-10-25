@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
@@ -21,9 +22,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.kfc_menu);
+        setContentView(R.layout.settings);
 
-        RadioButton spicy = findViewById(R.id.radioButton1);
+        SwitchCompat switchPin = findViewById(R.id.switch_pin);
+        SwitchCompat closeBlock = findViewById(R.id.block);
+        switchPin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if(isChecked){
+                    Toast.makeText(MainActivity.this,"ON",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(MainActivity.this,"OFF",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        closeBlock.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isBlocked) {
+                if(isBlocked){
+                    Toast.makeText(MainActivity.this,"Block is on",Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(MainActivity.this,"Block is off",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
+        /*RadioButton spicy = findViewById(R.id.radioButton1);
         RadioButton original = findViewById(R.id.radioButton2);
 
         CheckBox checkBox1 = findViewById(R.id.checkbox1);
@@ -51,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-
+*/
 
 }
 

@@ -4,4 +4,8 @@
     <string name="tesak">տեսակ</string>
     <string name="addings">հավելում</string>
     <string name="cheese1">պանտի 1 շերտ</string>
+    <string name="change_password">Փոխել գաղտնաբառը</string>
+    <string name="enter_pin">Սահմանել PIN կոդ մուտք գործելու համար</string>
+    <string name="blocking">Փակելիս բլոկավորել</string>
+    <string name="change_language">Փոխել լեզուն</string>
 </resources>
