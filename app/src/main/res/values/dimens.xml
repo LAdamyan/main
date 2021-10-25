@@ -10,7 +10,7 @@
     <dimen name="smallSize">40sp</dimen>
     <dimen name="fifty_dp">50dp</dimen>
     <dimen name="middleSize">60sp</dimen>
-    <dimen name="largeSize">70sp</dimen>
+    <dimen name="seventy_dp">70sp</dimen>
     <dimen name="eighty_dp">80dp</dimen>
     <dimen name="ninety_dp">90dp</dimen>
     <dimen name="hundred_dp">100dp</dimen>

@@ -48,5 +48,18 @@
     <string name="enter_pin">Սահմանել PIN կոդ մուտք գործելու համար</string>
     <string name="blocking">Փակելիս բլոկավորել</string>
     <string name="change_language">Փոխել լեզուն</string>
+    <string name="push_notifications">PUSH NOTIFICATIONS</string>
+    <string name="preferences">Preferences</string>
+    <string name="card_new">NEW</string>
+    <string name="match_alerts">Match Alerts</string>
+    <string name="get_ntf">Get instant notifications for match events</string>
+    <string name="football">Football</string>
+    <string name="tennis">Tennis</string>
+    <string name="Basketball">Basketball</string>
+    <string name="hockey">Hockey</string>
+    <string name="cricket">Cricket</string>
+    <string name="in_app_ntf">IN-APP NOTIFICATIONS</string>
+    <string name="favourite_match">Favourite Match</string>
+    <string name="favourite_league">Favourite League</string>
 
 </resources>
