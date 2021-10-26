@@ -38,4 +38,12 @@
         <item name="android:fontFamily">@font/montserrat_light</item>
     </style>
 
+    <style name ="MySwitch" parent ="TextAppearance.AppCompat.Widget.Switch">
+        <item name = "backgroundColor">@color/teal_200</item>
+
+
+
+    </style>
+
+
 </resources>

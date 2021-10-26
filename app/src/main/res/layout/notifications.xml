@@ -101,17 +101,7 @@
         android:layout_marginStart="@dimen/twenty_dp"
         app:layout_constraintTop_toBottomOf="@id/get_ntf"/>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/football_slack"
-        android:layout_width="@dimen/twenty_dp"
-        android:layout_height="@dimen/twenty_dp"
-        android:layout_marginStart="@dimen/_350dp"
-        android:src="@drawable/slack"
-        android:background="@color/white"
-        android:layout_marginEnd="@dimen/twenty_dp"
-        app:layout_constraintEnd_toEndOf="@id/football_text"
-        app:layout_constraintTop_toTopOf="@id/football_text"
-        app:layout_constraintBottom_toBottomOf="@id/football_text" />
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/football_text"
@@ -122,6 +112,7 @@
         android:text="@string/football"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_sp"
+        android:drawableEnd="@drawable/slack_white1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/football"
@@ -149,22 +140,13 @@
         android:text="@string/tennis"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_sp"
+        android:drawableEnd="@drawable/slack_white1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/tennis"
         app:layout_constraintTop_toBottomOf="@id/football_text" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/tennis_slack"
-        android:layout_width="@dimen/twenty_dp"
-        android:layout_height="@dimen/twenty_dp"
-        android:layout_marginStart="@dimen/_350dp"
-        android:src="@drawable/slack"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/tennis_text"
-        app:layout_constraintTop_toTopOf="@id/tennis_text"
 
-        app:layout_constraintBottom_toBottomOf="@id/tennis_text" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/basketball"
@@ -186,23 +168,12 @@
         android:text="@string/Basketball"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_sp"
+        android:drawableEnd="@drawable/slack_white1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="@id/basketball"
         app:layout_constraintTop_toBottomOf="@id/tennis_text" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/basketball_slack"
-        android:layout_width="@dimen/twenty_dp"
-        android:layout_height="@dimen/twenty_dp"
-        android:layout_marginStart="@dimen/_350dp"
-        android:src="@drawable/slack"
-        android:background="@color/white"
-        android:layout_marginEnd="@dimen/fifteen_dp"
-        app:layout_constraintEnd_toEndOf="@id/basketball_text"
-        app:layout_constraintTop_toTopOf="@id/basketball_text"
-
-        app:layout_constraintBottom_toBottomOf="@id/basketball_text" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/hockey"
@@ -224,23 +195,12 @@
         android:text="@string/hockey"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_sp"
+        android:drawableEnd="@drawable/slack_white1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/basketball"
         app:layout_constraintTop_toBottomOf="@id/basketball_text" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/hockey_slack"
-        android:layout_width="@dimen/twenty_dp"
-        android:layout_height="@dimen/twenty_dp"
-        android:layout_marginStart="@dimen/_350dp"
-        android:src="@drawable/slack"
-        android:background="@color/white"
-
-        app:layout_constraintEnd_toEndOf="@id/hockey_text"
-        app:layout_constraintTop_toTopOf="@id/hockey_text"
-
-        app:layout_constraintBottom_toBottomOf="@id/hockey_text" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/cricket"
@@ -262,21 +222,12 @@
         android:text="@string/cricket"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_sp"
+        android:drawableEnd="@drawable/slack_white1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/basketball"
         app:layout_constraintTop_toBottomOf="@id/hockey_text" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/cricket_slack"
-        android:layout_width="@dimen/twenty_dp"
-        android:layout_height="@dimen/twenty_dp"
-        android:layout_marginStart="@dimen/_350dp"
-        android:src="@drawable/slack"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/cricket_text"
-        app:layout_constraintTop_toTopOf="@id/cricket_text"
-        app:layout_constraintBottom_toBottomOf="@id/cricket_text" />
 
 
     <androidx.appcompat.widget.AppCompatTextView
