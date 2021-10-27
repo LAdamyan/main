@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/eighty_dp"
         android:background="@color/white"
-        android:drawableEnd="@drawable/selector"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:drawablePadding="@dimen/twenty_dp"
         android:paddingStart="@dimen/ten_dp"
         android:paddingTop="@dimen/thirty_dp"
@@ -35,23 +35,23 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/enter_pin"
         android:layout_width="@dimen/_290dp"
-        android:layout_height="@dimen/hundred_dp"
+        android:layout_height="100dp"
         android:background="@color/white"
         android:paddingStart="@dimen/ten_dp"
         android:paddingTop="@dimen/thirty_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
         android:text="@string/enter_pin"
         android:textSize="@dimen/twenty_sp"
-        app:layout_constraintTop_toBottomOf="@id/change_password"
-
         app:layout_constraintEnd_toStartOf="@+id/switch_pin"
+
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintTop_toBottomOf="@id/change_password" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switch_pin"
-        android:layout_width="@dimen/hundred_dp"
-        android:layout_height="@dimen/hundred_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:checked="true"
         android:enabled="true"
         app:layout_constraintTop_toTopOf="parent"
@@ -75,17 +75,28 @@
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/block"
-        android:layout_width="@dimen/hundred_dp"
-        android:layout_height="@dimen/hundred_dp"
-        android:layout_marginEnd="@dimen/thirty_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
         android:checked="true"
-        android:enabled="true"
+        android:enabled="true" android:layout_marginStart="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@id/block_closing"
         app:layout_constraintTop_toBottomOf="@id/switch_pin"
-        app:layout_constraintVertical_bias="0"/>
+        app:layout_constraintVertical_bias="0.002" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block_closing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/change_language"/>
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/change_language"
@@ -93,7 +104,7 @@
         android:layout_height="@dimen/eighty_dp"
         android:layout_marginTop="@dimen/twenty_dp"
         android:layout_marginBottom="@dimen/_200dp"
-        android:drawableEnd="@drawable/selector"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:drawablePadding="@dimen/twenty_dp"
         android:paddingStart="@dimen/ten_dp"
         android:paddingTop="@dimen/thirty_dp"
@@ -105,6 +116,15 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/block_closing" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/change_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
