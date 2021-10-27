@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/settings_jpg"
+        android:layout_width="@dimen/_400dp"
+        android:layout_height="@dimen/_200dp"
+        android:src="@drawable/ic_baseline_app_settings_alt_24"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/change_password_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eighty_dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawablePadding="@dimen/twenty_dp"
+        android:paddingStart="@dimen/ten_dp"
+        android:paddingTop="@dimen/thirty_dp"
+
+        android:text="@string/change_password"
+        android:textSize="@dimen/twenty_sp"
+         />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/enter_pin_linear"
+        android:layout_width="@dimen/_290dp"
+        android:layout_height="@dimen/hundred_dp"
+        android:background="@color/white"
+        android:paddingStart="@dimen/five_dp"
+        android:paddingTop="@dimen/thirty_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        android:text="@string/enter_pin"
+        android:textSize="@dimen/twenty_sp"
+         />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:enabled="true"
+        android:layout_marginTop="@dimen/twenty_dp"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/block_closing"
+        android:layout_width="@dimen/_290dp"
+        android:layout_height="@dimen/hundred_dp"
+        android:paddingStart="@dimen/ten_dp"
+        android:paddingTop="@dimen/thirty_dp"
+        android:text="@string/blocking"
+        android:textSize="@dimen/twenty_sp"
+       />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:checked="true"
+        android:enabled="true" android:layout_marginStart="10dp"
+         />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twenty_dp"
+        android:background="@color/white2"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/change_language_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eighty_dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawablePadding="@dimen/twenty_dp"
+        android:paddingStart="@dimen/ten_dp"
+        android:paddingTop="@dimen/thirty_dp"
+        android:text="@string/change_language"
+        android:textSize="@dimen/twenty_sp"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:background="@color/white2"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
