@@ -41,11 +41,12 @@
         android:paddingTop="@dimen/thirty_dp"
         android:text="@string/enter_pin"
         android:textSize="@dimen/twenty_sp"
+        app:layout_constraintTop_toBottomOf="@id/change_password"
 
         app:layout_constraintEnd_toStartOf="@+id/switch_pin"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="280dp" />
+         />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switch_pin"
