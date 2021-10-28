@@ -32,6 +32,7 @@
     <dimen name="_400dp">400dp</dimen>
     <dimen name="_350dp">350dp</dimen>
     <dimen name="_290dp">290dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
 
 
 </resources>

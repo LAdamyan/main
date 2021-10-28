@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -7,9 +8,11 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -20,7 +23,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-    @SuppressLint("SetTextI18n")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +34,31 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
         return true;
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.gallery:
+                Intent intent = new Intent(this,SecondActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.settings:
+                Toast.makeText(this, "Settings menu item clicked", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+
+                super.onOptionsItemSelected(item);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }}
     /*  SwitchCompat switchPin = findViewById(R.id.switch_pin);
         SwitchCompat closeBlock = findViewById(R.id.block);
         switchPin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -91,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         }
 */
 
-}
+
 
        /* AppCompatTextView newPassword = findViewById(R.id.new_password);
         newPassword.setText("New password");
