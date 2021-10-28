@@ -38,11 +38,6 @@ public class SecondActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
         showButton.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {

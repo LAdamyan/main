@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.settings:
-                Toast.makeText(this, "Settings menu item clicked", Toast.LENGTH_SHORT).show();
+                Intent intent1 = new Intent(MainActivity.this,ThirdActivity.class);
+                startActivity(intent1);
+
                 break;
             default:
 
