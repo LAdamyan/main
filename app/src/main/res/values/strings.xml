@@ -65,5 +65,9 @@
     <string name="settings">Settings</string>
     <string name="share">Share</string>
     <string name="second_activity">Second Activity</string>
+    <string name="button">Button</string>
+    <string name="hide_progress">Hide Progress</string>
+    <string name="show_progress">Show progress</string>
+    <string name="get_rating">Get rating</string>
 
 </resources>
