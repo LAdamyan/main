@@ -61,5 +61,8 @@
     <string name="in_app_ntf">IN-APP NOTIFICATIONS</string>
     <string name="favourite_match">Favourite Match</string>
     <string name="favourite_league">Favourite League</string>
+    <string name="gallery">Gallery</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
 
 </resources>

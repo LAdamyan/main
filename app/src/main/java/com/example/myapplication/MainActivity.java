@@ -8,6 +8,8 @@ import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -22,12 +24,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings_linear);
+        setContentView(R.layout.new_views);
+
+        View view = LayoutInflater.from(this).inflate(R.layout.new_views,null);
 
 
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
+        return true;
+    }
 
-     /*  SwitchCompat switchPin = findViewById(R.id.switch_pin);
+    /*  SwitchCompat switchPin = findViewById(R.id.switch_pin);
         SwitchCompat closeBlock = findViewById(R.id.block);
         switchPin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -94,4 +104,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    }
+

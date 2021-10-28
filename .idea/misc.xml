@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2513888888888889" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/selector.xml" value="0.1527777777777778" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/track.xml" value="0.2513888888888889" />
@@ -15,7 +16,9 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/description_relative.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/grid_layout.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/kfc_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/new_views.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/notifications.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/ntf_linear.xml" value="0.18425925925925926" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/password_linear.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/password_relative.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/second_activity.xml" value="0.253125" />
@@ -23,6 +26,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/settings_linear.xml" value="0.18425925925925926" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/table_layout.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/third_activity.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/menu/toolbar_menu.xml" value="0.23703703703703705" />
       </map>
     </option>
   </component>
