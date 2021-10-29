@@ -29,6 +29,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:name=".ThirdActivity"
             android:exported="true">
             <intent-filter>

@@ -69,5 +69,18 @@
     <string name="hide_progress">Hide Progress</string>
     <string name="show_progress">Show progress</string>
     <string name="get_rating">Get rating</string>
+    <string name="learn_everything_about_spinner">Learn everything about Spinner</string>
+    <string name="my_third_activity">My Third Activity</string>
+
+    <string-array name="colors_array">
+
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Grey</item>
+    </string-array>
 
 </resources>
