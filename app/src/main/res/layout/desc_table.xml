@@ -1,79 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/fifty_dp"
     android:layout_marginTop="@dimen/thirty_dp"
-    android:layout_marginEnd="@dimen/thirty_dp"
-    android:layout_marginStart="@dimen/fifty_dp">
+    android:layout_marginEnd="@dimen/thirty_dp">
+
     <TableRow>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/description"
             android:fontFamily="@font/chunk_five_print"
-            android:textSize="@dimen/twenty_five_sp"
-            android:textColor="@color/light_blue" />
+            android:text="@string/description"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/twenty_five_sp" />
     </TableRow>
 
     <TableRow>
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/description_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/desc_text"
-            android:layout_marginTop="@dimen/thirty_dp"/>
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:text="@string/desc_text" />
     </TableRow>
 
 
     <TableRow>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/phone_icon_table"
             android:layout_width="@dimen/thirty_dp"
             android:layout_height="@dimen/thirty_dp"
-            android:src="@drawable/ic_baseline_local_phone_24"
             android:layout_marginTop="@dimen/thirty_dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_local_phone_24" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/telephone_number_table"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:layout_marginEnd="@dimen/hundred_dp"
             android:text="@string/telephone_number"
             android:textColor="@color/light_blue"
-            android:textSize="@dimen/twenty_five_sp"
-            android:layout_marginTop="@dimen/thirty_dp"
-            android:layout_marginEnd="@dimen/hundred_dp" />
+            android:textSize="@dimen/twenty_five_sp" />
     </TableRow>
+
     <TableRow>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/location_icon_table"
             android:layout_width="@dimen/thirty_dp"
             android:layout_height="@dimen/thirty_dp"
-            android:src="@drawable/ic_baseline_location_on_24"
             android:layout_marginTop="@dimen/thirty_dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_location_on_24" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/location_name_table"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:fontFamily="@font/chunk_five_print"
             android:text="@string/Luang_Prabang_Laos"
             android:textColor="@color/light_blue"
-            android:textSize="@dimen/twenty_five_sp"
-            android:layout_marginTop="@dimen/thirty_dp"
-            android:fontFamily="@font/chunk_five_print" />
+            android:textSize="@dimen/twenty_five_sp" />
     </TableRow>
 
     <TableRow>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/google_map_table"
             android:layout_width="@dimen/three_hundred_dp"
             android:layout_height="@dimen/three_hundred_dp"
-            android:src="@drawable/luang_prabang"
-            />
+            android:src="@drawable/luang_prabang" />
     </TableRow>
 </TableLayout>

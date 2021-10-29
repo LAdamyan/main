@@ -9,24 +9,26 @@
         android:id="@+id/desc_lineal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/description"
-        android:fontFamily="@font/chunk_five_print"
-        android:textSize="@dimen/twenty_five_sp"
-        android:textColor="@color/light_blue"
         android:layout_marginStart="@dimen/fifty_dp"
-        android:layout_marginTop="@dimen/fifty_dp">
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:fontFamily="@font/chunk_five_print"
+        android:text="@string/description"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/twenty_five_sp">
 
     </androidx.appcompat.widget.AppCompatTextView>
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/desc_text_lineal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/desc_text"
         android:layout_marginStart="@dimen/fifty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
         android:layout_marginEnd="@dimen/twenty_dp"
-        android:layout_marginTop="@dimen/twenty_dp">
+        android:text="@string/desc_text">
 
     </androidx.appcompat.widget.AppCompatTextView>
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,9 +38,9 @@
             android:id="@+id/phone_icon_linear"
             android:layout_width="@dimen/thirty_dp"
             android:layout_height="@dimen/thirty_dp"
-            android:src="@drawable/ic_baseline_local_phone_24"
+            android:layout_marginStart="@dimen/fifty_dp"
             android:layout_marginTop="@dimen/thirty_dp"
-            android:layout_marginStart="@dimen/fifty_dp">
+            android:src="@drawable/ic_baseline_local_phone_24">
 
         </androidx.appcompat.widget.AppCompatImageView>
 
@@ -47,17 +49,17 @@
             android:id="@+id/telephone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/thirty_dp"
             android:text="@string/telephone_number"
             android:textColor="@color/light_blue"
-            android:textSize="@dimen/twenty_five_sp"
-            android:layout_marginTop="@dimen/thirty_dp"
-            android:layout_marginStart="@dimen/ten_dp">
+            android:textSize="@dimen/twenty_five_sp">
 
         </androidx.appcompat.widget.AppCompatTextView>
 
 
-
     </androidx.appcompat.widget.LinearLayoutCompat>
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,21 +69,22 @@
             android:id="@+id/location_icon"
             android:layout_width="@dimen/thirty_dp"
             android:layout_height="@dimen/thirty_dp"
-            android:src="@drawable/ic_baseline_location_on_24"
             android:layout_marginStart="@dimen/fifty_dp"
-            android:layout_marginTop="@dimen/thirty_dp">
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:src="@drawable/ic_baseline_location_on_24">
 
         </androidx.appcompat.widget.AppCompatImageView>
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/location_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:fontFamily="@font/chunk_five_print"
             android:text="@string/Luang_Prabang_Laos"
             android:textColor="@color/light_blue"
-            android:textSize="@dimen/twenty_five_sp"
-            android:fontFamily="@font/chunk_five_print"
-            android:layout_marginTop="@dimen/thirty_dp"
-            android:layout_marginStart="@dimen/ten_dp">
+            android:textSize="@dimen/twenty_five_sp">
 
         </androidx.appcompat.widget.AppCompatTextView>
 
@@ -92,11 +95,10 @@
         android:id="@+id/google_map_lineal"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginEnd="@dimen/twenty_dp"
         android:layout_marginStart="@dimen/fifty_dp"
         android:layout_marginTop="@dimen/thirty_dp"
-        android:src="@drawable/luang_prabang"
-        >
+        android:layout_marginEnd="@dimen/twenty_dp"
+        android:src="@drawable/luang_prabang">
 
     </androidx.appcompat.widget.AppCompatImageView>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -10,22 +10,22 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/sixty_dp"
         android:background="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/toolbar_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/my_third_activity"
-        android:textSize="@dimen/twenty_sp"
         android:paddingTop="@dimen/fifteen_dp"
+        android:text="@string/my_third_activity"
         android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/third_toolbar"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/third_toolbar" />
 
 
     <androidx.appcompat.widget.AppCompatSpinner
@@ -33,23 +33,20 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/fifty_dp"
         android:layout_marginTop="@dimen/fifty_dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/third_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
-       />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_toolbar" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty_dp"
         android:text="@string/learn_everything_about_spinner"
         android:textSize="@dimen/twenty_five_sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/fifty_dp"/>
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
