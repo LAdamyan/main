@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.kfc_menu);
+        setContentView(R.layout.notifications);
 
         View view = LayoutInflater.from(this).inflate(R.layout.new_views,null);
 

@@ -71,6 +71,8 @@
     <string name="get_rating">Get rating</string>
     <string name="learn_everything_about_spinner">Learn everything about Spinner</string>
     <string name="my_third_activity">My Third Activity</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
 
     <string-array name="colors_array">
 
