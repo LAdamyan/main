@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -14,9 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.content.ContextCompat;
 
 public class ThirdActivity extends AppCompatActivity {
-
 
 
     @Override
@@ -34,16 +35,48 @@ public class ThirdActivity extends AppCompatActivity {
                 android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
 
-        spinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                AppCompatTextView textView = findViewById(R.id.textView_spinner);
+        TextView textView = findViewById(R.id.textView_spinner);
 
-            }
-        });
+        Context context = this;
+
+       spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+           @Override
+           public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
+
+               switch (position){
+
+                       case 0: {
+                           textView.setTextColor(ContextCompat.getColor(context, R.color.light_red));
+                       }
+                       case 1: {
+                           textView.setTextColor(ContextCompat.getColor(context, R.color.light_blue));
+                       }
+                       case 2: {
+                           textView.setTextColor(ContextCompat.getColor(context, R.color.yellow));
+                       }
+                       case 3: {
+                           textView.setTextColor(ContextCompat.getColor(context, R.color.light_green));
+                       }
+                       case 4: {
+                           textView.setTextColor(ContextCompat.getColor(context, R.color.black));
+                       }
+                       case 5: {
+                           textView.setTextColor(ContextCompat.getColor(context, R.color.grey));
+                       }
+                   }
+               }
+
+           @Override
+           public void onNothingSelected(AdapterView<?> adapterView) {
+
+           }
+
+
+       });
 
 
 
-   }
+
+    }
 }
 
