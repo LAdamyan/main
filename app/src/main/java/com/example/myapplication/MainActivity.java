@@ -23,17 +23,14 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notifications);
+        setContentView(R.layout.new_views);
 
         View view = LayoutInflater.from(this).inflate(R.layout.new_views,null);
 
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

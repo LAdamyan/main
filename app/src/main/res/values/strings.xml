@@ -80,9 +80,8 @@
         <item>Blue</item>
         <item>Yellow</item>
         <item>Green</item>
-        <item>Orange</item>
-        <item>Purple</item>
-        <item>Grey</item>
+        <item>Black</item>
+        <item >Grey</item>
     </string-array>
 
 </resources>
