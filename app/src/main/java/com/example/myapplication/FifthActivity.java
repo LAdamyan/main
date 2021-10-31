@@ -38,7 +38,6 @@ public class FifthActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     @Override
