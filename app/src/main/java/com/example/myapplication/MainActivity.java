@@ -3,9 +3,8 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -13,8 +12,6 @@ import androidx.appcompat.widget.AppCompatEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editName;
-    Button enterButton;
     String name;
 
 
@@ -23,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fourth_activity);
 
-        editName = findViewById(R.id.editName);
-        enterButton= findViewById(R.id.enter_button);
+        AppCompatEditText editName = findViewById(R.id.editName);
+        AppCompatButton enterButton = findViewById(R.id.enter_button);
 
 
         enterButton.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +36,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        if(savedInstanceState!= null){
+            name =savedInstanceState.getString("Value");
+            editName.setText(String.valueOf(name));
+        }
 
+    }
+
+    @Override
+    protected void onSaveInstanceState( Bundle outState) {
+        outState.putString("Value",name);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
     }
 }
    /* @Override
