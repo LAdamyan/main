@@ -31,12 +31,10 @@ public class FifthActivity extends AppCompatActivity {
 
 
         showButton.setOnClickListener(view -> progressBar.setVisibility(View.VISIBLE));
-        hideButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                progressBar.setVisibility(View.GONE);
-            }
-        });
+        hideButton.setOnClickListener(view -> progressBar.setVisibility(View.GONE));
+
+
+
 
     }
 
