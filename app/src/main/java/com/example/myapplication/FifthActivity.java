@@ -34,8 +34,6 @@ public class FifthActivity extends AppCompatActivity {
         hideButton.setOnClickListener(view -> progressBar.setVisibility(View.GONE));
 
 
-
-
     }
 
     @Override
