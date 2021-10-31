@@ -1,38 +1,48 @@
 package com.example.myapplication;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.appcompat.widget.SwitchCompat;
-import androidx.core.content.ContextCompat;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.RadioButton;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.Button;
+import android.widget.EditText;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatEditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText editName;
+    Button enterButton;
+    String name;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notifications);
+        setContentView(R.layout.fourth_activity);
 
-        View view = LayoutInflater.from(this).inflate(R.layout.new_views,null);
+        editName = findViewById(R.id.editName);
+        enterButton= findViewById(R.id.enter_button);
+
+
+        enterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, FifthActivity.class);
+                name = editName.getText().toString();
+                intent.putExtra("Value", name);
+                startActivity(intent);
+                finish();
+
+            }
+        });
 
     }
-
-    @Override
+}
+   /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
         return true;
@@ -57,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }}
+    }}*/
     /*  SwitchCompat switchPin = findViewById(R.id.switch_pin);
         SwitchCompat closeBlock = findViewById(R.id.block);
         switchPin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
