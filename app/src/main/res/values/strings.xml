@@ -77,6 +77,12 @@
     <string name="enter">Enter</string>
     <string name="value">Value</string>
     <string name="submit">Submit</string>
+    <string name="tomasso_trattoria_enoteca"><![CDATA[Tomasso Trattoria & Enoteca]]></string>
+    <string name="tomasso_text"><![CDATA[Tomasso Trattoria & Enoteca prepares
+     some of the finest Italian food in the area.We have something
+     special to please ever...]]></string>
+    <string name="restaurants">Restaurants</string>
+    <string name="request">Request</string>
 
     <string-array name="colors_array">
 
@@ -86,6 +92,16 @@
         <item>Green</item>
         <item>Black</item>
         <item >Grey</item>
+    </string-array>
+
+    <string-array name="cities_array">
+
+        <item> All Cities</item>
+        <item>Yerevan</item>
+        <item>Moscow</item>
+        <item>London</item>
+        <item>New-York</item>
+        <item >Paris</item>
     </string-array>
 
 </resources>

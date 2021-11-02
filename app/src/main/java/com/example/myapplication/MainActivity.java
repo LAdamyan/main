@@ -12,15 +12,15 @@ import androidx.appcompat.widget.AppCompatEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    String name;
+    //String name;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fourth_activity);
+        setContentView(R.layout.list_activity);
 
-        AppCompatEditText editName = findViewById(R.id.editName);
+       /* AppCompatEditText editName = findViewById(R.id.editName);
         AppCompatButton enterButton = findViewById(R.id.enter_button);
 
 
@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-    }
-}
+    }*/
+//}
    /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
@@ -146,5 +146,4 @@ public class MainActivity extends AppCompatActivity {
 */
 
 
-
-
+    }}

@@ -26,6 +26,8 @@ public class FifthActivity extends AppCompatActivity {
 
 
          progressBar = findViewById(R.id.progressBar2);
+         progressBar.getVisibility();
+
         AppCompatButton showButton = findViewById(R.id.button1);
         AppCompatButton hideButton = findViewById(R.id.button2);
 
@@ -38,6 +40,7 @@ public class FifthActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+        outState.putBoolean("progressbar", true);
         super.onSaveInstanceState(outState);
 
 
