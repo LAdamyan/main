@@ -63,11 +63,34 @@ public class Entertainments {
     public static List<Entertainments> getEntertainments(){
        ArrayList<Entertainments>entertainmentsArrayList = new ArrayList<>();
        entertainmentsArrayList.add(new Entertainments(R.drawable.tomasso,
-                                                      " Tomasso Trattoria & Enoteca",
+               " Tomasso Trattoria & Enoteca",
                "Tomasso Trattoria & Enoteca prepares\n" +
-                       "some of the finest Italian food in the area.\n" + "We have something special to please ever..."
-                           ,"Restaurants","Request"));
-               return entertainmentsArrayList;
+                       "some of the finest Italian food in the area.\n"
+                       + "We have something special to please ever..."
+                           ,"Restaurants",
+                           "Request"));
+        entertainmentsArrayList.add(new Entertainments(R.drawable.glen_eagles_golf,
+                " Gleneagles Golf Club & Events",
+                "Gleneagles Golf Course consists of a \n" +
+                        "challenging 18-hole course,measuring over \n"
+                        + "6,500 yards from the blue trees.The Course..."
+                ,"Golf and Country Clubs",
+                "Request"));
+        entertainmentsArrayList.add(new Entertainments(R.drawable.barrington_golf_club,
+                " Barrington Golf Club",
+                "A challenging regulation 18 hole golf\n" +
+                        "course on 180 acres.Raccoon Hill will\n"
+                        + "challenge every part of your golf game wit..."
+                ,"Golf and Country Clubs",
+                "Request"));
+        entertainmentsArrayList.add(new Entertainments(R.drawable.ellswooth_golf_club,
+                " Ellsworth Meadows Golf Club",
+                "TEllsworth Meadows Golf Club is open to\n" +
+                        "the public,located in Hudson,OH Please \n"
+                        + "inquire about golf membersships.Call(330...)"
+                ,"Golf and Country Clubss",
+                "Request"));
+                          return entertainmentsArrayList;
 
 
    }
