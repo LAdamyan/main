@@ -83,6 +83,7 @@
      special to please ever...]]></string>
     <string name="restaurants">Restaurants</string>
     <string name="request">Request</string>
+    <string name="search_by_place_name">Search by place name</string>
 
     <string-array name="colors_array">
 

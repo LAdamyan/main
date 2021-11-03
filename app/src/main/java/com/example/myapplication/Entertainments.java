@@ -72,8 +72,7 @@ public class Entertainments {
         entertainmentsArrayList.add(new Entertainments(R.drawable.glen_eagles_golf,
                 " Gleneagles Golf Club & Events",
                 "Gleneagles Golf Course consists of a \n" +
-                        "challenging 18-hole course,measuring over \n"
-                        + "6,500 yards from the blue trees.The Course..."
+                        "challenging 18-hole course,measuring over 6,500 yards from the blue trees.The Course..."
                 ,"Golf and Country Clubs",
                 "Request"));
         entertainmentsArrayList.add(new Entertainments(R.drawable.barrington_golf_club,
@@ -82,6 +81,20 @@ public class Entertainments {
                         "course on 180 acres.Raccoon Hill will\n"
                         + "challenge every part of your golf game wit..."
                 ,"Golf and Country Clubs",
+                "Request"));
+        entertainmentsArrayList.add(new Entertainments(R.drawable.ellswooth_golf_club,
+                " Ellsworth Meadows Golf Club",
+                "TEllsworth Meadows Golf Club is open to\n" +
+                        "the public,located in Hudson,OH Please \n"
+                        + "inquire about golf membersships.Call(330...)"
+                ,"Golf and Country Clubss",
+                "Request"));
+        entertainmentsArrayList.add(new Entertainments(R.drawable.ellswooth_golf_club,
+                " Ellsworth Meadows Golf Club",
+                "TEllsworth Meadows Golf Club is open to\n" +
+                        "the public,located in Hudson,OH Please \n"
+                        + "inquire about golf membersships.Call(330...)"
+                ,"Golf and Country Clubss",
                 "Request"));
         entertainmentsArrayList.add(new Entertainments(R.drawable.ellswooth_golf_club,
                 " Ellsworth Meadows Golf Club",
