@@ -11,11 +11,11 @@
         android:layout_height="@dimen/seventy_dp"
         android:layout_marginStart="@dimen/ten_dp"
         android:background="@drawable/image_radius"
-        tools:src="@drawable/tomasso"
         app:layout_constraintBottom_toBottomOf="@id/textView_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textView_text"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintTop_toTopOf="@id/textView_name"
+        app:layout_constraintVertical_bias="0.1"
+        tools:src="@drawable/tomasso" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -53,19 +53,27 @@
         app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/textView_name" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/thirty_dp"
+         app:layout_constraintBottom_toTopOf="@id/view"
+        app:layout_constraintEnd_toStartOf="@+id/restaurant"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/restaurant"
+        tools:src="@drawable/ic_baseline_restaurant_24" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/restaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/ten_dp"
-        android:layout_marginTop="@dimen/five_dp"
-        android:layout_marginEnd="@dimen/twenty_dp"
-        android:drawableStart="@drawable/ic_baseline_restaurant_24"
         android:text="@string/restaurants"
+        android:layout_marginTop="@dimen/fifteen_dp"
         app:layout_constraintBottom_toBottomOf="@+id/request1"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="@id/guideline"
-        app:layout_constraintTop_toTopOf="@id/request1" />
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toTopOf="@+id/request1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -79,7 +87,6 @@
         android:layout_width="@dimen/hundred_dp"
         android:layout_height="40dp"
         android:layout_marginStart="@dimen/seventy_dp"
-        android:layout_marginTop="@dimen/ten_dp"
         android:layout_marginEnd="@dimen/ten_dp"
         android:layout_marginBottom="@dimen/ten_dp"
         android:background="@drawable/request_background"
@@ -89,6 +96,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/textView_text" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+         android:background="#F2F2F2"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginStart="@dimen/twenty_five_dp"
+        android:layout_marginEnd="@dimen/twenty_five_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/restaurant"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

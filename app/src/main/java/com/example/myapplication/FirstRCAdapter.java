@@ -52,12 +52,15 @@ class MyViewHolder extends RecyclerView.ViewHolder{
     void initData(Entertainments entertainments){
 
         AppCompatImageView imageView = itemView.findViewById(R.id.image1);
+        AppCompatImageView imageView2 = itemView.findViewById(R.id.logo);
         AppCompatTextView textViewName = itemView.findViewById(R.id.textView_name);
         AppCompatTextView textViewText = itemView.findViewById(R.id.textView_text);
         AppCompatTextView textViewPlace = itemView.findViewById(R.id.restaurant);
         AppCompatButton buttonRequest = itemView.findViewById(R.id.request1);
 
+
         imageView.setImageResource(entertainments.getImage());
+        imageView2.setImageResource(entertainments.getLogo());
         textViewName.setText(entertainments.getTitle());
         textViewText.setText(entertainments.getText());
         textViewPlace.setText(entertainments.getPlace());
