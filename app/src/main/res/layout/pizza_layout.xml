@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/twenty_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pizza_logo"
+        android:layout_width="@dimen/_120dp"
+        android:layout_height="@dimen/fifty_dp"
+        android:src="@drawable/_12ktor"
+        android:background="@drawable/_12ktor_resize"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginStart="@dimen/twenty_dp"
+        app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/recycle_horizontal"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/_12ktor_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_12_ktor_pizza"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+        app:layout_constraintEnd_toStartOf="@id/pizza_rating"
+        app:layout_constraintStart_toEndOf="@id/pizza_logo"
+        app:layout_constraintTop_toTopOf="@id/pizza_logo"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pizza_rating"
+        android:layout_width="@dimen/seventy_dp"
+        android:layout_height="@dimen/twenty_five_dp"
+        android:text="@string/_4_8"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fifteen_sp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:drawableEnd="@drawable/ic_baseline_star_24"
+        app:layout_constraintStart_toEndOf="@id/_12ktor_pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycle_horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/_12ktor_pizza"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/delivery800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_fee_800"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginStart="@dimen/twenty_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pizza_logo"
+        app:layout_constraintBottom_toTopOf="@id/min_order"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/min_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_order_fee_1400"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginStart="@dimen/twenty_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delivery800"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amd"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/five_dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginStart="@dimen/five_dp"
+        app:layout_constraintStart_toEndOf="@id/delivery800"
+        app:layout_constraintTop_toTopOf="@id/delivery800"
+        app:layout_constraintBottom_toBottomOf="@id/delivery800"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amd"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/five_dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginStart="@dimen/five_dp"
+        app:layout_constraintStart_toEndOf="@id/min_order"
+        app:layout_constraintTop_toTopOf="@id/min_order"
+        app:layout_constraintBottom_toBottomOf="@id/min_order"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/closed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="@string/closed"
+        android:textColor="@color/light_red"
+        android:textSize="@dimen/twenty_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/delivery800"
+        app:layout_constraintBottom_toBottomOf="@id/delivery800"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_11_00_23_00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        android:layout_marginEnd="@dimen/_16dp"
+        app:layout_constraintTop_toBottomOf="@id/closed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/min_order"
+        app:layout_constraintBottom_toBottomOf="@id/min_order"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/twenty_dp"
+        app:layout_constraintTop_toBottomOf="@id/min_order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

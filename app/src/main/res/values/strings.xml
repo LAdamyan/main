@@ -88,6 +88,14 @@
     <string name="share">Share</string>
     <string name="choose_browser">Choose Browser</string>
     <string name="chooser_title">Choose Title</string>
+    <string name="_12_ktor_pizza">12 Ktor Pizza</string>
+    <string name="_4_8">4.8</string>
+    <string name="delivery_fee_800">Delivery Fee 800</string>
+    <string name="min_order_fee_1400">Min Order Fee 1400</string>
+    <string name="amd">AMD</string>
+    <string name="closed">CLOSED</string>
+    <string name="_11_00_23_00">11:00-23:00</string>
+    <string name="pizza_6_pieces">Pizza 6 pieces</string>
 
 
     <string-array name="colors_array">
