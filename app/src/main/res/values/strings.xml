@@ -96,6 +96,10 @@
     <string name="closed">CLOSED</string>
     <string name="_11_00_23_00">11:00-23:00</string>
     <string name="pizza_6_pieces">Pizza 6 pieces</string>
+    <string name="pizza_meat_assorted_medium">Pizza meat assorted medium</string>
+    <string name="pizza_meat_assorted">Pizza meat assorted</string>
+    <string name="medium">medium</string>
+    <string name="_4000">4000</string>
 
 
     <string-array name="colors_array">

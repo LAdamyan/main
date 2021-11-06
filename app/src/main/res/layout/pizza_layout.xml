@@ -15,7 +15,9 @@
         android:layout_marginTop="@dimen/twenty_dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="horizontal"
+       />
 
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -137,9 +139,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="@dimen/_250dp"
         app:layout_constraintTop_toBottomOf="@id/min_order"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
