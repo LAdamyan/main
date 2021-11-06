@@ -65,7 +65,7 @@ public class Menu {
                    ));
            menuArrayList.add(new Menu(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
                    "  plum medium","3900","AMD",R.drawable.ic_baseline_add_shopping_cart_24,
-                   "Pizza 6 pieces","view"
+                   "Pizza 12 pieces","view"
            ));
            menuArrayList.add(new Menu(R.drawable.pizza_piquant, " Pizza Piquant ",
                    "  plum medium","3800","AMD",R.drawable.ic_baseline_add_shopping_cart_24,
@@ -73,7 +73,7 @@ public class Menu {
            ));
            menuArrayList.add(new Menu(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
                    "  plum medium","3300","AMD",R.drawable.ic_baseline_add_shopping_cart_24,
-                   "Pizza 6 pieces","view"
+                   "Pizza 12 pieces","view"
            ));
            menuArrayList.add(new Menu(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
                    "  plum medium","3300","AMD",R.drawable.ic_baseline_add_shopping_cart_24,
@@ -81,7 +81,7 @@ public class Menu {
            ));
            menuArrayList.add(new Menu(R.drawable.pizza_piquant, " Pizza Piquant ",
                    "  plum medium","3800","AMD",R.drawable.ic_baseline_add_shopping_cart_24,
-                   "Pizza 6 pieces","view"
+                   "Pizza 12 pieces","view"
            ));
            menuArrayList.add(new Menu(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
                    "  plum medium","3900","AMD",R.drawable.ic_baseline_add_shopping_cart_24,
