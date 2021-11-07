@@ -8,11 +8,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MenuActivity extends AppCompatActivity implements ItemClickListener {
+public class MenuActivity extends AppCompatActivity {
 
-    private MenuAdapter horizontalAdapter = new MenuAdapter();
-    private MenuAdapter verticalAdapter = new MenuAdapter();
-
+    MenuHorizontalAdapter horizontalAdapter = new MenuHorizontalAdapter();
+    MenuVerticalAdapter verticalAdapter = new MenuVerticalAdapter();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,26 +19,24 @@ public class MenuActivity extends AppCompatActivity implements ItemClickListener
         setContentView(R.layout.pizza_layout);
         initRecycleView();
     }
-    private void initRecycleView(){
+
+    private void initRecycleView() {
         RecyclerView recyclerHorizontal = findViewById(R.id.recycle_horizontal);
         RecyclerView recyclerVertical = findViewById(R.id.recycle_vertical);
 
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerHorizontal.setLayoutManager(linearLayoutManager);
         recyclerHorizontal.setAdapter(horizontalAdapter);
-       horizontalAdapter.SetMenu(Menu.getMenuItems());
-       horizontalAdapter.setOnItemClickListener(this);
+        horizontalAdapter.SetMenuHorizontal(MenuHorizontal.getMenuItems());
 
-       verticalAdapter.SetMenu(Menu.getMenuItems());
-       GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2, GridLayoutManager.VERTICAL,false);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
         recyclerVertical.setLayoutManager(gridLayoutManager);
         recyclerVertical.setAdapter(verticalAdapter);
+        verticalAdapter.SetMenu(Menu.getMenuItems());
 
     }
 
-    @Override
-    public void onclick(String text) {
-        System.out.println(text);
-    }
+
 }
