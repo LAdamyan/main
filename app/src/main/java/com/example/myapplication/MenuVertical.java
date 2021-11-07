@@ -3,7 +3,7 @@ package com.example.myapplication;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Menu {
+public class MenuVertical {
 
     private int pizzaImage;
     private String pizzaName;
@@ -12,7 +12,7 @@ public class Menu {
     private String priceAmd;
     private int shopCard;
 
-    public Menu(int pizzaImage, String pizzaName, String pizzaType, String price, String priceAmd, int shopCard) {
+    public MenuVertical(int pizzaImage, String pizzaName, String pizzaType, String price, String priceAmd, int shopCard) {
         this.pizzaImage = pizzaImage;
         this.pizzaName = pizzaName;
         this.pizzaType = pizzaType;
@@ -48,22 +48,22 @@ public class Menu {
     }
 
 
-       public static List<Menu> getMenuItems(){
-           ArrayList<Menu>menuArrayList = new ArrayList<>();
-           menuArrayList.add(new Menu(R.drawable.pizza_meat_assortment, " Pizza meat assorted ",
+       public static List<MenuVertical> getMenuItems(){
+           ArrayList<MenuVertical>menuArrayList = new ArrayList<>();
+           menuArrayList.add(new MenuVertical(R.drawable.pizza_meat_assortment, " Pizza meat assorted ",
                    " medium", "4000", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new Menu(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
+           menuArrayList.add(new MenuVertical(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
                    "  plum medium", "3900", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new Menu(R.drawable.pizza_piquant, " Pizza Piquant ",
+           menuArrayList.add(new MenuVertical(R.drawable.pizza_piquant, " Pizza Piquant ",
                    "  plum medium", "3800", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new Menu(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
+           menuArrayList.add(new MenuVertical(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
                    "  plum medium", "3300", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new Menu(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
+           menuArrayList.add(new MenuVertical(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
                    "  plum medium", "3300", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new Menu(R.drawable.pizza_piquant, " Pizza Piquant ",
+           menuArrayList.add(new MenuVertical(R.drawable.pizza_piquant, " Pizza Piquant ",
                    "  plum medium", "3800", "AMD", R.drawable.ic_baseline_add_shopping_cart_24
            ));
-           menuArrayList.add(new Menu(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
+           menuArrayList.add(new MenuVertical(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
                    "  plum medium", "3900", "AMD", R.drawable.ic_baseline_add_shopping_cart_24
 
            ));

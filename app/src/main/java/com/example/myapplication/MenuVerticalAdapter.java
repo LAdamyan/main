@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MenuVerticalAdapter extends RecyclerView.Adapter<MyBeholder> {
 
-    private List<Menu> menu = Collections.emptyList();
+    private List<MenuVertical> menu = Collections.emptyList();
 
 
     @Override
@@ -37,7 +37,7 @@ public class MenuVerticalAdapter extends RecyclerView.Adapter<MyBeholder> {
         return menu.size();
     }
 
-    public void SetMenu(List<Menu> menu) {
+    public void SetMenu(List<MenuVertical> menu) {
         this.menu = menu;
     }
 
@@ -49,21 +49,21 @@ class MyBeholder extends RecyclerView.ViewHolder {
         super(itemView);
     }
 
-    void initData(Menu menu) {
+    void initData(MenuVertical menu) {
 
         AppCompatImageView pizzaImage = itemView.findViewById(R.id.pizza_meat);
         AppCompatTextView name = itemView.findViewById(R.id.pizza_assort);
         AppCompatTextView type = itemView.findViewById(R.id.medium);
-            AppCompatTextView price = itemView.findViewById(R.id.price);
-            AppCompatTextView amd = itemView.findViewById(R.id.amd2);
-            AppCompatImageView card = itemView.findViewById(R.id.shop_card);
+        AppCompatTextView price = itemView.findViewById(R.id.price);
+        AppCompatTextView amd = itemView.findViewById(R.id.amd2);
+        AppCompatImageView card = itemView.findViewById(R.id.shop_card);
 
-            pizzaImage.setImageResource(menu.getPizzaImage());
-            name.setText(menu.getPizzaName());
-            type.setText(menu.getPizzaType());
-            price.setText(menu.getPrice());
-            amd.setText(menu.getPriceAmd());
-            card.setImageResource(menu.getShopCard());
+        pizzaImage.setImageResource(menu.getPizzaImage());
+        name.setText(menu.getPizzaName());
+        type.setText(menu.getPizzaType());
+        price.setText(menu.getPrice());
+        amd.setText(menu.getPriceAmd());
+        card.setImageResource(menu.getShopCard());
 
         }
 

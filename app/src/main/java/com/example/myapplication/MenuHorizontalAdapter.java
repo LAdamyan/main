@@ -17,6 +17,14 @@ public class MenuHorizontalAdapter extends RecyclerView.Adapter<MenuItemHolder> 
 
     private List<MenuHorizontal> menuHorizontals = Collections.emptyList();
 
+    private ItemClickListener itemClickListener;
+
+
+    public void setItemClickListener(ItemClickListener itemClickListener) {
+        this.itemClickListener = itemClickListener;
+
+    }
+
     @NonNull
     @Override
     public MenuItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -26,7 +34,17 @@ public class MenuHorizontalAdapter extends RecyclerView.Adapter<MenuItemHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MenuItemHolder holder, int position) {
-        holder.initData(menuHorizontals.get(position));
+        MenuHorizontal menuHorizontal = menuHorizontals.get(position);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                itemClickListener.click(menuHorizontal.getPieces());
+
+            }
+
+        });
+        holder.initData(menuHorizontal);
     }
 
 
@@ -54,4 +72,7 @@ class MenuItemHolder extends RecyclerView.ViewHolder {
 
 
     }
+}
+interface ItemClickListener {
+    void click(String text);
 }

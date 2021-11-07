@@ -9,6 +9,7 @@ public class MenuHorizontal {
     private String pieces;
 
 
+
     public MenuHorizontal(String pieces) {
         this.pieces = pieces;
 
@@ -29,3 +30,5 @@ public class MenuHorizontal {
         return menuHorizontalArrayList;
     }
 }
+
+
