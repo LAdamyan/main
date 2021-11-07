@@ -1,5 +1,10 @@
 package com.example.myapplication;
 
+import static com.example.myapplication.R.layout.horizontal_listing;
+import static com.example.myapplication.R.layout.pizza_layout;
+import static com.example.myapplication.R.layout.vertical_listing;
+
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,32 +16,57 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.zip.Inflater;
 
 public class MenuAdapter extends RecyclerView.Adapter<MyBeholder> {
 
-    private List<Menu> menu = Collections.emptyList();
+    private ItemClickListener itemClickListener;
 
+    private List<Menu> menus = Collections.emptyList();
+    boolean isHorizontalList;
+
+    public void setOnItemClickListener(ItemClickListener itemClickListener){
+        this.itemClickListener = itemClickListener;
+    }
 
     @NonNull
     @Override
     public MyBeholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.pizza_layout, null);
-        return new MyBeholder(view);
+         View itemView ;
+         if(isHorizontalList){
+             itemView = LayoutInflater.from(parent.getContext()).inflate(horizontal_listing,null);
+         }else{
+             itemView =LayoutInflater.from(parent.getContext()).inflate(vertical_listing,null);
+         }
+
+        return new MyBeholder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyBeholder holder, int position) {
-     holder.initData(menu.get(position));
+      Menu menu = menus.get(position);
+
+      holder.itemView.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              itemClickListener.onclick(menu.getPieces());
+          }
+      });
+
+
+     holder.initData(menu);
+
+
     }
 
     @Override
     public int getItemCount() {
-        return menu.size();
+        return menus.size();
     }
 
-    public void SetMenu(List<Menu>entertainments){
-        this.menu.clear();
-        this.menu.addAll(entertainments);
+    public void SetMenu(List<Menu>menus){
+        this.menus.clear();
+        this.menus.addAll(menus);
         notifyDataSetChanged();
     }
 
@@ -49,7 +79,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MyBeholder> {
         public MyBeholder(@NonNull View itemView) {
             super(itemView);
         }
-
 
         void initData(Menu menu) {
 
@@ -74,5 +103,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MyBeholder> {
 
 
         }
+
+
     }
+interface ItemClickListener{
+    void onclick(String text);
+}
 

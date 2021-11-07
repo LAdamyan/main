@@ -8,9 +8,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity implements ItemClickListener {
 
-    MenuAdapter menuAdapter =new MenuAdapter();
+    private MenuAdapter horizontalAdapter = new MenuAdapter();
+    private MenuAdapter verticalAdapter = new MenuAdapter();
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,21 +24,22 @@ public class MenuActivity extends AppCompatActivity {
         RecyclerView recyclerHorizontal = findViewById(R.id.recycle_horizontal);
         RecyclerView recyclerVertical = findViewById(R.id.recycle_vertical);
 
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         recyclerHorizontal.setLayoutManager(linearLayoutManager);
-        recyclerHorizontal.setAdapter(menuAdapter);
+        recyclerHorizontal.setAdapter(horizontalAdapter);
+       horizontalAdapter.SetMenu(Menu.getMenuItems());
+       horizontalAdapter.setOnItemClickListener(this);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2,
-                                                                      GridLayoutManager.VERTICAL,false);
+       verticalAdapter.SetMenu(Menu.getMenuItems());
+       GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2, GridLayoutManager.VERTICAL,false);
         recyclerVertical.setLayoutManager(gridLayoutManager);
-
-        menuAdapter.SetMenu(Menu.getMenuItems());
-
-        recyclerVertical.setAdapter(menuAdapter);
-
+        recyclerVertical.setAdapter(verticalAdapter);
 
     }
 
-
-
+    @Override
+    public void onclick(String text) {
+        System.out.println(text);
+    }
 }

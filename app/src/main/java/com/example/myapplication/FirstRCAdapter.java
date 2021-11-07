@@ -44,12 +44,13 @@ public class FirstRCAdapter extends RecyclerView.Adapter<MyViewHolder> {
     }
 }
 
-class MyViewHolder extends RecyclerView.ViewHolder{
+class MyViewHolder extends RecyclerView.ViewHolder {
 
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
     }
-    void initData(Entertainments entertainments){
+
+    void initData(Entertainments entertainments) {
 
         AppCompatImageView imageView = itemView.findViewById(R.id.image1);
         AppCompatImageView imageView2 = itemView.findViewById(R.id.logo);
@@ -65,6 +66,6 @@ class MyViewHolder extends RecyclerView.ViewHolder{
         textViewText.setText(entertainments.getText());
         textViewPlace.setText(entertainments.getPlace());
         buttonRequest.setText(entertainments.getButton());
-
     }
 }
+
