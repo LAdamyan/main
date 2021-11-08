@@ -1,10 +1,5 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.R.color.light_red;
-import static com.example.myapplication.R.layout.abc_action_bar_up_container;
-import static com.example.myapplication.R.layout.horizontal_listing;
-
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +9,12 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MenuHorizontalAdapter extends RecyclerView.Adapter<MenuItemHolder> {
 
-    private List<MenuHorizontal> menuHorizontals = Collections.emptyList();
+    private ArrayList<MenuHorizontal> menuHorizontals = new ArrayList<>();
 
 
     private ItemClickListener itemClickListener;
@@ -39,16 +34,26 @@ public class MenuHorizontalAdapter extends RecyclerView.Adapter<MenuItemHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MenuItemHolder holder, int position) {
+
         MenuHorizontal menuHorizontal = menuHorizontals.get(position);
 
-       holder.itemView.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-
-           }
-       });
-
         holder.initData(menuHorizontal);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+
+            boolean isClicked = false;
+
+            @Override
+            public void onClick(View view) {
+                if (!isClicked) {
+                    holder.pieceTextView.setBackgroundColor(ContextCompat.getColor(holder.pieceTextView.getContext(), R.color.light_red));
+                    isClicked = true;
+                } else {
+                    holder.pieceTextView.setBackgroundColor(ContextCompat.getColor(holder.pieceTextView.getContext(), R.color.grey));
+                    isClicked = false;
+                }
+            }
+        });
     }
 
 
@@ -75,8 +80,6 @@ class MenuItemHolder extends RecyclerView.ViewHolder {
 
     void initData(MenuHorizontal menu) {
         pieceTextView.setText(menu.getPiece());
-
-
     }
 
 }
@@ -85,5 +88,3 @@ interface ItemClickListener{
 
 
 }
-
-

@@ -42,5 +42,3 @@ public class MenuHorizontal {
         return menuHorizontalArrayList;
     }
 }
-
-

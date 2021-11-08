@@ -43,7 +43,6 @@ public class MenuActivity extends AppCompatActivity  implements ItemClickListene
 
     @Override
     public void click(String name, int id) {
-
+        System.out.println(name);
     }
 }
-

@@ -48,28 +48,28 @@ public class MenuVertical {
     }
 
 
-       public static List<MenuVertical> getMenuItems(){
-           ArrayList<MenuVertical>menuArrayList = new ArrayList<>();
-           menuArrayList.add(new MenuVertical(R.drawable.pizza_meat_assortment, " Pizza meat assorted ",
-                   " medium", "4000", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new MenuVertical(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
-                   "  plum medium", "3900", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new MenuVertical(R.drawable.pizza_piquant, " Pizza Piquant ",
-                   "  plum medium", "3800", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new MenuVertical(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
-                   "  plum medium", "3300", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new MenuVertical(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
-                   "  plum medium", "3300", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
-           menuArrayList.add(new MenuVertical(R.drawable.pizza_piquant, " Pizza Piquant ",
-                   "  plum medium", "3800", "AMD", R.drawable.ic_baseline_add_shopping_cart_24
-           ));
-           menuArrayList.add(new MenuVertical(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
-                   "  plum medium", "3900", "AMD", R.drawable.ic_baseline_add_shopping_cart_24
+    public static List<MenuVertical> getMenuItems(){
+        ArrayList<MenuVertical>menuArrayList = new ArrayList<>();
+        menuArrayList.add(new MenuVertical(R.drawable.pizza_meat_assortment, " Pizza meat assorted ",
+                " medium", "4000", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
+        menuArrayList.add(new MenuVertical(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
+                "  plum medium", "3900", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
+        menuArrayList.add(new MenuVertical(R.drawable.pizza_piquant, " Pizza Piquant ",
+                "  plum medium", "3800", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
+        menuArrayList.add(new MenuVertical(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
+                "  plum medium", "3300", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
+        menuArrayList.add(new MenuVertical(R.drawable.pizza_vegeterian, " Pizza Vegeterian ",
+                "  plum medium", "3300", "AMD", R.drawable.ic_baseline_add_shopping_cart_24));
+        menuArrayList.add(new MenuVertical(R.drawable.pizza_piquant, " Pizza Piquant ",
+                "  plum medium", "3800", "AMD", R.drawable.ic_baseline_add_shopping_cart_24
+        ));
+        menuArrayList.add(new MenuVertical(R.drawable.pizza_carpaccio, " Pizza Carpaccio with ",
+                "  plum medium", "3900", "AMD", R.drawable.ic_baseline_add_shopping_cart_24
 
-           ));
-           return menuArrayList;
+        ));
+        return menuArrayList;
 
-       }
+    }
 
 
 }

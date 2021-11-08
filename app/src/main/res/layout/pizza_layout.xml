@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:scrollbars="horizontal"
-       />
+        />
 
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -29,7 +29,7 @@
         android:layout_marginTop="@dimen/twenty_dp"
         android:layout_marginStart="@dimen/twenty_dp"
         app:layout_constraintStart_toStartOf="parent"
-         app:layout_constraintTop_toBottomOf="@id/recycle_horizontal"/>
+        app:layout_constraintTop_toBottomOf="@id/recycle_horizontal"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/_12ktor_pizza"

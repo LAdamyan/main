@@ -9,14 +9,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class MenuVerticalAdapter extends RecyclerView.Adapter<MyBeholder> {
 
-    private List<MenuVertical> menuVerticals = Collections.emptyList();
+    private ArrayList<MenuVertical> menuVerticals = new ArrayList<>();
 
 
     @Override
@@ -27,8 +29,10 @@ public class MenuVerticalAdapter extends RecyclerView.Adapter<MyBeholder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyBeholder holder, int position) {
+
         holder.initData(menuVerticals.get(position));
-        
+
+
     }
 
     @Override
@@ -56,7 +60,7 @@ class MyBeholder extends RecyclerView.ViewHolder {
         AppCompatTextView name = itemView.findViewById(R.id.pizza_assort);
         AppCompatTextView type = itemView.findViewById(R.id.medium);
         AppCompatTextView price = itemView.findViewById(R.id.price);
-        AppCompatTextView amd = itemView.findViewById(R.id.amd2);
+        AppCompatTextView amd = itemView.findViewById(R.id.pizza_amd);
         AppCompatImageView card = itemView.findViewById(R.id.shop_card);
 
         pizzaImage.setImageResource(menu.getPizzaImage());
@@ -66,8 +70,6 @@ class MyBeholder extends RecyclerView.ViewHolder {
         amd.setText(menu.getPriceAmd());
         card.setImageResource(menu.getShopCard());
 
-        }
-
     }
 
-
+}
