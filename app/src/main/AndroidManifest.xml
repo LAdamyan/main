@@ -51,6 +51,13 @@
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
             android:name=".MenuActivity"
             android:exported="true">
+
+
+        </activity>
+        <activity
+            android:theme="@style/Theme.MaterialComponents.Light.Bridge"
+            android:name=".TestActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

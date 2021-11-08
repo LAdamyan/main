@@ -38,7 +38,37 @@
         <item name="android:fontFamily">@font/montserrat_light</item>
     </style>
 
+    <style name="Widget.MyApp.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MyApp.Chip.Choice</item>
+    </style>
 
+    <style name="ThemeOverlay.MyApp.Chip.Choice" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+
+    <style name="ThemeOverlay.MyApp.Chip.Filter" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="android:checkable">true</item>
+        <item name="chipIconVisible">false</item>
+        <item name="checkedIcon">@drawable/ic_baseline_check_24</item>
+    </style>
+
+    <style name="chipInput" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="android:checkable">true</item>
+        <item name="chipIconVisible">false</item>
+        <item name="closeIconVisible">false</item>
+        <item name="checkedIcon">@drawable/ic_baseline_close_24</item>
+    </style>
+
+    <style name="chipAction" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="android:checkable">true</item>
+        <item name="chipIconVisible">false</item>
+        <item name="closeIconVisible">false</item>
+        <item name="checkedIcon">@drawable/ic_baseline_close_24</item>
+    </style>
 
 
 
