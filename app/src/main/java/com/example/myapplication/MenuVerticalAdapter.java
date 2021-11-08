@@ -16,29 +16,30 @@ import java.util.List;
 
 public class MenuVerticalAdapter extends RecyclerView.Adapter<MyBeholder> {
 
-    private List<MenuVertical> menu = Collections.emptyList();
+    private List<MenuVertical> menuVerticals = Collections.emptyList();
 
 
     @Override
     public MyBeholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(horizontal_listing, null);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.vertical_listing,parent, false);
         return new MyBeholder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyBeholder holder, int position) {
-        holder.initData(menu.get(position));
-
-
+        holder.initData(menuVerticals.get(position));
+        
     }
 
     @Override
     public int getItemCount() {
-        return menu.size();
+        return menuVerticals.size();
     }
 
-    public void SetMenu(List<MenuVertical> menu) {
-        this.menu = menu;
+    public void setMenu(List<MenuVertical> menu) {
+        this.menuVerticals.clear();
+        this.menuVerticals.addAll(menu);
+        notifyDataSetChanged();
     }
 
 }
@@ -67,5 +68,9 @@ class MyBeholder extends RecyclerView.ViewHolder {
 
         }
 
+    }
+    interface  ItemClickListener{
+    void click(String name,int id);
+    void click(String piece);
     }
 

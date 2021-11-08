@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MenuActivity extends AppCompatActivity  implements ItemClickListener{
+public class MenuActivity extends AppCompatActivity   {
 
     MenuHorizontalAdapter horizontalAdapter = new MenuHorizontalAdapter();
     MenuVerticalAdapter verticalAdapter = new MenuVerticalAdapter();
@@ -17,31 +17,30 @@ public class MenuActivity extends AppCompatActivity  implements ItemClickListene
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pizza_layout);
-        initRecycleView();
+        initHorizontalRecycleView();
+        initVerticalRecycleView();
     }
 
-    private void initRecycleView() {
+    private void initHorizontalRecycleView() {
         RecyclerView recyclerHorizontal = findViewById(R.id.recycle_horizontal);
-        RecyclerView recyclerVertical = findViewById(R.id.recycle_vertical);
-
-
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerHorizontal.setLayoutManager(linearLayoutManager);
         recyclerHorizontal.setAdapter(horizontalAdapter);
-        horizontalAdapter.SetMenuHorizontal(MenuHorizontal.getMenuItems());
+        horizontalAdapter.setMenuHorizontal(MenuHorizontal.getMenuItems());
+    }
 
-
+    private void initVerticalRecycleView() {
+        RecyclerView recyclerVertical = findViewById(R.id.recycle_vertical);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
         recyclerVertical.setLayoutManager(gridLayoutManager);
         recyclerVertical.setAdapter(verticalAdapter);
-        verticalAdapter.SetMenu(MenuVertical.getMenuItems());
-        horizontalAdapter.setItemClickListener(this);
+        verticalAdapter.setMenu(MenuVertical.getMenuItems());
+
 
     }
 
 
-    @Override
-    public void click(String text) {
 
-    }
+
 }
+

@@ -24,7 +24,7 @@
     <string name="_1150" translatable="false">1150</string>
     <string name="_amd" translatable="false">amd</string>
 
-    <string name="_1" translatable="false">- | 1 | +</string>
+
     <string name="row1" translatable="false">Row 1</string>
     <string name="Row2" translatable="false">Row 2 column1</string>
     <string name="Row3" translatable="false">Row3 column 2</string>
@@ -100,6 +100,7 @@
     <string name="pizza_meat_assorted" translatable="false">Pizza meat assorted</string>
     <string name="medium" translatable="false">medium</string>
     <string name="_4000" translatable="false">4000</string>
+    <string name="input_chip">Input chip</string>
 
 
     <string-array name="colors_array">

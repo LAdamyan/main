@@ -3,33 +3,26 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="@dimen/_250dp"
+    android:layout_height="@dimen/_350dp"
     android:orientation="vertical"
-    android:background="@color/black"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/view_corner"
     >
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/view"
-        android:layout_width="250dp"
-        android:layout_height="350dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/view_corner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/pizza_meat"
-        android:layout_width="250dp"
-        android:layout_height="220dp"
+        android:layout_width="@dimen/_250dp"
+        android:layout_height="@dimen/_220dp"
         android:background="@drawable/pizza_img_radius"
-        tools:src="@drawable/pizza_meat_assortment"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/view"
-        app:layout_constraintTop_toTopOf="@id/view"
-        />
+        app:layout_constraintBottom_toTopOf="@id/pizza_assort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/pizza_meat_assortment" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/pizza_assort"
@@ -39,9 +32,10 @@
         android:text="@string/pizza_meat_assorted"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_five_sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@id/view"
-        app:layout_constraintTop_toBottomOf="@id/pizza_meat" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pizza_meat"
+        app:layout_constraintBottom_toTopOf="@id/medium"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/medium"
@@ -51,8 +45,8 @@
         android:text="@string/medium"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_five_sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pizza_assort" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -65,9 +59,10 @@
         android:textSize="@dimen/twenty_five_sp"
         android:layout_marginStart="@dimen/ten_dp"
         android:layout_marginTop="@dimen/twenty_dp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/medium"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0"/>
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -90,7 +85,7 @@
         android:layout_marginTop="@dimen/five_dp"
         android:layout_marginEnd="@dimen/ten_dp"
         app:layout_constraintStart_toEndOf="pizza_amd"
-        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/medium"
         app:layout_constraintBottom_toBottomOf="@id/pizza_amd"/>
 
