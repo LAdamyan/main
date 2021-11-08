@@ -69,8 +69,5 @@ class MyBeholder extends RecyclerView.ViewHolder {
         }
 
     }
-    interface  ItemClickListener{
-    void click(String name,int id);
-    void click(String piece);
-    }
+
 

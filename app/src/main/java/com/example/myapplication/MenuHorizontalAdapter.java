@@ -21,6 +21,7 @@ public class MenuHorizontalAdapter extends RecyclerView.Adapter<MenuItemHolder> 
 
     private List<MenuHorizontal> menuHorizontals = Collections.emptyList();
 
+
     private ItemClickListener itemClickListener;
 
 
@@ -77,11 +78,12 @@ class MenuItemHolder extends RecyclerView.ViewHolder {
 
 
     }
-    interface ItemClickListener{
-        void click(String name,int id);
+
+}
+interface ItemClickListener{
+    void click(String name,int id);
 
 
-    }
 }
 
 

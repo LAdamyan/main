@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MenuActivity extends AppCompatActivity   {
+public class MenuActivity extends AppCompatActivity  implements ItemClickListener {
 
     MenuHorizontalAdapter horizontalAdapter = new MenuHorizontalAdapter();
     MenuVerticalAdapter verticalAdapter = new MenuVerticalAdapter();
@@ -27,6 +27,7 @@ public class MenuActivity extends AppCompatActivity   {
         recyclerHorizontal.setLayoutManager(linearLayoutManager);
         recyclerHorizontal.setAdapter(horizontalAdapter);
         horizontalAdapter.setMenuHorizontal(MenuHorizontal.getMenuItems());
+        horizontalAdapter.setItemClickListener(this);
     }
 
     private void initVerticalRecycleView() {
@@ -40,7 +41,9 @@ public class MenuActivity extends AppCompatActivity   {
     }
 
 
+    @Override
+    public void click(String name, int id) {
 
-
+    }
 }
 
