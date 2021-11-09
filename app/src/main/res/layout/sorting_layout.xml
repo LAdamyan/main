@@ -74,12 +74,15 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/sorting_recycle"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_550dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/categories_view"/>
+        app:layout_constraintTop_toBottomOf="@id/categories_view"
+        app:layout_constraintBottom_toTopOf="@id/button_space"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/button_space"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

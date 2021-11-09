@@ -9,6 +9,6 @@ public class FilterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sorting_item_view);
+        setContentView(R.layout.sorting_layout);
     }
 }
