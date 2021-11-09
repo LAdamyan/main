@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/_12ktor_resize.xml" value="0.2513888888888889" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/background_corner.xml" value="0.24794520547945206" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_add_shopping_cart_24.xml" value="0.19398148148148148" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_app_settings_alt_24.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_golf_course_24.xml" value="0.18584474885844748" />
@@ -56,6 +57,8 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/second_activity.xml" value="0.253125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/settings.xml" value="0.22" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/settings_linear.xml" value="0.18425925925925926" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sorting_item_view.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sorting_layout.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/table_layout.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/third_activity.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/third_activity2.xml" value="0.13425925925925927" />

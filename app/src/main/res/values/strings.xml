@@ -143,6 +143,19 @@
     <string name="loading">Loading...</string>
     <string name="yes_delete_it">Yes,delete it!</string>
     <string name="theming_chip">Theming chip</string>
+    <string name="sorting">SORTING</string>
+    <string name="sorting2">Sorting</string>
+    <string name="newest">Newest</string>
+    <string name="categories">Categories</string>
+    <string name="clear">Clear</string>
+    <string name="apply">Apply</string>
+    <string name="arts_entertainment"><![CDATA[Arts & Entertainment]]></string>
+    <string name="casinos">Casinos</string>
+    <string name="comedy_clubs">Comedy clubs</string>
+    <string name="art_galleries">Art Galleries</string>
+    <string name="movie_theatres">Movie Theatres</string>
+    <string name="museums">Museums</string>
+    <string name="dance_studios">Dance Studios</string>
 
 
     <string-array name="colors_array">

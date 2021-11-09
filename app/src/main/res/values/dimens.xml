@@ -38,6 +38,8 @@
     <dimen name="_250dp">250dp</dimen>
     <dimen name="_220dp">220dp</dimen>
     <dimen name="forty_sp">40sp</dimen>
+    <dimen name="_550dp">550dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
 
 
 </resources>

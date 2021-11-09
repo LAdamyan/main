@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/sorting_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sorting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorting"
+        android:textColor="@color/grey"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:layout_marginBottom="@dimen/ten_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/sorting_view"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sorting_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorting2"
+        android:textSize="@dimen/twenty_sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginStart="@dimen/twenty_dp"
+        android:drawableStart="@drawable/ic_baseline_toc_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sorting_view"
+        android:drawablePadding="@dimen/five_dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newest"
+        android:textSize="@dimen/fifteen_sp"
+        android:layout_marginEnd="@dimen/twenty_dp"
+       android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sorting_menu"
+        app:layout_constraintBottom_toBottomOf="@id/sorting_menu"/>
+
+    <View
+        android:id="@+id/categories_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sorting_menu" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/categories_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categories"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/fifteen_sp"
+        android:layout_marginStart="@dimen/twenty_dp"
+        app:layout_constraintBottom_toBottomOf="@id/categories_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/categories_view"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sorting_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_550dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categories_view"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sorting_recycle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clear"
+        android:layout_width="@dimen/_180dp"
+        android:layout_height="@dimen/eighty_dp"
+        android:text="@string/clear"
+        android:textSize="@dimen/twenty_sp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apply"
+            android:layout_width="@dimen/_180dp"
+            android:layout_height="@dimen/eighty_dp"
+            android:text="@string/apply"
+            android:textSize="@dimen/twenty_sp"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
