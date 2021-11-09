@@ -53,6 +53,13 @@
             android:text="@string/action_chip"
             />
 
+        <com.google.android.material.chip.Chip
+            android:id="@+id/theming_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theming_chip"
+            style="@style/ThemingChip"/>
+
     </com.google.android.material.chip.ChipGroup>
 
     <Button

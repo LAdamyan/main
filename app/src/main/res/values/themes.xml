@@ -70,7 +70,17 @@
         <item name="checkedIcon">@drawable/ic_baseline_close_24</item>
     </style>
 
-
+    <style name="ThemingChip" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="android:checkable">false</item>
+        <item name="chipIconTint">@color/purple_200</item>
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="closeIconVisible">true</item>
+        <item name="chipIconVisible">true</item>
+        <item name="chipStrokeWidth">3dp</item>
+        <item name="chipIcon">@drawable/ic_baseline_flatware_24</item>
+        <item name="chipStrokeColor">@color/purple</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
 
 
 

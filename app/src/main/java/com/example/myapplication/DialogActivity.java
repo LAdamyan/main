@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,7 +34,7 @@ public class DialogActivity extends AppCompatActivity {
             dialog.show();
 
             view1.findViewById(R.id.cancel).setOnClickListener(view2 -> dialog.dismiss());
-            view1.findViewById(R.id.delete).setOnClickListener(view22 -> dialog.dismiss());
+            view1.findViewById(R.id.delete).setOnClickListener(view2 -> dialog.dismiss());
 
         });
     }
@@ -51,23 +52,28 @@ public class DialogActivity extends AppCompatActivity {
         });
 
     }
-    private void alert3Click(){
+
+    private void alert3Click() {
         Button alert3 = findViewById(R.id.alert3);
         alert3.setOnClickListener(view -> {
-            View view3 = LayoutInflater.from(DialogActivity.this).inflate(R.layout.alert3,null);
+            View view3 = LayoutInflater.from(DialogActivity.this).inflate(R.layout.alert3, null);
             AlertDialog.Builder builder = new AlertDialog.Builder(DialogActivity.this);
             builder.setView(view3);
             AlertDialog dialog = builder.create();
             dialog.show();
 
-            view3.findViewById(R.id.loading).setOnClickListener(view1 -> dialog.dismiss());
+            view3.findViewById(R.id.loading).setOnClickListener(view1 -> {
+                Intent intent = new Intent(DialogActivity.this,MenuActivity.class);
+                startActivity(intent);
+            });
+
         });
     }
 
     private void alert4Click() {
         Button alert4 = findViewById(R.id.alert4);
         alert4.setOnClickListener(view -> {
-            View view4 = LayoutInflater.from(DialogActivity.this).inflate(R.layout.alert4,null);
+            View view4 = LayoutInflater.from(DialogActivity.this).inflate(R.layout.alert4, null);
             AlertDialog.Builder builder = new AlertDialog.Builder(DialogActivity.this);
             builder.setView(view4).setIcon(R.drawable.ic_baseline_error_outline_24);
             AlertDialog dialog = builder.create();
