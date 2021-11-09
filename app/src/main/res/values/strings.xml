@@ -126,6 +126,22 @@
     <string name="button_18">Button 18</string>
     <string name="button_19">Button 19</string>
     <string name="button_20">Button 20</string>
+    <string name="alert1">Alert1</string>
+    <string name="alert2">Alert2</string>
+    <string name="alert3">Alert3</string>
+    <string name="alert4">Alert4</string>
+    <string name="you_won_t_be_able_to_recover_this_file">You won\'t be able to recover this file</string>
+    <string name="you_won_t_be_able_to_recover">You won\'t be abe to recover</string>
+    <string name="this_file">this file!</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="deleted">Deleted!</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="your_imiginary_file_has_been">Your imiginary file has been</string>
+    <string name="deleted_">deleted!</string>
+    <string name="ok">Ok</string>
+    <string name="loading">Loading...</string>
+    <string name="yes_delete_it">Yes,delete it!</string>
 
 
     <string-array name="colors_array">

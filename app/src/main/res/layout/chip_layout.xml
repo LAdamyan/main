@@ -55,6 +55,56 @@
 
     </com.google.android.material.chip.ChipGroup>
 
+    <Button
+        android:id="@+id/alert1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert1"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:textSize="@dimen/twenty_sp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip_group"/>
+
+    <Button
+        android:id="@+id/alert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert2"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:textSize="@dimen/twenty_sp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert1"/>
+
+    <Button
+        android:id="@+id/alert3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert3"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:textSize="@dimen/twenty_sp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert2"/>
+
+    <Button
+        android:id="@+id/alert4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert4"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:textSize="@dimen/twenty_sp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert3"/>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,6 @@ public class TestActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.scroll_layout);
+        setContentView(R.layout.chip_layout);
     }
 }

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/_12ktor_resize.xml" value="0.2513888888888889" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/background_corner.xml" value="0.24794520547945206" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_app_settings_alt_24.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_golf_course_24.xml" value="0.18584474885844748" />
@@ -25,6 +26,10 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/twister_radius.xml" value="0.2513888888888889" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/view_corner.xml" value="0.2513888888888889" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/alert1.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/alert2.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/alert3.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/alert4.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/change_password.xml" value="0.22" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/chip_layout.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/desc_grid.xml" value="0.17297297297297298" />
