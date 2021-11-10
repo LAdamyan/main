@@ -14,7 +14,7 @@ public class Category {
 
 
 
-    public Category(int icon, String title, ChipGroup chipGroup) {
+    public Category(int icon, String title) {
         this.icon = icon;
         this.title = title;
         this.chipGroup = chipGroup;
@@ -34,7 +34,12 @@ public class Category {
 
     public static List<Category> getCategoryItems() {
         ArrayList<Category> categoryArrayList = new ArrayList<>();
-           categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment",""));
+           categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment"));
+        categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment"));
+        categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment"));
+        categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment"));
+        categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment"));
+        categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment"));
 
         return categoryArrayList;
     }
