@@ -34,7 +34,7 @@ public class Category {
 
     public static List<Category> getCategoryItems() {
         ArrayList<Category> categoryArrayList = new ArrayList<>();
-          // categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment",""));
+           categoryArrayList.add(new Category(R.drawable.brush_icon,"Arts & Entertainment",""));
 
         return categoryArrayList;
     }
