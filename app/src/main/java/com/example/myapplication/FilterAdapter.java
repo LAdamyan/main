@@ -60,12 +60,12 @@ class SortingItemHolder extends RecyclerView.ViewHolder {
         iconImage.setImageResource(category.getIcon());
         titleText.setText(category.getTitle());
 
-
         String []fun = {"Casinos","Art Galleries","Comedy Clubs","Move Theatres","Museums","Dance Studios"};
         for(String funPlaces : fun ){
             Chip chip = new Chip(chipGroup.getContext());
             chip.setText(funPlaces);
             chipGroup.addView(chip);
+
         }
 
 
