@@ -1,12 +1,15 @@
 package com.example.myapplication;
 
+import android.content.res.ColorStateList;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.chip.Chip;
@@ -64,7 +67,10 @@ class SortingItemHolder extends RecyclerView.ViewHolder {
         for(String funPlaces : fun ){
             Chip chip = new Chip(chipGroup.getContext());
             chip.setText(funPlaces);
+            chip.setCheckable(true);
+            chip.setChipBackgroundColor(AppCompatResources.getColorStateList(itemView.getContext(), R.color.light_blue3));
             chipGroup.addView(chip);
+
 
         }
 

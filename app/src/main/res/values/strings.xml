@@ -4,7 +4,7 @@
     <string name="android" translatable="false">Android</string>
     <string name="kotlin" translatable="false">Kotlin</string>
     <string name="javascript" translatable="false">Javascript</string>
-    <string name="desc_text" translatable="false" >Souphattra Hotel
+    <string name="desc_text" translatable="false">Souphattra Hotel
                 located next to the UNESCO World Heritage town in Luang
                 Prabang,Souphattra Hotel radiates all the understated
                 elegance and charm of a colonial-era mansion,luxuriously
@@ -165,7 +165,7 @@
         <item>Yellow</item>
         <item>Green</item>
         <item>Black</item>
-        <item >Grey</item>
+        <item>Grey</item>
     </string-array>
 
     <string-array name="cities_array">
@@ -175,7 +175,16 @@
         <item>Moscow</item>
         <item>London</item>
         <item>New-York</item>
-        <item >Paris</item>
+        <item>Paris</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="firstfragment">FirstFragment</string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="third_fragment">Third Fragment</string>
 
 </resources>
