@@ -1,16 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white_1"
     tools:context=".fragment.SecondFragment">
 
-    <TextView
-        android:id="@+id/second_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/second_fragment"
-        android:textSize="@dimen/thirty_sp"
-        android:layout_gravity="center"/>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/bank_spinner"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="@dimen/sixty_dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:entries="@array/banks_array"
+        android:background="@color/white"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/cash_spinner"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="@dimen/sixty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:entries="@array/cash_array"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@id/bank_spinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/artsakh_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:entries="@array/artsakh_array"
+        android:background="@color/white"
+        android:paddingStart="@dimen/sixty_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/cash_spinner"
+         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/artsakh_bank_800"
+        app:layout_constraintStart_toStartOf="@id/artsakh_spinner"
+        app:layout_constraintTop_toTopOf="@id/artsakh_spinner"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/usd"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="@dimen/sixty_dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:paddingStart="@dimen/seventy_dp"
+        android:entries="@array/usd"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/artsakh_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/usa"
+        app:layout_constraintStart_toStartOf="@id/usd"
+        app:layout_constraintTop_toTopOf="@id/usd"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/amd"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="@dimen/sixty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:paddingStart="@dimen/sixty_dp"
+        android:paddingEnd="@dimen/ten_dp"
+        android:entries="@array/amd"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/artsakh_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/amd_png"
+        app:layout_constraintStart_toStartOf="@id/amd"
+        app:layout_constraintTop_toTopOf="@id/amd"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText1"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty_dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:hint="@string/ունեմ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usd"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText2"
+        android:layout_width="@dimen/_160dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="@dimen/_16dp"
+        android:hint="@string/ցանկանումեմ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editText1"
+        app:layout_constraintBottom_toBottomOf="@id/editText1"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -186,5 +186,46 @@
     <string name="first_fragment">First Fragment</string>
     <string name="second_fragment">Second Fragment</string>
     <string name="third_fragment">Third Fragment</string>
+    <string name="ունեմ">Ունեմ</string>
+    <string name="ցանկանումեմ">Ցանկանում եմ</string>
+
+
+    <string-array name="banks_array">
+
+        <item> Բանկ</item>
+        <item>Ինեկոբանկ</item>
+        <item>Կոնվերսբանկ</item>
+        <item>Այդիբանկ</item>
+        <item>Արդշինբանկ</item>
+        <item>Հայբիզնեսբանկ</item>
+        <item>Արարատբանկ</item>
+    </string-array>
+
+    <string-array name="cash_array">
+
+        <item> Կանխիկ</item>
+        <item> Փոխանցում</item>
+
+    </string-array>
+
+    <string-array name="artsakh_array">
+        <item> Արցախբանկ</item>
+        <item> Մասնաճյուղեր</item>
+        <item> Բանկոմատներ</item>
+        <item> Շառայություններ</item>
+        <item> Փոխանցումներ</item>
+        <item> Սպասարկում</item>
+        <item> Վարկեր</item>
+        <item> Ավանդներ</item>
+
+
+    </string-array>
+    <string-array name="amd">
+        <item> AMD</item>
+    </string-array>
+    <string-array name="usd">
+        <item> USD</item>
+
+    </string-array>
 
 </resources>

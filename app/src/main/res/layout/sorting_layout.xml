@@ -4,26 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/sorting_view"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:background="@color/white2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/sorting_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sorting"
+        android:padding="@dimen/ten_dp"
         android:textColor="@color/grey"
-        android:layout_marginStart="@dimen/twenty_dp"
         android:layout_marginBottom="@dimen/ten_dp"
+        android:background="@color/white2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/sorting_view"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/sorting_menu"
@@ -35,7 +30,7 @@
         android:layout_marginStart="@dimen/twenty_dp"
         android:drawableStart="@drawable/ic_baseline_toc_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sorting_view"
+        app:layout_constraintTop_toBottomOf="@id/sorting_text"
         android:drawablePadding="@dimen/five_dp"/>
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -50,26 +45,20 @@
         app:layout_constraintTop_toTopOf="@id/sorting_menu"
         app:layout_constraintBottom_toBottomOf="@id/sorting_menu"/>
 
-    <View
-        android:id="@+id/categories_view"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:background="@color/white2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sorting_menu" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/categories_text"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp"
         android:text="@string/categories"
         android:textColor="@color/grey"
         android:textSize="@dimen/fifteen_sp"
-        android:layout_marginStart="@dimen/twenty_dp"
-        app:layout_constraintBottom_toBottomOf="@id/categories_view"
+        android:background="@color/white2"
+        app:layout_constraintBottom_toTopOf="@id/sorting_recycle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/categories_view"/>
+        app:layout_constraintTop_toBottomOf="@id/sorting_menu" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/sorting_recycle"
@@ -78,7 +67,7 @@
         android:scrollbars="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/categories_view"
+        app:layout_constraintTop_toBottomOf="@id/categories_text"
         app:layout_constraintBottom_toTopOf="@id/button_space"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
