@@ -195,6 +195,16 @@
     <string name="back_to_activity1">Back to Activity1</string>
     <string name="returned_textview">Returned textView</string>
     <string name="returned_textview2">Returned textView2</string>
+    <string name="accepted_tests">Accepted tests</string>
+    <string name="show_all_6">Show all(6)</string>
+    <string name="new_comments">New comments</string>
+    <string name="cooperko">CooperKo</string>
+    <string name="_247_advanced_ticketing">#247:Advanced ticketing</string>
+    <string name="coverage_ends_in_81d_14_44">Coverage|Ends in 81d 14:44</string>
+    <string name="bug_comment">Bug comment</string>
+    <string name="test_io_update">test IO Update:</string>
+    <string name="we_couldn_t_find_a_tester_within_24_hours_we_reco">We couldn\'t find a tester within 24 hours.We reco...</string>
+    <string name="_29_only_product">#29|Only Product</string>
 
 
     <string-array name="banks_array">

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/comment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_baseline_comment_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bug_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/bug_comment"
+        android:textSize="@dimen/fifteen_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@id/comment"
+        app:layout_constraintTop_toTopOf="@id/comment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/test_IO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/test_io_update"
+        android:textSize="@dimen/fifteen_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/bug_comment"
+        app:layout_constraintTop_toBottomOf="@id/bug_comment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bug_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        android:text="@string/we_couldn_t_find_a_tester_within_24_hours_we_reco"
+        android:textSize="@dimen/fifteen_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/test_IO"
+        app:layout_constraintTop_toBottomOf="@id/test_IO" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_29_only_product"
+        android:layout_marginBottom="@dimen/_200dp"
+        app:layout_constraintStart_toStartOf="@id/bug_text"
+        app:layout_constraintTop_toBottomOf="@id/bug_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

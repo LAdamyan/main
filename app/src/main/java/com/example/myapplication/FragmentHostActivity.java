@@ -7,6 +7,8 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.fragment.FirstFragment;
 import com.example.myapplication.fragment.SecondFragment;
@@ -48,4 +50,10 @@ public class FragmentHostActivity extends AppCompatActivity {
         });
 
     }
+
+
+
+
+
+
 }
