@@ -188,6 +188,13 @@
     <string name="third_fragment">Third Fragment</string>
     <string name="ունեմ">Ունեմ</string>
     <string name="ցանկանումեմ">Ցանկանում եմ</string>
+    <string name="go_to_2nd_activity">Go to the 2nd activity</string>
+    <string name="go_to_the_3rd_activity">Go to the 3rd activity</string>
+    <string name="_3rd_activity">3rd activity</string>
+    <string name="_2nd_activity">2nd activity</string>
+    <string name="back_to_activity1">Back to Activity1</string>
+    <string name="returned_textview">Returned textView</string>
+    <string name="returned_textview2">Returned textView2</string>
 
 
     <string-array name="banks_array">

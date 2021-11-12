@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_2nd_activity"
+        android:layout_marginTop="@dimen/_200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_160dp"
+        android:text="@string/go_to_the_3rd_activity"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/appCompatButton1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/appCompatButton1"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton1"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_returned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returned_textview"
+        android:textSize="@dimen/twenty_sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/seventy_dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/appCompatButton1"
+        app:layout_constraintEnd_toEndOf="@id/appCompatButton1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_returned2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returned_textview2"
+        android:textSize="@dimen/twenty_sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/fifty_dp"
+        app:layout_constraintTop_toBottomOf="@id/textView_returned"
+        app:layout_constraintStart_toStartOf="@id/textView_returned"
+        app:layout_constraintEnd_toEndOf="@id/textView_returned"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
