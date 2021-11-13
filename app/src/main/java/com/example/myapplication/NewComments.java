@@ -36,8 +36,9 @@ public class NewComments {
         return productNum;
     }
 
-    public List<NewComments> getNewComments(){
-        ArrayList<NewComments>newCommentsArrayList = new ArrayList<>();
+
+    public static List<NewComments> getNewComments (){
+        ArrayList<NewComments>newCommentsArrayList= new ArrayList<>();
         newCommentsArrayList.add(new NewComments(R.drawable.ic_baseline_comment_24,"Bug comment",
                 "test IO Update","We couldn't find a tester within 24 hours.We rec...",
                 "#29|OnlyProduct"));
