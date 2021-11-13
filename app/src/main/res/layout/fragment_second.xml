@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_1"
+    android:background="@color/white2"
     tools:context=".fragment.SecondFragment">
 
     <androidx.appcompat.widget.AppCompatSpinner
@@ -14,7 +14,6 @@
         android:layout_marginStart="@dimen/_16dp"
         android:layout_marginTop="@dimen/twenty_dp"
         android:entries="@array/banks_array"
-        android:background="@color/white"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +25,6 @@
         android:layout_marginTop="@dimen/twenty_dp"
         android:layout_marginEnd="@dimen/_16dp"
         android:entries="@array/cash_array"
-        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="@id/bank_spinner"
@@ -40,7 +38,6 @@
         android:layout_marginStart="@dimen/_16dp"
         android:layout_marginEnd="@dimen/_16dp"
         android:entries="@array/artsakh_array"
-        android:background="@color/white"
         android:paddingStart="@dimen/sixty_dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,9 +58,9 @@
         android:layout_height="@dimen/sixty_dp"
         android:layout_marginStart="@dimen/_16dp"
         android:layout_marginTop="@dimen/twenty_dp"
-        android:paddingStart="@dimen/seventy_dp"
+        android:paddingStart="@dimen/sixty_dp"
         android:entries="@array/usd"
-        android:background="@color/white"
+        android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/artsakh_spinner"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +83,7 @@
         android:paddingStart="@dimen/sixty_dp"
         android:paddingEnd="@dimen/ten_dp"
         android:entries="@array/amd"
-        android:background="@color/white"
+
         app:layout_constraintTop_toBottomOf="@id/artsakh_spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
