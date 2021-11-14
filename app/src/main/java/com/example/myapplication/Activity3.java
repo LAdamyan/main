@@ -23,22 +23,18 @@ public class Activity3 extends AppCompatActivity {
 
         editText2= findViewById(R.id.editText_pass2);
         button2 =findViewById(R.id.button_back2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+        button2.setOnClickListener(view -> onBackPressed());
     }
 
 
     @Override
     public void onBackPressed() {
-        if(editText2!=null){
+        if(editText2!=null) {
             String message = editText2.getText().toString();
             Intent intent = new Intent();
-            intent.putExtra("text2",message);
+            intent.putExtra(Activity1.ACCESS_MESSAGE2,message);
             setResult(RESULT_OK,intent);
+            finish();
         }
         super.onBackPressed();
 

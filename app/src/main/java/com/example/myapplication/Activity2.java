@@ -23,12 +23,7 @@ public class Activity2 extends AppCompatActivity {
 
         editText= findViewById(R.id.editText_pass);
         button1 =findViewById(R.id.button_back);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+        button1.setOnClickListener(view -> onBackPressed());
     }
 
     @Override
@@ -36,8 +31,9 @@ public class Activity2 extends AppCompatActivity {
         if(editText!=null){
             String message = editText.getText().toString();
             Intent intent = new Intent();
-            intent.putExtra("text",message);
+            intent.putExtra(Activity1.ACCESS_MESSAGE1,message);
             setResult(RESULT_OK,intent);
+            finish();
         }
         super.onBackPressed();
     }

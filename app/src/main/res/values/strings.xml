@@ -105,57 +105,57 @@
     <string name="filter_chip" translatable="false">Filter chip</string>
     <string name="action_chip" translatable="false">Action Chip</string>
     <string name="scrollview_example" translatable="false">ScrollView example</string>
-    <string name="vertical_scrollview_example">Vertical ScrollView example</string>
-    <string name="button_1">Button 1</string>
-    <string name="button_2">Button 2</string>
-    <string name="button_3">Button 3</string>
-    <string name="button_4">Button 4</string>
-    <string name="button_5">Button 5</string>
-    <string name="button_6">Button 6</string>
-    <string name="button_7">Button 7</string>
-    <string name="button_8">Button 8</string>
-    <string name="button_9">Button 9</string>
-    <string name="button_10">Button 10</string>
-    <string name="button_11">Button 11</string>
-    <string name="button_12">Button 12</string>
-    <string name="button_13">Button 13</string>
-    <string name="button_14">Button 14</string>
-    <string name="button_15">Button 15</string>
-    <string name="button_16">Button 16</string>
-    <string name="button_17">Button 17</string>
-    <string name="button_18">Button 18</string>
-    <string name="button_19">Button 19</string>
-    <string name="button_20">Button 20</string>
-    <string name="alert1">Alert1</string>
-    <string name="alert2">Alert2</string>
-    <string name="alert3">Alert3</string>
-    <string name="alert4">Alert4</string>
-    <string name="you_won_t_be_able_to_recover_this_file">You won\'t be able to recover this file</string>
-    <string name="you_won_t_be_able_to_recover">You won\'t be abe to recover</string>
-    <string name="this_file">this file!</string>
-    <string name="cancel">Cancel</string>
-    <string name="delete">Delete</string>
-    <string name="deleted">Deleted!</string>
-    <string name="are_you_sure">Are you sure?</string>
-    <string name="your_imiginary_file_has_been">Your imiginary file has been</string>
-    <string name="deleted_">deleted!</string>
-    <string name="ok">Ok</string>
-    <string name="loading">Loading...</string>
-    <string name="yes_delete_it">Yes,delete it!</string>
-    <string name="theming_chip">Theming chip</string>
-    <string name="sorting">SORTING</string>
-    <string name="sorting2">Sorting</string>
-    <string name="newest">Newest</string>
-    <string name="categories">Categories</string>
-    <string name="clear">Clear</string>
-    <string name="apply">Apply</string>
-    <string name="arts_entertainment"><![CDATA[Arts & Entertainment]]></string>
-    <string name="casinos">Casinos</string>
-    <string name="comedy_clubs">Comedy clubs</string>
-    <string name="art_galleries">Art Galleries</string>
-    <string name="movie_theatres">Movie Theatres</string>
-    <string name="museums">Museums</string>
-    <string name="dance_studios">Dance Studios</string>
+    <string name="vertical_scrollview_example" translatable="false">Vertical ScrollView example</string>
+    <string name="button_1" translatable="false">Button 1</string>
+    <string name="button_2" translatable="false">Button 2</string>
+    <string name="button_3" translatable="false">Button 3</string>
+    <string name="button_4" translatable="false">Button 4</string>
+    <string name="button_5" translatable="false">Button 5</string>
+    <string name="button_6" translatable="false">Button 6</string>
+    <string name="button_7" translatable="false">Button 7</string>
+    <string name="button_8" translatable="false">Button 8</string>
+    <string name="button_9" translatable="false">Button 9</string>
+    <string name="button_10" translatable="false">Button 10</string>
+    <string name="button_11" translatable="false">Button 11</string>
+    <string name="button_12" translatable="false">Button 12</string>
+    <string name="button_13" translatable="false">Button 13</string>
+    <string name="button_14" translatable="false">Button 14</string>
+    <string name="button_15" translatable="false">Button 15</string>
+    <string name="button_16" translatable="false">Button 16</string>
+    <string name="button_17" translatable="false">Button 17</string>
+    <string name="button_18" translatable="false">Button 18</string>
+    <string name="button_19" translatable="false">Button 19</string>
+    <string name="button_20" translatable="false">Button 20</string>
+    <string name="alert1" translatable="false">Alert1</string>
+    <string name="alert2" translatable="false">Alert2</string>
+    <string name="alert3" translatable="false">Alert3</string>
+    <string name="alert4" translatable="false">Alert4</string>
+    <string name="you_won_t_be_able_to_recover_this_file" translatable="false">You won\'t be able to recover this file</string>
+    <string name="you_won_t_be_able_to_recover" translatable="false">You won\'t be abe to recover</string>
+    <string name="this_file" translatable="false">this file!</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="deleted" translatable="false">Deleted!</string>
+    <string name="are_you_sure" translatable="false">Are you sure?</string>
+    <string name="your_imiginary_file_has_been" translatable="false">Your imiginary file has been</string>
+    <string name="deleted_" translatable="false">deleted!</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="loading" translatable="false">Loading...</string>
+    <string name="yes_delete_it" translatable="false">Yes,delete it!</string>
+    <string name="theming_chip" translatable="false">Theming chip</string>
+    <string name="sorting" translatable="false">SORTING</string>
+    <string name="sorting2" translatable="false">Sorting</string>
+    <string name="newest" translatable="false">Newest</string>
+    <string name="categories" translatable="false">Categories</string>
+    <string name="clear" translatable="false">Clear</string>
+    <string name="apply" translatable="false">Apply</string>
+    <string name="arts_entertainment" translatable="false"><![CDATA[Arts & Entertainment]]></string>
+    <string name="casinos" translatable="false">Casinos</string>
+    <string name="comedy_clubs" translatable="false">Comedy clubs</string>
+    <string name="art_galleries" translatable="false">Art Galleries</string>
+    <string name="movie_theatres" translatable="false">Movie Theatres</string>
+    <string name="museums" translatable="false">Museums</string>
+    <string name="dance_studios" translatable="false">Dance Studios</string>
 
 
     <string-array name="colors_array">
@@ -178,33 +178,35 @@
         <item>Paris</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="one">One</string>
-    <string name="two">Two</string>
-    <string name="three">Three</string>
-    <string name="firstfragment">FirstFragment</string>
-    <string name="first_fragment">First Fragment</string>
-    <string name="second_fragment">Second Fragment</string>
-    <string name="third_fragment">Third Fragment</string>
-    <string name="ունեմ">Ունեմ</string>
-    <string name="ցանկանումեմ">Ցանկանում եմ</string>
-    <string name="go_to_2nd_activity">Go to the 2nd activity</string>
-    <string name="go_to_the_3rd_activity">Go to the 3rd activity</string>
-    <string name="_3rd_activity">3rd activity</string>
-    <string name="_2nd_activity">2nd activity</string>
-    <string name="back_to_activity1">Back to Activity1</string>
-    <string name="returned_textview">Returned textView</string>
-    <string name="returned_textview2">Returned textView2</string>
-    <string name="accepted_tests">Accepted tests</string>
-    <string name="show_all_6">Show all(6)</string>
-    <string name="new_comments">New comments</string>
-    <string name="cooperko">CooperKo</string>
-    <string name="_247_advanced_ticketing">#247:Advanced ticketing</string>
-    <string name="coverage_ends_in_81d_14_44">Coverage|Ends in 81d 14:44</string>
-    <string name="bug_comment">Bug comment</string>
-    <string name="test_io_update">test IO Update:</string>
-    <string name="we_couldn_t_find_a_tester_within_24_hours_we_reco">We couldn\'t find a tester within 24 hours.We reco...</string>
-    <string name="_29_only_product">#29|Only Product</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="one" translatable="false">One</string>
+    <string name="two" translatable="false">Two</string>
+    <string name="three" translatable="false">Three</string>
+    <string name="firstfragment" translatable="false">FirstFragment</string>
+    <string name="first_fragment" translatable="false">First Fragment</string>
+    <string name="second_fragment" translatable="false">Second Fragment</string>
+    <string name="third_fragment" translatable="false">Third Fragment</string>
+    <string name="ունեմ" translatable="false">Ունեմ</string>
+    <string name="ցանկանումեմ" translatable="false">Ցանկանում եմ</string>
+    <string name="go_to_2nd_activity" translatable="false">Go to the 2nd activity</string>
+    <string name="go_to_the_3rd_activity" translatable="false">Go to the 3rd activity</string>
+    <string name="_3rd_activity" translatable="false">3rd activity</string>
+    <string name="_2nd_activity" translatable="false">2nd activity</string>
+    <string name="back_to_activity1" translatable="false">Back to Activity1</string>
+    <string name="returned_textview" translatable="false">Returned textView</string>
+    <string name="returned_textview2" translatable="false">Returned textView2</string>
+    <string name="accepted_tests" translatable="false">Accepted tests</string>
+    <string name="show_all_6" translatable="false">Show all(6)</string>
+    <string name="new_comments" translatable="false">New comments</string>
+    <string name="cooperko" translatable="false">CooperKo</string>
+    <string name="_247_advanced_ticketing" translatable="false">#247:Advanced ticketing</string>
+    <string name="coverage_ends_in_81d_14_44" translatable="false">Coverage|Ends in 81d 14:44</string>
+    <string name="bug_comment" translatable="false">Bug comment</string>
+    <string name="test_io_update" translatable="false">test IO Update:</string>
+    <string name="we_couldn_t_find_a_tester_within_24_hours_we_reco" translatable="false">We couldn\'t find a tester within 24 hours.We reco...</string>
+    <string name="_29_only_product" translatable="false">#29|Only Product</string>
+    <string name="storage" translatable="false">Storage</string>
+    <string name="camera" translatable="false">Camera</string>
 
 
     <string-array name="banks_array">
