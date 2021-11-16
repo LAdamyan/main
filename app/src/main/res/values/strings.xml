@@ -207,6 +207,13 @@
     <string name="_29_only_product" translatable="false">#29|Only Product</string>
     <string name="storage" translatable="false">Storage</string>
     <string name="camera" translatable="false">Camera</string>
+    <string name="pass_data">Pass Data</string>
+    <string name="get_data_from_fragment_2">Get data from Fragment 2</string>
+    <string name="get_location">Get Location</string>
+    <string name="latitude">Latitude</string>
+    <string name="country_name">Country Name</string>
+    <string name="longitude">Longitude</string>
+    <string name="address">Address</string>
 
 
     <string-array name="banks_array">
