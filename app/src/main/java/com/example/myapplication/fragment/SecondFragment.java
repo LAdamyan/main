@@ -49,10 +49,7 @@ public class SecondFragment extends Fragment  {
     AppCompatButton btnLocation;
     AppCompatTextView textView1,textView2;
     FusedLocationProviderClient fusedLocationProviderClient;
-
-
-
-
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,8 +64,7 @@ public class SecondFragment extends Fragment  {
 
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getContext());
-
-            btnLocation.setOnClickListener(new View.OnClickListener() {
+        btnLocation.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if(ActivityCompat.checkSelfPermission(getContext(),Manifest.permission.ACCESS_FINE_LOCATION)==
@@ -124,6 +120,9 @@ public class SecondFragment extends Fragment  {
 
         });
     }
+
+
+
 
 
 

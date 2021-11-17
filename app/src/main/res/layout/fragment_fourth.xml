@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/accepted_tests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/accepted_tests"
+            android:textSize="@dimen/twenty_sp"
+            android:padding="@dimen/ten_dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_marginStart="@dimen/_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/Show_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/show_all_6"
+            android:textColor="@color/blue"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:textSize="@dimen/twenty_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/accepted_tests"
+            app:layout_constraintBottom_toBottomOf="@id/accepted_tests"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/accepted_tests" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

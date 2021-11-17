@@ -53,6 +53,16 @@ public class AcceptedTests {
         acceptedTestsArrayList.add(new AcceptedTests(R.drawable.letter_k_print,
                 "Yost,Powlowski and Jenkins","#184:VZ test #184",
                 "Coverage|Ends in 19d 20:44"));
+        acceptedTestsArrayList.add(new AcceptedTests(R.drawable.letter_a_print,
+                "CooperKo","#247:Advanced Ticketing",
+                "Coverage|Ends in 81d 14:44"));
+        acceptedTestsArrayList.add(new AcceptedTests(R.drawable.letter_b_print,
+                "Yost,Powlowski and Jenkins","#136:VZ test #136",
+                "Coverage|Ends in 50d 17:44"));
+        acceptedTestsArrayList.add(new AcceptedTests(R.drawable.letter_k_print,
+                "Yost,Powlowski and Jenkins","#184:VZ test #184",
+                "Coverage|Ends in 19d 20:44"));
+
         return acceptedTestsArrayList;
     }
 }

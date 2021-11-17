@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -20,6 +23,8 @@ public class FirstFragment extends Fragment {
 
     public AcceptedTestsAdapter acceptedTestsAdapter = new AcceptedTestsAdapter();
     public NewCommentsAdapter newCommentsAdapter = new NewCommentsAdapter();
+
+    AppCompatTextView showAll;
 
 
     @Override
@@ -38,6 +43,21 @@ public class FirstFragment extends Fragment {
         recyclerView2.setLayoutManager(linearLayoutManager2);
         recyclerView2.setAdapter(newCommentsAdapter);
         newCommentsAdapter.setNewComments(NewComments.getNewComments());
+
+        showAll = view.findViewById(R.id.Show_all);
+        showAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FourthFragment fourthFragment = new FourthFragment();
+                FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fourthFragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+
+    }
+        });
+
 
         return view;
 

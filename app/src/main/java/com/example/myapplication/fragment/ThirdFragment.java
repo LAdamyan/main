@@ -10,6 +10,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,24 +20,24 @@ import android.widget.Toast;
 import com.example.myapplication.Permissions;
 import com.example.myapplication.R;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class ThirdFragment extends Fragment {
-
-    private static final int STORAGE_PERMISSION_CODE = 100;
 
 
     AppCompatTextView textView;
     String result;
     AppCompatButton saveButton;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_third, container, false);
-
 
         textView = v.findViewById(R.id.getData);
         Bundle arguments = getArguments();
@@ -44,16 +45,35 @@ public class ThirdFragment extends Fragment {
             result = arguments.getString("Text");
             textView.setText(result);
         }
-        saveButton = v.findViewById(R.id.saveButton);
+
+        saveButton = v.findViewById(R.id.permButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+               saveTextToFile(result);
             }
         });
-
         return v;
 
+
+    }
+    private void saveTextToFile(String filename) {
+
+        try {
+            FileWriter myWriter = new FileWriter("filename.java");
+            myWriter.write(result);
+            myWriter.close();
+            Toast.makeText(getContext(),"Saved",Toast.LENGTH_LONG).show();
+        } catch (FileNotFoundException e) {
+              e.printStackTrace();
+            Toast.makeText(getContext(),"Saved",Toast.LENGTH_LONG).show();
+        }catch (IOException e){
+            e.printStackTrace();
+            Toast.makeText(getContext(),"Error saving",Toast.LENGTH_LONG).show();
+    }
+
+
+    }
 
 
     }
@@ -61,4 +81,4 @@ public class ThirdFragment extends Fragment {
 
 
 
-}
+
