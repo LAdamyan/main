@@ -10,6 +10,9 @@
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
     <application
 
         android:allowBackup="true"
@@ -84,7 +87,7 @@
         </activity>
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.Bridge"
-            android:name=".FragmentHostActivity"
+            android:name=".GlideActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -121,11 +124,6 @@
             android:theme="@style/Theme.MaterialComponents.Light.Bridge"
             android:name=".Activity1"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
 
         </activity>
         <activity
