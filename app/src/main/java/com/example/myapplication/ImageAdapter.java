@@ -60,6 +60,8 @@ class MyViewHolder2 extends RecyclerView.ViewHolder{
 
         Glide.with(itemView)
                 .load(image.getImageUrl())
+                .placeholder(R.drawable.loading)
+                .error(R.drawable.error)
                 .centerCrop()
                 .into(imageUrl);
 
