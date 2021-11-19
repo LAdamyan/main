@@ -1,5 +1,7 @@
 package com.example.myapplication;
 import android.content.Context;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +32,7 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
     public void onBindViewHolder(@NonNull MyViewHolder2 holder, int position) {
          GlideImage glideImage = myUrls.get(position);
          holder.initData(glideImage);
+
 
     }
 
@@ -64,6 +67,8 @@ class MyViewHolder2 extends RecyclerView.ViewHolder{
                 .error(R.drawable.error)
                 .centerCrop()
                 .into(imageUrl);
+
+
 
 
     }
