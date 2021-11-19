@@ -214,6 +214,7 @@
     <string name="country_name">Country Name</string>
     <string name="longitude">Longitude</string>
     <string name="address">Address</string>
+    <string name="textview">Textview</string>
 
 
     <string-array name="banks_array">

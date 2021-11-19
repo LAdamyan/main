@@ -42,6 +42,7 @@
     <dimen name="_180dp">180dp</dimen>
     <dimen name="_160dp">160dp</dimen>
     <dimen name="two_dp">2dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
 
 
 </resources>
