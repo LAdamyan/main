@@ -1,7 +1,4 @@
 package com.example.myapplication;
-import android.content.Context;
-import android.graphics.ColorMatrix;
-import android.graphics.ColorMatrixColorFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,12 +10,11 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.Inflater;
 
 
 public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
 
-    private ArrayList<GlideImage> myUrls = new ArrayList<>();
+    private ArrayList<Gallery> myUrls = new ArrayList<>();
 
 
     @NonNull
@@ -30,8 +26,8 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder2 holder, int position) {
-         GlideImage glideImage = myUrls.get(position);
-         holder.initData(glideImage);
+         Gallery gallery = myUrls.get(position);
+         holder.initData(gallery);
 
 
     }
@@ -40,7 +36,7 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
     public int getItemCount() {
         return myUrls.size();
     }
-    public void setMyUrls(List<GlideImage>imageList){
+    public void setMyUrls(List<Gallery>imageList){
         this.myUrls.clear();
         this.myUrls.addAll(imageList);
         notifyDataSetChanged();
@@ -59,7 +55,7 @@ class MyViewHolder2 extends RecyclerView.ViewHolder{
 
 
     }
-    void initData(GlideImage image) {
+    void initData(Gallery image) {
 
         Glide.with(itemView)
                 .load(image.getImageUrl())
@@ -67,6 +63,13 @@ class MyViewHolder2 extends RecyclerView.ViewHolder{
                 .error(R.drawable.error)
                 .centerCrop()
                 .into(imageUrl);
+
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
 
