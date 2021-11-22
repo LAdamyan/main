@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/_12ktor_resize.xml" value="0.2513888888888889" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/background_corner.xml" value="0.24794520547945206" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/circle_image.xml" value="0.24794520547945206" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_add_shopping_cart_24.xml" value="0.19398148148148148" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_app_settings_alt_24.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1" />
@@ -38,6 +39,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/alert4.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/change_password.xml" value="0.22" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/chip_layout.xml" value="0.5" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/custom_view_layout.xml" value="0.18888888888888888" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/desc_grid.xml" value="0.17297297297297298" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/desc_table.xml" value="0.23451071221771858" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/description.xml" value="0.20572916666666666" />
@@ -49,10 +51,13 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_contain.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_first.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_fourth.xml" value="0.23703703703703705" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_full_image.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_recycle_view1.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_recycle_view2.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_second.xml" value="0.22453703703703703" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_shared1.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_shared2.xml" value="0.18888888888888888" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_third.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/glide_recycle.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/glide_recycle_items.xml" value="0.23703703703703705" />

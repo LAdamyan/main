@@ -216,6 +216,15 @@
     <string name="address">Address</string>
     <string name="textview">Textview</string>
     <string name="text">Text</string>
+    <string name="customtextview1">CustomTextView1</string>
+    <string name="customtextview2">CustomTextView2</string>
+    <string name="input_text">Input text</string>
+    <string name="saved_text">Saved Text</string>
+    <string name="name_surname">Name Surname</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="_15">15</string>
+    <string name="_100">100</string>
 
 
     <string-array name="banks_array">

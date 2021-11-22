@@ -81,7 +81,8 @@
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.Bridge"
             android:name=".Activity4"
-            android:exported="true">
+            android:exported="true"
+            >
             <intent-filter>
 
                 <action android:name="android.intent.action.MAIN"/>
