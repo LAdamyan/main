@@ -14,6 +14,7 @@ public class MyCustomView extends LinearLayout {
     public MyCustomView(Context context) {
         super(context);
 
+
         View view = LayoutInflater.from(getContext()).inflate(R.layout.custom_view_layout, null);
         addView(view);
     }
