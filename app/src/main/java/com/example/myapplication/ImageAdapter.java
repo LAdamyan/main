@@ -52,7 +52,6 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
 
     }
 
-
     @Override
     public int getItemCount() {
         return myUrls.size();

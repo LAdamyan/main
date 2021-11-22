@@ -23,9 +23,12 @@ public class SharedFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v =  inflater.inflate(R.layout.fragment_shared2, container, false);
+        textView = v.findViewById(R.id.shared_textview);
 
 
         return v;
+
+
     }
 
 

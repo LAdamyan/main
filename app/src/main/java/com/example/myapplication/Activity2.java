@@ -28,12 +28,14 @@ public class Activity2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if(editText!=null){
+
             String message = editText.getText().toString();
-            Intent intent = new Intent();
-            intent.putExtra(Activity1.ACCESS_MESSAGE1,message);
-            setResult(RESULT_OK,intent);
-            finish();
+            if(editText!=null) {
+                Intent intent = new Intent();
+                intent.putExtra(Activity1.ACCESS_MESSAGE1, message);
+                setResult(RESULT_OK, intent);
+                finish();
+
         }
         super.onBackPressed();
     }
