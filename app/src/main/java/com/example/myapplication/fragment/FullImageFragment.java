@@ -1,14 +1,9 @@
 package com.example.myapplication.fragment;
-
-import android.app.FragmentManager;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import androidx.fragment.app.Fragment;
 import com.example.myapplication.R;
 
 
@@ -19,8 +14,8 @@ public class FullImageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_full_image, container, false);
-      return  view;
+        View view2 = inflater.inflate(R.layout.fragment_full_image, container, false);
+       return  view2;
     }
 
 

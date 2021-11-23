@@ -32,6 +32,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activit1.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activit3.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity2.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity4.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/alert1.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/alert2.xml" value="0.23703703703703705" />
@@ -52,11 +53,11 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_first.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_fourth.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_full_image.xml" value="0.23703703703703705" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_recycle_view1.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_recycle_view2.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_second.xml" value="0.22453703703703703" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_shared1.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_shared1.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_shared2.xml" value="0.18888888888888888" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_third.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/MyApplication/app/src/main/res/layout/glide_recycle.xml" value="0.1" />

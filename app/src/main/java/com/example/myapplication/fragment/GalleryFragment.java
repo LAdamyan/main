@@ -25,7 +25,7 @@ public class GalleryFragment extends Fragment implements onItemClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.glide_recycle, container, false);
+        View view = inflater.inflate(R.layout.fragment_gallery, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.recycle_glide);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),3,GridLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(gridLayoutManager);
@@ -39,10 +39,13 @@ public class GalleryFragment extends Fragment implements onItemClickListener {
     @Override
     public void onClick(String imageUrl) {
         FullImageFragment fullImageFragment = new FullImageFragment();
-        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.full_image_container,fullImageFragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+        if(getActivity()!=null){
+            FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.activity4_fragment_container,fullImageFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+
 
     }
 }

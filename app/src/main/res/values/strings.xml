@@ -225,6 +225,9 @@
     <string name="followers">Followers</string>
     <string name="_15">15</string>
     <string name="_100">100</string>
+    <string name="loadtext">LoadText</string>
+    <string name="load_text" />
+    <string name="load_text_">Load text</string>
 
 
     <string-array name="banks_array">

@@ -14,11 +14,11 @@ public class Activity4 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_gallery);
+        setContentView(R.layout.activity4);
 
         GalleryFragment galleryFragment = new GalleryFragment();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.gallery_fragment_container,galleryFragment);
+        fragmentTransaction.replace(R.id.activity4_fragment_container,galleryFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
