@@ -77,7 +77,7 @@ class MyViewHolder2 extends RecyclerView.ViewHolder{
     }
     void initData(Gallery image) {
 
-        Glide.with(itemView)
+        Glide.with(itemView.getContext())
                 .load(image.getImageUrl())
                 .placeholder(R.drawable.loading)
                 .error(R.drawable.error)

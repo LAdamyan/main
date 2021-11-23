@@ -2,6 +2,8 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -9,10 +11,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.SwitchCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    //String name;
+    String name;
 
 
     @Override
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_activity);
 
-       /* AppCompatEditText editName = findViewById(R.id.editName);
+        AppCompatEditText editName = findViewById(R.id.editName);
         AppCompatButton enterButton = findViewById(R.id.enter_button);
 
 
@@ -52,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-    }*/
+    }
 //}
-   /* @Override
+   @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
         return true;
@@ -79,8 +82,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }}*/
-    /*  SwitchCompat switchPin = findViewById(R.id.switch_pin);
+    }};
+/*
+     SwitchCompat switchPin = findViewById(R.id.switch_pin);
         SwitchCompat closeBlock = findViewById(R.id.block);
         switchPin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -101,10 +105,10 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"Block is off",Toast.LENGTH_SHORT).show();
                 }
             }
-        });*/
+        });
 
 
-        /*RadioButton spicy = findViewById(R.id.radioButton1);
+        RadioButton spicy = findViewById(R.id.radioButton1);
         RadioButton original = findViewById(R.id.radioButton2);
 
         CheckBox checkBox1 = findViewById(R.id.checkbox1);
@@ -143,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         AppCompatButton saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(view -> Toast.makeText(MainActivity.this,"Your password has changed ",
                 Toast.LENGTH_LONG).show());
-*/
 
 
-    }}
+
+    }}*/
