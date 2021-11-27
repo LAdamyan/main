@@ -26,6 +26,7 @@ public class GalleryFragment extends Fragment implements onItemClickListener {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
+
         RecyclerView recyclerView = view.findViewById(R.id.recycle_glide);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),3,GridLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(gridLayoutManager);

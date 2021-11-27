@@ -23,8 +23,6 @@ public class SharedFragment1 extends Fragment {
     AppCompatButton button;
     AppCompatButton button2;
     AppCompatTextView textView;
-
-
     final String SAVED_TEXT= "saved text";
 
 
@@ -45,19 +43,12 @@ public class SharedFragment1 extends Fragment {
             fragmentTransaction.replace(R.id.shared_fragment_container,sharedFragment2);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
-           loadText();
+
+
+
 
         });
         return view;
-    }
-
-    private  void loadText() {
-        if (getActivity() != null) {
-            SharedPreferences sharedPreferences = getActivity().getSharedPreferences("saved text", MODE_PRIVATE);
-            String savedText = sharedPreferences.getString("saved text", "loaded text");
-            textView.setText(savedText);
-        }
-
     }
 
     private void saveText() {
@@ -69,5 +60,8 @@ public class SharedFragment1 extends Fragment {
         }
 
     }
+
+
+
 
 }

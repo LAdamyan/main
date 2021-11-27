@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myapplication.fragment.GalleryFragment;
+import com.example.myapplication.fragment.ProfileFragment;
 
 public class Activity4 extends AppCompatActivity {
 
@@ -16,9 +17,9 @@ public class Activity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity4);
 
-        GalleryFragment galleryFragment = new GalleryFragment();
+        ProfileFragment profileFragment = new ProfileFragment();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.activity4_fragment_container,galleryFragment);
+        fragmentTransaction.replace(R.id.activity4_fragment_container,profileFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

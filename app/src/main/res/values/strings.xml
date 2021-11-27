@@ -228,6 +228,8 @@
     <string name="loadtext">LoadText</string>
     <string name="load_text" />
     <string name="load_text_">Load text</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
 
 
     <string-array name="banks_array">
