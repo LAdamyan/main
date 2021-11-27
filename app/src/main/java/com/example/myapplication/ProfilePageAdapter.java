@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,12 +60,16 @@ public class ProfilePageAdapter extends RecyclerView.Adapter<ProfileHolder> {
 
 
 }
-class ProfileHolder extends RecyclerView.ViewHolder{
+class ProfileHolder extends RecyclerView.ViewHolder {
+
+    private  int LIKE_STATUS= 0;
 
     CircleImageView circleImageView = itemView.findViewById(R.id.profile_image_page);
     AppCompatTextView name = itemView.findViewById(R.id.profile_name_page);
     AppCompatTextView surName = itemView.findViewById(R.id.profile_surName_page);
     AppCompatImageView imageview = itemView.findViewById(R.id.page_image);
+    AppCompatImageView likeImage = itemView.findViewById(R.id.heart_icon);
+
 
     public ProfileHolder(@NonNull View itemView) {
         super(itemView);
@@ -81,6 +87,23 @@ class ProfileHolder extends RecyclerView.ViewHolder{
                 .error(R.drawable.error)
                 .centerCrop()
                 .into(imageview);
+        likeImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if( LIKE_STATUS== 0){ // like is off, turn it on
+                    likeImage.setColorFilter(Color.parseColor("#C8CDF2"));
+                    LIKE_STATUS = 1;
+                }
+
+                else if(LIKE_STATUS == 1){ // like  is on, turn it off
+                    likeImage.setColorFilter(Color.parseColor("#8797EF"));
+                    LIKE_STATUS = 0;
+                }
+
+
+            }
+        });
+
 
     }
 

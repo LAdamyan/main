@@ -1,7 +1,9 @@
 package com.example.myapplication.fragment;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -48,6 +50,8 @@ public class ProfileFragment extends Fragment implements onItemClickListener2 {
             fragmentTransaction.replace(R.id.activity4_fragment_container,galleryFragment);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
-        }
+        };
     }
+
+
 }

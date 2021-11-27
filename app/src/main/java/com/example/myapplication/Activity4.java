@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,5 +23,11 @@ public class Activity4 extends AppCompatActivity {
         fragmentTransaction.replace(R.id.activity4_fragment_container,profileFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+
+
+
+
+
+
     }
 }

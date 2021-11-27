@@ -53,10 +53,10 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/heart_icon"
-        android:layout_width="@dimen/thirty_dp"
+        android:layout_width="@dimen/forty_dp"
         android:layout_height="@dimen/thirty_dp"
         android:layout_marginStart="@dimen/forty_dp"
-        android:src="@drawable/heart_empty"
+        android:src="@drawable/heart"
         android:layout_marginTop="@dimen/ten_dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/comment_icon"
@@ -70,7 +70,7 @@
         android:layout_height="@dimen/thirty_dp"
         android:layout_marginStart="@dimen/twenty_dp"
         android:layout_marginTop="@dimen/ten_dp"
-        android:src="@drawable/ic_baseline_comment_24"
+        android:src="@drawable/comment_processing_outline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/heart_icon"
         app:layout_constraintTop_toBottomOf="@id/page_image"
