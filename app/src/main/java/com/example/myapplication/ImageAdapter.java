@@ -1,31 +1,24 @@
 package com.example.myapplication;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.myapplication.fragment.FullImageFragment;
-import com.example.myapplication.fragment.GalleryFragment;
-import com.example.myapplication.fragment.ThirdFragment;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 
 public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
 
-    private ArrayList<Gallery> myUrls = new ArrayList<>();
-    private onItemClickListener onItemClickListener;
+    private final ArrayList<Gallery> myUrls = new ArrayList<>();
 
 
     @NonNull
@@ -35,27 +28,33 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
         return new MyViewHolder2(view);
     }
 
-    public void setOnItemClickListener(onItemClickListener onItemClickListener) {
-        this.onItemClickListener = onItemClickListener;
+    public void setOnItemClickListener() {
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder2 holder, int position) {
-         Gallery gallery = myUrls.get(position);
-         holder.initData(gallery);
-         holder.itemView.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               onItemClickListener.onClick(gallery.getImageUrl());
-           }
-       });
+        Gallery gallery = myUrls.get(position);
+        holder.initData(gallery);
 
+        holder.imageUrl.setOnClickListener(view -> {
+            Bundle bundle = new Bundle();
+            bundle.putString("imageUrl", gallery.getImageUrl());
+            FullImageFragment fullImageFragment = new FullImageFragment();
+            fullImageFragment.setArguments(bundle);
+            AppCompatActivity activity = (AppCompatActivity) view.getContext();
+            FragmentManager fragmentManager = activity.getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.activity4_fragment_container, fullImageFragment);
+            fragmentTransaction.commit();
+
+        });
     }
 
     @Override
     public int getItemCount() {
         return myUrls.size();
     }
+    @SuppressLint("NotifyDataSetChanged")
     public void setMyUrls(List<Gallery>imageList){
         this.myUrls.clear();
         this.myUrls.addAll(imageList);
@@ -77,7 +76,7 @@ class MyViewHolder2 extends RecyclerView.ViewHolder{
     }
     void initData(Gallery image) {
 
-        Glide.with(itemView.getContext())
+        Glide.with(itemView)
                 .load(image.getImageUrl())
                 .placeholder(R.drawable.loading)
                 .error(R.drawable.error)

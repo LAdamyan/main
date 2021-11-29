@@ -3,7 +3,6 @@ package com.example.myapplication.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -32,20 +31,14 @@ public class GalleryFragment extends Fragment implements onItemClickListener {
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(imageAdapter);
         imageAdapter.setMyUrls(Gallery.getGlideImages());
-        imageAdapter.setOnItemClickListener(this);
+        imageAdapter.setOnItemClickListener();
 
         return view;
     }
 
     @Override
     public void onClick(String imageUrl) {
-        FullImageFragment fullImageFragment = new FullImageFragment();
-        if(getActivity()!=null){
-            FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.activity4_fragment_container,fullImageFragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-        }
+
 
 
     }

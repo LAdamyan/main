@@ -26,10 +26,10 @@
 
 
     <string name="row1" translatable="false">Row 1</string>
-    <string name="Row2" translatable="false">Row 2 column1</string>
+    <string name="Row2" translatable="false">Row 2 column!</string>
     <string name="Row3" translatable="false">Row3 column 2</string>
     <string name="Row2_2" translatable="false">Row2 column2</string>
-    <string name="row2_1" translatable="false">Row2 column1</string>
+    <string name="row2_1" translatable="false">Row2 column!</string>
     <string name="row2_2" translatable="false">Row2 column2</string>
     <string name="row2_3" translatable="false">Row2 column3</string>
     <string name="row3_1" translatable="false">Row3 column1</string>
@@ -207,29 +207,32 @@
     <string name="_29_only_product" translatable="false">#29|Only Product</string>
     <string name="storage" translatable="false">Storage</string>
     <string name="camera" translatable="false">Camera</string>
-    <string name="pass_data">Pass Data</string>
-    <string name="get_data_from_fragment_2">Get data from Fragment 2</string>
-    <string name="get_location">Get Location</string>
-    <string name="latitude">Latitude</string>
-    <string name="country_name">Country Name</string>
-    <string name="longitude">Longitude</string>
-    <string name="address">Address</string>
-    <string name="textview">Textview</string>
-    <string name="text">Text</string>
-    <string name="customtextview1">CustomTextView1</string>
-    <string name="customtextview2">CustomTextView2</string>
-    <string name="input_text">Input text</string>
-    <string name="saved_text">Saved Text</string>
-    <string name="name_surname">Name Surname</string>
-    <string name="posts">Posts</string>
-    <string name="followers">Followers</string>
-    <string name="_15">15</string>
-    <string name="_100">100</string>
-    <string name="loadtext">LoadText</string>
-    <string name="load_text" />
-    <string name="load_text_">Load text</string>
-    <string name="name">Name</string>
-    <string name="surname">Surname</string>
+    <string name="pass_data" translatable="false">Pass Data</string>
+    <string name="get_data_from_fragment_2" translatable="false">Get data from Fragment 2</string>
+    <string name="get_location" translatable="false">Get Location</string>
+    <string name="latitude" translatable="false">Latitude</string>
+    <string name="country_name" translatable="false">Country Name</string>
+    <string name="longitude" translatable="false">Longitude</string>
+    <string name="address" translatable="false">Address</string>
+    <string name="textview" translatable="false">Textview</string>
+    <string name="text" translatable="false">Text</string>
+    <string name="customtextview1" translatable="false">CustomTextView1</string>
+    <string name="customtextview2" translatable="false">CustomTextView2</string>
+    <string name="input_text" translatable="false">Input text</string>
+    <string name="saved_text" translatable="false">Saved Text</string>
+    <string name="name_surname" translatable="false">Name Surname</string>
+    <string name="posts" translatable="false">Posts</string>
+    <string name="followers" translatable="false">Followers</string>
+    <string name="_15" translatable="false">15</string>
+    <string name="_100" translatable="false">100</string>
+    <string name="loadtext" translatable="false">LoadText</string>
+    <string name="load_text" translatable="false" />
+    <string name="load_text_" translatable="false">Load text</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="surname" translatable="false">Surname</string>
+    <string name="services_in_android" translatable="false">Services in Android</string>
+    <string name="start_the_service" translatable="false">Start the service</string>
+    <string name="stop_the_service" translatable="false">Stop the service</string>
 
 
     <string-array name="banks_array">

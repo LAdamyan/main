@@ -1,31 +1,26 @@
 package com.example.myapplication;
-
+import android.annotation.SuppressLint;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.myapplication.fragment.GalleryFragment;
-import com.example.myapplication.fragment.ProfileFragment;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfilePageAdapter extends RecyclerView.Adapter<ProfileHolder> {
 
-     private ArrayList<Profile>profiles = new ArrayList<>();
-    private onItemClickListener2 onItemClickListener2;
+     private final ArrayList<Profile>profiles = new ArrayList<>();
+
 
     @NonNull
     @Override
@@ -34,8 +29,7 @@ public class ProfilePageAdapter extends RecyclerView.Adapter<ProfileHolder> {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.profile_recycle_item,parent,false);
         return new ProfileHolder(view);
     }
-    public void setOnItemClickListener2(onItemClickListener2 onItemClickListener2){
-        this.onItemClickListener2 = onItemClickListener2;
+    public void setOnItemClickListener2(){
     }
 
     @Override
@@ -43,6 +37,15 @@ public class ProfilePageAdapter extends RecyclerView.Adapter<ProfileHolder> {
 
         Profile profile = profiles.get(position);
         holder.initData(profile);
+        holder.itemView.setOnClickListener(view -> {
+            AppCompatActivity activity = (AppCompatActivity) view.getContext();
+            GalleryFragment galleryFragment = new GalleryFragment();
+            FragmentManager fragmentManager = activity.getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.activity4_fragment_container, galleryFragment);
+            fragmentTransaction.commit();
+        });
+
 
     }
 
@@ -51,6 +54,7 @@ public class ProfilePageAdapter extends RecyclerView.Adapter<ProfileHolder> {
         return profiles.size();
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     public void setProfiles(List<Profile>profile){
         this.profiles.clear();
         this.profiles.addAll(profile);
@@ -87,21 +91,18 @@ class ProfileHolder extends RecyclerView.ViewHolder {
                 .error(R.drawable.error)
                 .centerCrop()
                 .into(imageview);
-        likeImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if( LIKE_STATUS== 0){ // like is off, turn it on
-                    likeImage.setColorFilter(Color.parseColor("#C8CDF2"));
-                    LIKE_STATUS = 1;
-                }
-
-                else if(LIKE_STATUS == 1){ // like  is on, turn it off
-                    likeImage.setColorFilter(Color.parseColor("#8797EF"));
-                    LIKE_STATUS = 0;
-                }
-
-
+        likeImage.setOnClickListener(view -> {
+            if( LIKE_STATUS== 0){ // like is off, turn it on
+                likeImage.setColorFilter(Color.parseColor("#C8CDF2"));
+                LIKE_STATUS = 1;
             }
+
+            else if(LIKE_STATUS == 1){ // like  is on, turn it off
+                likeImage.setColorFilter(Color.parseColor("#8797EF"));
+                LIKE_STATUS = 0;
+            }
+
+
         });
 
 
