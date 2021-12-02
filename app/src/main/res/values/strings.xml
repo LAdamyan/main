@@ -233,6 +233,13 @@
     <string name="services_in_android" translatable="false">Services in Android</string>
     <string name="start_the_service" translatable="false">Start the service</string>
     <string name="stop_the_service" translatable="false">Stop the service</string>
+    <string name="text1">Text1</string>
+    <string name="text_here">Text here</string>
+    <string name="add_photo">Add photo</string>
+    <string name="use_camera">Use Camera</string>
+    <string name="upload_from_gallery">Upload from Gallery</string>
+    <string name="remove_photo">Remove Photo</string>
+    <string name="page1">Page1</string>
 
 
     <string-array name="banks_array">
