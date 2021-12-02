@@ -27,11 +27,9 @@ public class ForestFragment extends Fragment {
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Bundle args= getArguments();
+
         AppCompatImageView forestImage = view.findViewById(R.id.forest);
-        if( args != null) {
-            forestImage.setImageResource(args.getInt(ARG_OBJECT));
+        forestImage.setImageResource(R.drawable.forests);
         }
     }
 
-}

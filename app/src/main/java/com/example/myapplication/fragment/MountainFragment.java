@@ -27,10 +27,8 @@ public class MountainFragment extends Fragment {
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Bundle args= getArguments();
+
         AppCompatImageView mountainImage = view.findViewById(R.id.mountain);
-        if( args != null) {
-            mountainImage.setImageResource(args.getInt(ARG_OBJECT));
+        mountainImage.setImageResource(R.drawable.mountains);
         }
     }
-}

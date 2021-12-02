@@ -26,9 +26,15 @@ public class AddPhotoBottomDialogFragment extends BottomSheetDialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        View view = inflater.inflate(R.layout.bottom_sheet_layout,container,false);
-       camera.findViewById(R.id.add_photo);
-       gallery.findViewById(R.id.gallery);
-       remove.findViewById(R.id.remove);
+
        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        camera=view.findViewById(R.id.camera);
+        gallery=view.findViewById(R.id.gallery);
+        remove=view.findViewById(R.id.remove);
     }
 }

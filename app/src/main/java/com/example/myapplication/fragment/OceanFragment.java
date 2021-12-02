@@ -28,10 +28,8 @@ public class OceanFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Bundle args= getArguments();
+
         AppCompatImageView oceanImage = view.findViewById(R.id.ocean);
-        if( args != null) {
-            oceanImage.setImageResource(args.getInt(ARG_OBJECT));
+        oceanImage.setImageResource(R.drawable.ocean);
         }
     }
-}

@@ -19,32 +19,24 @@ import java.util.List;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
 
-    public ViewPagerAdapter(@NonNull Fragment fragment) {
-        super(fragment);
+    public ViewPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
+        super(fragmentManager, lifecycle);
     }
+
+
 
     @NonNull
     @Override
     public Fragment createFragment(int position) {
         switch (position){
             case 0:
-                MountainFragment mountainFragment = new MountainFragment();
-                Bundle args1 = new Bundle();
-                args1.putInt(MountainFragment.ARG_OBJECT, position + 1);
-                mountainFragment.setArguments(args1);
-                return mountainFragment;
+                return new MountainFragment();
             case 1 :
-                OceanFragment oceanFragment = new OceanFragment();
-                Bundle args2 = new Bundle();
-                args2.putInt(OceanFragment.ARG_OBJECT,position + 1);
-                oceanFragment.setArguments(args2);
-                return  oceanFragment;
+
+                return  new OceanFragment();
             case 2 :
-                ForestFragment forestFragment = new ForestFragment();
-                Bundle args3 = new Bundle();
-                args3.putInt(ForestFragment.ARG_OBJECT,position + 1);
-                forestFragment.setArguments(args3);
-                return forestFragment;
+
+                return new ForestFragment();
         }
         return new ForestFragment();
     }

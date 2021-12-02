@@ -14,6 +14,6 @@ public class AddPhotoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         AddPhotoBottomDialogFragment addPhotoBottomDialogFragment = AddPhotoBottomDialogFragment.newInstance();
-        addPhotoBottomDialogFragment.show(getSupportFragmentManager(),"add_photo_dialog_fragment");
+        addPhotoBottomDialogFragment.show(getSupportFragmentManager(),null);
     }
 }
