@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.AcceptedTests;
-import com.example.myapplication.AcceptedTestsAdapter;
+import com.example.myapplication.recycleView1.AcceptedTests;
+import com.example.myapplication.recycleView1.AcceptedTestsAdapter;
 import com.example.myapplication.R;
 
 public class FourthFragment extends Fragment {
