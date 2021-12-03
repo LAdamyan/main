@@ -241,6 +241,18 @@
     <string name="remove_photo">Remove Photo</string>
     <string name="page1">Page1</string>
     <string name="nature">Nature</string>
+    <string name="bound_service">Bound service</string>
+    <string name="open_the_bottom_dialog">Open The Bottom Dialog</string>
+    <string name="filters">Filters</string>
+    <string name="reset_all">Reset all</string>
+    <string name="sort_by">Sort by</string>
+    <string name="date_newest_first">Date (newest first)</string>
+    <string name="date_oldest_first">Date (oldest first)</string>
+    <string name="bug_fix_confirmation">Bug Fix Confirmation</string>
+    <string name="task_type">Task type</string>
+    <string name="bug_reproductions">Bug Reproductions</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="download">Download</string>
 
 
     <string-array name="banks_array">

@@ -56,20 +56,21 @@
 
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.Bridge"
-            android:name=".intent.IntentActivity"
+            android:name=".bottomDialog.BottomDialogActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
 
         </activity>
 
         <activity
             android:theme="@style/Theme.MaterialComponents.NoActionBar"
-            android:name=".viewPager.ViewPagerActivity"
+            android:name=".screenSlidePager.ScreenSlidePageActivity"
             android:exported="true">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+
 
 
         </activity>

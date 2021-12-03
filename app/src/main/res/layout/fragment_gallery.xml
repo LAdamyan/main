@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gallery_tabLayout"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -94,16 +95,26 @@
        app:layout_constraintStart_toEndOf="@id/post_count"
         app:layout_constraintTop_toTopOf="@id/gallery_view"/>
 
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/gallery_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@id/recycle_glide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gallery_view" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_glide"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/two_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/gallery_view"
-        app:layout_constraintBottom_toBottomOf="parent"
-         />
+        app:layout_constraintTop_toBottomOf="@id/gallery_tabLayout"
+        app:layout_constraintVertical_bias="0.142" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

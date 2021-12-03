@@ -9,13 +9,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
 
 import com.example.myapplication.R;
+import com.google.android.material.tabs.TabLayout;
 
 
 public class GalleryFragment extends Fragment implements onItemClickListener {
 
     ImageAdapter imageAdapter = new ImageAdapter();
+    TabLayout tabLayout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +32,10 @@ public class GalleryFragment extends Fragment implements onItemClickListener {
         recyclerView.setAdapter(imageAdapter);
         imageAdapter.setMyUrls(Gallery.getGlideImages());
         imageAdapter.setOnItemClickListener();
+
+        tabLayout = view.findViewById(R.id.gallery_tabLayout);
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.image_multiple_outline));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.message_video));
 
         return view;
     }
