@@ -105,6 +105,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/gallery_view" />
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/gallery_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/recycle_glide"
+        app:layout_constraintTop_toBottomOf="@id/gallery_tabLayout"
+        app:layout_constraintEnd_toEndOf="@id/recycle_glide"
+        app:layout_constraintBottom_toBottomOf="@id/recycle_glide"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_glide"
         android:layout_width="match_parent"

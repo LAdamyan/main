@@ -56,7 +56,7 @@
 
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.Bridge"
-            android:name=".bottomDialog.BottomDialogActivity"
+            android:name=".firstApp.Activity4"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

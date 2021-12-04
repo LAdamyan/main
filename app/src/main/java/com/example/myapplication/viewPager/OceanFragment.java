@@ -17,8 +17,6 @@ import com.example.myapplication.R;
 public class OceanFragment extends Fragment {
 
 
-    public static final String ARG_OBJECT = "Ocean";
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

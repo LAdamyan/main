@@ -253,6 +253,7 @@
     <string name="bug_reproductions">Bug Reproductions</string>
     <string name="apply_filters">Apply Filters</string>
     <string name="download">Download</string>
+    <string name="videofragment">VideoFragment</string>
 
 
     <string-array name="banks_array">
