@@ -21,12 +21,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class HomePageAdapter extends RecyclerView.Adapter<HomePageHolder> {
 
      private final ArrayList<HomePageProfile> homePageProfiles = new ArrayList<>();
-     private ItemClickListener itemClickListener;
+     private onItemClickListener2 onItemClickListener2;
 
 
 
-     public void setItemClickListener(ItemClickListener itemClickListener){
-         this.itemClickListener = itemClickListener;
+     public void setItemClickListener2(onItemClickListener2 onItemClickListener2){
+         this.onItemClickListener2 = onItemClickListener2;
      }
     @NonNull
     @Override
@@ -43,7 +43,7 @@ public class HomePageAdapter extends RecyclerView.Adapter<HomePageHolder> {
         HomePageProfile homePageProfile = homePageProfiles.get(position);
         holder.initData(homePageProfile);
         holder.itemView.setOnClickListener(view -> {
-            itemClickListener.onClick(homePageProfile.getName(), homePageProfile.getSurName());
+            onItemClickListener2.click(homePageProfile.getName(), homePageProfile.getSurName());
         });
 
 
@@ -109,6 +109,6 @@ class HomePageHolder extends RecyclerView.ViewHolder {
     }
 
 }
-      interface ItemClickListener {
-     void onClick(String name, String surname);
-      }
+interface onItemClickListener2{
+    void click(String name,String surname);
+}

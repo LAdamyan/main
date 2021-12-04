@@ -11,7 +11,7 @@ public class Gallery {
         this.imageUrl = imageUrl;
     }
 
-    public String getImageUrl() {
+    public  String getImageUrl() {
         return imageUrl;
     }
 

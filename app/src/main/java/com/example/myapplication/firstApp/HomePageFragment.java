@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.R;
 
 
-public class HomePageFragment extends Fragment implements ItemClickListener {
+public class HomePageFragment extends Fragment implements onItemClickListener2 {
 
     HomePageAdapter profilePageAdapter = new HomePageAdapter();
 
@@ -29,14 +29,14 @@ public class HomePageFragment extends Fragment implements ItemClickListener {
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(profilePageAdapter);
         profilePageAdapter.setProfiles(HomePageProfile.getHomePageProfile());
-        profilePageAdapter.setItemClickListener(this);
+        profilePageAdapter.setItemClickListener2(this);
 
         return view;
     }
 
 
     @Override
-    public void onClick(String name, String surname) {
+    public void click(String name, String surname) {
         ProfileFragment profileFragment = new ProfileFragment();
         FragmentManager fragmentManager = getParentFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
