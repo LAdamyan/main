@@ -35,10 +35,14 @@ public class GalleryFragment extends Fragment implements onItemClickListener {
         imageAdapter.setMyUrls(Gallery.getGlideImages());
         imageAdapter.setOnItemClickListener();
 
-        viewPager2= view.findViewById(R.id.gallery_viewPager);
+
         tabLayout = view.findViewById(R.id.gallery_tabLayout);
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.image_multiple_outline));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.message_video));
+
+        viewPager2= view.findViewById(R.id.gallery_viewPager);
+        viewPagerAdapter= new ViewPagerAdapter(getActivity().getSupportFragmentManager(),getLifecycle());
+        viewPager2.setAdapter(viewPagerAdapter);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
