@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".firstApp.GalleryFragment">
+    tools:context=".firstApp.ProfileFragment">
 
 
     <View
-        android:id="@+id/gallery_view"
+        android:id="@+id/profile_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/gallery_tabLayout"/>
+        app:layout_constraintBottom_toTopOf="@id/profile_tabLayout"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -27,17 +27,17 @@
         app:civ_border_color="#FF000000"
         android:layout_marginTop="@dimen/twenty_five_dp"
         android:layout_marginStart="@dimen/fifty_dp"
-        app:layout_constraintStart_toStartOf="@id/gallery_view"
-        app:layout_constraintTop_toTopOf="@id/gallery_view"/>
+        app:layout_constraintStart_toStartOf="@id/profile_view"
+        app:layout_constraintTop_toTopOf="@id/profile_view"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/profile"
+        android:id="@+id/homePageProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
+        android:text="@string/homePageProfile"
         android:textSize="@dimen/twenty_sp"
         android:textColor="@color/light_blue3"
-        app:layout_constraintTop_toTopOf="@id/gallery_view"
+        app:layout_constraintTop_toTopOf="@id/profile_view"
         android:layout_marginTop="@dimen/twenty_dp"
         app:layout_constraintStart_toStartOf="@id/post_count"
         app:layout_constraintEnd_toEndOf="@id/followers_count"/>
@@ -83,7 +83,7 @@
         android:layout_marginStart="@dimen/fifty_dp"
         android:layout_marginTop="@dimen/sixty_dp"
         app:layout_constraintStart_toEndOf="@id/profile_image"
-        app:layout_constraintTop_toTopOf="@id/gallery_view"/>
+        app:layout_constraintTop_toTopOf="@id/profile_view"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/followers_count"
@@ -93,37 +93,28 @@
         android:layout_marginStart="@dimen/seventy_dp"
         android:layout_marginTop="@dimen/sixty_dp"
        app:layout_constraintStart_toEndOf="@id/post_count"
-        app:layout_constraintTop_toTopOf="@id/gallery_view"/>
+        app:layout_constraintTop_toTopOf="@id/profile_view"/>
 
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/gallery_tabLayout"
+        android:id="@+id/profile_tabLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:layout_constraintBottom_toTopOf="@id/recycle_glide"
+        app:layout_constraintBottom_toTopOf="@id/profile_viewPager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/gallery_view" />
+        app:layout_constraintTop_toBottomOf="@id/profile_view" />
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/gallery_viewPager"
+        android:id="@+id/profile_viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/recycle_glide"
-        app:layout_constraintTop_toBottomOf="@id/gallery_tabLayout"
-        app:layout_constraintEnd_toEndOf="@id/recycle_glide"
-        app:layout_constraintBottom_toBottomOf="@id/recycle_glide"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycle_glide"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/two_dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/gallery_tabLayout"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintTop_toBottomOf="@id/profile_tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

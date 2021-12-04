@@ -7,7 +7,7 @@
     android:background="#EDF2FF">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/profile_recycle"
+        android:id="@+id/home_page_recycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

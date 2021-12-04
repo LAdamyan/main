@@ -254,6 +254,7 @@
     <string name="apply_filters">Apply Filters</string>
     <string name="download">Download</string>
     <string name="videofragment">VideoFragment</string>
+    <string name="homePageProfile">Profile</string>
 
 
     <string-array name="banks_array">

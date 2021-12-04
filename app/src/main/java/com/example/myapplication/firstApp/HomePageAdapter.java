@@ -18,33 +18,32 @@ import java.util.ArrayList;
 import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class ProfilePageAdapter extends RecyclerView.Adapter<ProfileHolder> {
+public class HomePageAdapter extends RecyclerView.Adapter<HomePageHolder> {
 
-     private final ArrayList<Profile>profiles = new ArrayList<>();
+     private final ArrayList<HomePageProfile> homePageProfiles = new ArrayList<>();
+     private ItemClickListener itemClickListener;
 
 
+
+     public void setItemClickListener(ItemClickListener itemClickListener){
+         this.itemClickListener = itemClickListener;
+     }
     @NonNull
     @Override
-    public ProfileHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public HomePageHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.profile_recycle_item,parent,false);
-        return new ProfileHolder(view);
+        return new HomePageHolder(view);
     }
-    public void setOnItemClickListener2(){
-    }
+
 
     @Override
-    public void onBindViewHolder(@NonNull ProfileHolder holder, int position) {
+    public void onBindViewHolder(@NonNull HomePageHolder holder, int position) {
 
-        Profile profile = profiles.get(position);
-        holder.initData(profile);
+        HomePageProfile homePageProfile = homePageProfiles.get(position);
+        holder.initData(homePageProfile);
         holder.itemView.setOnClickListener(view -> {
-            AppCompatActivity activity = (AppCompatActivity) view.getContext();
-            GalleryFragment galleryFragment = new GalleryFragment();
-            FragmentManager fragmentManager = activity.getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.activity4_fragment_container, galleryFragment);
-            fragmentTransaction.commit();
+            itemClickListener.onClick(homePageProfile.getName(), homePageProfile.getSurName());
         });
 
 
@@ -52,20 +51,20 @@ public class ProfilePageAdapter extends RecyclerView.Adapter<ProfileHolder> {
 
     @Override
     public int getItemCount() {
-        return profiles.size();
+        return homePageProfiles.size();
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    public void setProfiles(List<Profile>profile){
-        this.profiles.clear();
-        this.profiles.addAll(profile);
+    public void setProfiles(List<HomePageProfile> homePageProfile){
+        this.homePageProfiles.clear();
+        this.homePageProfiles.addAll(homePageProfile);
         notifyDataSetChanged();
     }
 
 
 
 }
-class ProfileHolder extends RecyclerView.ViewHolder {
+class HomePageHolder extends RecyclerView.ViewHolder {
 
     private  int LIKE_STATUS= 0;
 
@@ -76,18 +75,18 @@ class ProfileHolder extends RecyclerView.ViewHolder {
     AppCompatImageView likeImage = itemView.findViewById(R.id.heart_icon);
 
 
-    public ProfileHolder(@NonNull View itemView) {
+    public HomePageHolder(@NonNull View itemView) {
         super(itemView);
     }
 
 
-    public void initData(Profile profile) {
+    public void initData(HomePageProfile homePageProfile) {
 
-        circleImageView.setImageResource(profile.getProfileImage());
-        name.setText(profile.getName());
-        surName.setText(profile.getSurName());
+        circleImageView.setImageResource(homePageProfile.getProfileImage());
+        name.setText(homePageProfile.getName());
+        surName.setText(homePageProfile.getSurName());
         Glide.with(itemView.getContext())
-                .load(profile.getImageURL())
+                .load(homePageProfile.getImageURL())
                 .placeholder(R.drawable.loading)
                 .error(R.drawable.error)
                 .centerCrop()
@@ -110,3 +109,6 @@ class ProfileHolder extends RecyclerView.ViewHolder {
     }
 
 }
+      interface ItemClickListener {
+     void onClick(String name, String surname);
+      }
