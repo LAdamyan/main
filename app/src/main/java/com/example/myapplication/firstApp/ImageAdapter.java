@@ -16,11 +16,11 @@ import java.util.List;
 public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
 
     private final ArrayList<Gallery> myUrls = new ArrayList<>();
-    private onItemClickListener onitemClickListener;
+    private onItemClickListener onItemClickListener;
 
 
-    public void setOnItemClickListener(onItemClickListener onitemClickListener){
-        this.onitemClickListener = onitemClickListener;
+    public void setOnItemClickListener(onItemClickListener onItemClickListener){
+        this.onItemClickListener = onItemClickListener;
     }
 
     @NonNull
@@ -35,7 +35,7 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
     public void onBindViewHolder(@NonNull MyViewHolder2 holder, int position) {
         Gallery gallery = myUrls.get(position);
         holder.imageUrl.setOnClickListener(view -> {
-            onitemClickListener.click(gallery.getImageUrl());
+            onItemClickListener.click(gallery.getImageUrl());
 
         });
         holder.initData(gallery);
