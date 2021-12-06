@@ -19,7 +19,7 @@ import com.example.myapplication.R;
 public class ImageFragment extends Fragment implements onItemClickListener {
 
     ImageAdapter imageAdapter = new ImageAdapter();
-    private Gallery gallery;
+
 
 
     @Override
@@ -42,8 +42,9 @@ public class ImageFragment extends Fragment implements onItemClickListener {
 
     @Override
     public void click(String imageUrl) {
+
         Bundle bundle = new Bundle();
-        bundle.putString("imageUrl", gallery.getImageUrl());
+        bundle.putString("imageUrl", Gallery.getImageUrl());
         FullImageFragment fullImageFragment = new FullImageFragment();
         fullImageFragment.setArguments(bundle);
         FragmentManager fragmentManager = getParentFragmentManager();

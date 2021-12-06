@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Gallery {
 
-    private String imageUrl;
+    private static String imageUrl;
 
     public Gallery(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 
-    public String getImageUrl() {
+    public static String getImageUrl() {
         return imageUrl;
     }
 
