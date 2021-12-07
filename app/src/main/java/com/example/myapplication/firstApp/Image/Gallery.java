@@ -1,17 +1,17 @@
-package com.example.myapplication.firstApp;
+package com.example.myapplication.firstApp.Image;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Gallery {
 
-    private static String imageUrl;
+    private  String imageUrl;
 
     public Gallery(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 
-    public static String getImageUrl() {
+    public  String getImageUrl() {
         return imageUrl;
     }
 

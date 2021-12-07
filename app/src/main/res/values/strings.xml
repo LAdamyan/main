@@ -255,6 +255,7 @@
     <string name="download">Download</string>
     <string name="videofragment">VideoFragment</string>
     <string name="homePageProfile">Profile</string>
+    <string name="home">Home</string>
 
 
     <string-array name="banks_array">

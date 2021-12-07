@@ -1,6 +1,5 @@
-package com.example.myapplication.firstApp;
+package com.example.myapplication.firstApp.Image;
 import android.annotation.SuppressLint;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +8,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.myapplication.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +16,11 @@ import java.util.List;
 public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
 
     private final ArrayList<Gallery> myUrls = new ArrayList<>();
-    private onItemClickListener onItemClickListener;
+    private ItemClickListener2 itemClickListener2;
 
 
-    public void setOnItemClickListener(onItemClickListener onItemClickListener){
-        this.onItemClickListener = onItemClickListener;
+    public void setItemClickListener2(ItemClickListener2 itemClickListener2){
+        this.itemClickListener2 = itemClickListener2;
     }
 
     @NonNull
@@ -34,8 +34,8 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder2 holder, int position) {
         Gallery gallery = myUrls.get(position);
-        holder.imageUrl.setOnClickListener(view -> {
-            onItemClickListener.click(gallery.getImageUrl());
+        holder.imageView.setOnClickListener(view -> {
+            itemClickListener2.onClick2(gallery.getImageUrl());
 
         });
         holder.initData(gallery);
@@ -57,11 +57,11 @@ public class ImageAdapter extends RecyclerView.Adapter<MyViewHolder2>{
 
 class MyViewHolder2 extends RecyclerView.ViewHolder{
 
-    AppCompatImageView imageUrl;
+    AppCompatImageView imageView;
 
     public MyViewHolder2(@NonNull View itemView) {
         super(itemView);
-        imageUrl = itemView.findViewById(R.id.image_url);
+        imageView = itemView.findViewById(R.id.image_url);
 
 
     }
@@ -72,12 +72,12 @@ class MyViewHolder2 extends RecyclerView.ViewHolder{
                 .placeholder(R.drawable.loading)
                 .error(R.drawable.error)
                 .centerCrop()
-                .into(imageUrl);
+                .into(imageView);
 
     }
 
 }
-       interface onItemClickListener {
-           void click(String imageUrl);
+interface ItemClickListener2 {
+    void onClick2(String imageUrl);
 
 }

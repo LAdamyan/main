@@ -1,15 +1,12 @@
-package com.example.myapplication.firstApp;
+package com.example.myapplication.firstApp.HomePage;
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.myapplication.R;
@@ -20,14 +17,14 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HomePageAdapter extends RecyclerView.Adapter<HomePageHolder> {
 
-     private final ArrayList<HomePageProfile> homePageProfiles = new ArrayList<>();
-     private ItemClickListener itemClickListener;
+    private final ArrayList<HomePageProfile> homePageProfiles = new ArrayList<>();
+    private ItemClickListener itemClickListener;
 
 
 
-     public void setItemClickListener(ItemClickListener itemClickListener){
-         this.itemClickListener = itemClickListener;
-     }
+    public void setItemClickListener(ItemClickListener itemClickListener){
+        this.itemClickListener = itemClickListener;
+    }
     @NonNull
     @Override
     public HomePageHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -44,6 +41,12 @@ public class HomePageAdapter extends RecyclerView.Adapter<HomePageHolder> {
         holder.initData(homePageProfile);
         holder.itemView.setOnClickListener(view -> {
             itemClickListener.onClick(homePageProfile.getName(), homePageProfile.getSurName());
+        });
+        holder.imageview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                itemClickListener.openFullImage(homePageProfile.getImageURL());
+            }
         });
 
 
@@ -109,6 +112,9 @@ class HomePageHolder extends RecyclerView.ViewHolder {
     }
 
 }
-      interface ItemClickListener {
-     void onClick(String name, String surname);
-      }
+interface ItemClickListener {
+    void onClick(String name, String surname);
+
+    void openFullImage(String imageUrl);
+}
+

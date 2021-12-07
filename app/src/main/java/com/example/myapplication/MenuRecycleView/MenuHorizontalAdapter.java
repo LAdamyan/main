@@ -19,13 +19,6 @@ public class MenuHorizontalAdapter extends RecyclerView.Adapter<MenuItemHolder> 
     private ArrayList<MenuHorizontal> menuHorizontals = new ArrayList<>();
 
 
-    private ItemClickListener itemClickListener;
-
-
-    public void setItemClickListener(ItemClickListener itemClickListener) {
-        this.itemClickListener = itemClickListener;
-
-    }
 
     @NonNull
     @Override
@@ -83,11 +76,5 @@ class MenuItemHolder extends RecyclerView.ViewHolder {
     void initData(MenuHorizontal menu) {
         pieceTextView.setText(menu.getPiece());
     }
-
-}
-interface ItemClickListener{
-    void click(String name,String userName);
-
-
 
 }

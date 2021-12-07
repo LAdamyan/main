@@ -1,22 +1,21 @@
-package com.example.myapplication.firstApp;
+package com.example.myapplication.firstApp.Image;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.example.myapplication.R;
+import com.example.myapplication.firstApp.FullImage.FullImageFragment;
 
 
-public class ImageFragment extends Fragment implements onItemClickListener {
+public class ImageFragment extends Fragment implements ItemClickListener2 {
 
     ImageAdapter imageAdapter = new ImageAdapter();
 
@@ -33,24 +32,30 @@ public class ImageFragment extends Fragment implements onItemClickListener {
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(imageAdapter);
         imageAdapter.setMyUrls(Gallery.getGlideImages());
-        imageAdapter.setOnItemClickListener(this);
+        imageAdapter.setItemClickListener2(this);
 
         return view;
     }
 
 
-
     @Override
-    public void click(String imageUrl) {
+    public void onClick2(String imageUrl) {
 
         Bundle bundle = new Bundle();
-        bundle.putString("imageUrl", Gallery.getImageUrl());
+        bundle.putString("imageUrl", imageUrl);
         FullImageFragment fullImageFragment = new FullImageFragment();
         fullImageFragment.setArguments(bundle);
         FragmentManager fragmentManager = getParentFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.activity4_fragment_container, fullImageFragment);
+        fragmentTransaction.add(R.id.activity4_fragment_container, fullImageFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+
+
+
     }
+
 }
+
+
+

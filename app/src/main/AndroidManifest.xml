@@ -55,7 +55,7 @@
         </activity>
 
         <activity
-            android:theme="@style/Theme.MaterialComponents.Light.Bridge"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:name=".firstApp.MainActivity"
             android:exported="true">
             <intent-filter>

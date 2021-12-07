@@ -1,11 +1,10 @@
-package com.example.myapplication.firstApp;
+package com.example.myapplication.firstApp.HomePage;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -13,6 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.firstApp.FullImage.FullImageFragment;
+import com.example.myapplication.firstApp.Profile.ProfileFragment;
 
 
 public class HomePageFragment extends Fragment implements ItemClickListener {
@@ -41,6 +42,19 @@ public class HomePageFragment extends Fragment implements ItemClickListener {
         FragmentManager fragmentManager = getParentFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.activity4_fragment_container, profileFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    public void openFullImage(String imageUrl) {
+        Bundle bundle = new Bundle();
+        bundle.putString("imageUrl", imageUrl);
+        FullImageFragment fullImageFragment = new FullImageFragment();
+        fullImageFragment.setArguments(bundle);
+        FragmentManager fragmentManager = getParentFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.activity4_fragment_container, fullImageFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

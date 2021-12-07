@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myapplication.R;
+import com.example.myapplication.firstApp.HomePage.HomePageFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,10 +23,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
+        }
 
-
-
-
-
-    }
 }

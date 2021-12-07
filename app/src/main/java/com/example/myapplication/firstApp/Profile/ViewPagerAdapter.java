@@ -1,10 +1,13 @@
-package com.example.myapplication.firstApp;
+package com.example.myapplication.firstApp.Profile;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.example.myapplication.firstApp.Image.ImageFragment;
+import com.example.myapplication.firstApp.Video.VideoFragment;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     public ViewPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {

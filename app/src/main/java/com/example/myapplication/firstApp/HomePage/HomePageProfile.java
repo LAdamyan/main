@@ -1,4 +1,4 @@
-package com.example.myapplication.firstApp;
+package com.example.myapplication.firstApp.HomePage;
 
 import com.example.myapplication.R;
 

@@ -5,8 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".firstApp.ProfileFragment">
+    tools:context=".firstApp.Profile.ProfileFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/profile_view"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/homePageProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/homePageProfile"
+        android:textSize="@dimen/thirty_sp"
+        android:textColor="@color/light_blue3"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/ten_dp"
+        app:layout_constraintStart_toStartOf="@id/profile_toolbar"
+        app:layout_constraintTop_toTopOf="@id/profile_toolbar"
+        app:layout_constraintEnd_toEndOf="@id/profile_toolbar"/>
 
     <View
         android:id="@+id/profile_view"
@@ -15,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_toolbar"
         app:layout_constraintBottom_toTopOf="@id/profile_tabLayout"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -30,17 +52,8 @@
         app:layout_constraintStart_toStartOf="@id/profile_view"
         app:layout_constraintTop_toTopOf="@id/profile_view"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/homePageProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/homePageProfile"
-        android:textSize="@dimen/twenty_sp"
-        android:textColor="@color/light_blue3"
-        app:layout_constraintTop_toTopOf="@id/profile_view"
-        android:layout_marginTop="@dimen/twenty_dp"
-        app:layout_constraintStart_toStartOf="@id/post_count"
-        app:layout_constraintEnd_toEndOf="@id/followers_count"/>
+
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/user_name"

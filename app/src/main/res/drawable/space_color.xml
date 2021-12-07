@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/white" />
-    <stroke android:width="@dimen/four_dp"
-        android:color="#B3C4CB" />
+    <stroke android:width="@dimen/two_dp"
+        android:color="@color/white" />
     <padding
-        android:left = "@dimen/four_dp"
-        android:top="@dimen/four_dp"
-        android:right="@dimen/two_dp"
-        android:bottom="@dimen/two_dp"/>
+        android:left = "@dimen/two_dp"
+        android:top="@dimen/two_dp"
+        android:right="@dimen/one_dp"
+        android:bottom="@dimen/one_dp"/>
 </shape>
