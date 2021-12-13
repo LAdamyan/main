@@ -10,7 +10,6 @@
 
     <item android:id="@+id/contacts"
         android:title="@string/contacts"
-        app:showAsAction="ifRoom"
         android:icon="@drawable/contacts_outline"
         tools:ignore="AppCompatResource" />
 
@@ -20,9 +19,7 @@
 
     <item android:id="@+id/share"
         android:title="@string/share"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_baseline_share_24"
-         />
+        android:icon="@drawable/ic_baseline_share_24" />
 
 
 </menu>

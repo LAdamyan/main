@@ -34,7 +34,7 @@ public class NavigationDrawerActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-            //   drawerLayout.open();
+                  drawerLayout.open();
             }
         });
 
@@ -67,26 +67,32 @@ public class NavigationDrawerActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-             switch (item.getItemId()){
-                 case  R.id.gallery : {
-                     Toast.makeText(NavigationDrawerActivity.this,"Gallery",Toast.LENGTH_SHORT).show();
-                     drawerLayout.closeDrawers();
-                     break;
-                 }
-                 case  R.id.contacts : {
-                     Toast.makeText(NavigationDrawerActivity.this,"Contacts",Toast.LENGTH_SHORT).show();
-                     drawerLayout.closeDrawers();
-                     break;
-                 }
-                 case  R.id.settings:  {
-                     Toast.makeText(NavigationDrawerActivity.this,"Settings",Toast.LENGTH_SHORT).show();
-                     drawerLayout.closeDrawers();
-                     break;
-                 }
-             }
-                return true;
+                switch (item.getItemId()){
+                    case  R.id.gallery : {
+                        Toast.makeText(NavigationDrawerActivity.this,"Gallery",Toast.LENGTH_SHORT).show();
+                        drawerLayout.close();
+                        break;
+                    }
+                    case  R.id.contacts : {
+                        Toast.makeText(NavigationDrawerActivity.this,"Contacts",Toast.LENGTH_SHORT).show();
+                        drawerLayout.close();
+                        break;
+                    }
+                    case  R.id.settings:  {
+                        Toast.makeText(NavigationDrawerActivity.this,"Settings",Toast.LENGTH_SHORT).show();
+                        drawerLayout.close();
+                        break;
+                    }
+                    case  R.id.share:  {
+                        Toast.makeText(NavigationDrawerActivity.this,"Share",Toast.LENGTH_SHORT).show();
+                        drawerLayout.close();
+                        break;
+                    }
+                }return true;
+
             }
         });
 
     }
 }
+
