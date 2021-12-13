@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_700">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/header_image"
+        android:layout_width="@dimen/eighty_dp"
+        android:layout_height="@dimen/eighty_dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/account_circle_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_surname"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        android:layout_marginTop="@dimen/ten_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tel_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_374_xxxxxxxxx"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/fifteen_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/moon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/weather_night"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        android:layout_marginEnd="@dimen/fifteen_dp"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

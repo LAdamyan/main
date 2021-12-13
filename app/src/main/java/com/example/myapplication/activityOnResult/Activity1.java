@@ -3,15 +3,12 @@ package com.example.myapplication.activityOnResult;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import com.example.myapplication.intent.Activity2;
-import com.example.myapplication.intent.Activity3;
 import com.example.myapplication.R;
 
 public class Activity1 extends AppCompatActivity {
@@ -24,13 +21,13 @@ public class Activity1 extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activit1);
-        openSecondActivityForResult();
-        openThirdActivityForResult();
+      /*  openSecondActivityForResult();
+        openThirdActivityForResult();*/
 
 
     }
 
-    public void openSecondActivityForResult() {
+   /* public void openSecondActivityForResult() {
         AppCompatButton button1 = findViewById(R.id.appCompatButton1);
         button1.setOnClickListener(view -> {
             startForResults.launch(new Intent(this, Activity2.class));
@@ -65,5 +62,5 @@ public class Activity1 extends AppCompatActivity {
                 }
             });
 
-
+*/
 }

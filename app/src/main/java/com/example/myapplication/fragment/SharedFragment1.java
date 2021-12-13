@@ -39,7 +39,7 @@ public class SharedFragment1 extends Fragment {
         button2 = view.findViewById(R.id.shared_data_button);
         button2.setOnClickListener(view12 -> {
             SharedFragment2 sharedFragment2 = new SharedFragment2();
-            FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+            FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.shared_fragment_container,sharedFragment2);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();

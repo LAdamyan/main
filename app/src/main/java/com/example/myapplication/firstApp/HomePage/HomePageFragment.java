@@ -39,7 +39,7 @@ public class HomePageFragment extends Fragment implements ItemClickListener {
     @Override
     public void onClick(String name, String surname) {
         ProfileFragment profileFragment = new ProfileFragment();
-        FragmentManager fragmentManager = getParentFragmentManager();
+        FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.activity4_fragment_container, profileFragment);
         fragmentTransaction.addToBackStack(null);
@@ -52,7 +52,7 @@ public class HomePageFragment extends Fragment implements ItemClickListener {
         bundle.putString("imageUrl", imageUrl);
         FullImageFragment fullImageFragment = new FullImageFragment();
         fullImageFragment.setArguments(bundle);
-        FragmentManager fragmentManager = getParentFragmentManager();
+        FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.activity4_fragment_container, fullImageFragment);
         fragmentTransaction.addToBackStack(null);

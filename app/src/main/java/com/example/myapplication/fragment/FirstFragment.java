@@ -50,7 +50,7 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 FourthFragment fourthFragment = new FourthFragment();
-                FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container, fourthFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();

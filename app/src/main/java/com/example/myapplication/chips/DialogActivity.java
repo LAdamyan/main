@@ -1,4 +1,4 @@
-package com.example.myapplication.dialog;
+package com.example.myapplication.chips;
 
 import android.content.Intent;
 import android.os.Bundle;

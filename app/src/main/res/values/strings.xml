@@ -256,6 +256,12 @@
     <string name="videofragment">VideoFragment</string>
     <string name="homePageProfile">Profile</string>
     <string name="home">Home</string>
+    <string name="retrieve">Retrieve</string>
+
+    <string name="_374_xxxxxxxxx">+374 XXXXXXXXX</string>
+    <string name="contacts">Contacts</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
 
 
     <string-array name="banks_array">

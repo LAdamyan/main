@@ -1,4 +1,4 @@
-package com.example.myapplication.chips;
+package com.example.myapplication.activityOnResult;
 
 import android.content.Context;
 import android.graphics.Canvas;
