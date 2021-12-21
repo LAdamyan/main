@@ -1,14 +1,15 @@
 package com.example.myapplication.Room;
 
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-import java.util.List;
-
-@Entity
+@Entity(tableName = "videos")
 public class Videos {
 
-    Integer id;
-    String name;
-    String age;
-    List<Integer > videosIds;
+@PrimaryKey(autoGenerate = true)
+    int id;
+
+    String videoUrl;
+
+
 }

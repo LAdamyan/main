@@ -16,6 +16,6 @@ public interface AuthorDao {
     void insert(Authors authors);
 
     @Delete
-    void delete(Integer id);
+    void delete(Authors authors);
 
 }
