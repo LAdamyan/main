@@ -17,6 +17,6 @@ public interface VideoDao {
     void insert(Videos videos);
 
     @Delete
-    void delete(Integer id);
+    void delete(Videos videos);
 
 }

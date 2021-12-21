@@ -19,8 +19,11 @@ public class RoomActivityExample extends AppCompatActivity {
         setContentView(R.layout.room_layout);
     }
 
-    RoomDatabase.Builder<AppDatabase>FirstBuilder = Room.databaseBuilder(this,
-            AppDatabase.class,"first db");
+    RoomDatabase.Builder<AppDatabase>FirstBuilder = Room.databaseBuilder(
+            this,
+            AppDatabase.class,
+            "first db");
+
     AppDatabase db = FirstBuilder.build();
     List<Authors> authors = db.getAuthorsDao().getAuthors();
     List<Videos>videos = db.getVideosDao().getVideos();

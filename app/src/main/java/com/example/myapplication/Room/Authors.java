@@ -5,13 +5,15 @@ import androidx.room.PrimaryKey;
 
 import java.util.List;
 
-@Entity
+@Entity(tableName = "authors")
 public class Authors {
-    @PrimaryKey
-    Integer id;
+
+    @PrimaryKey(autoGenerate = true)
+    int id;
     String name;
     String age;
-    List<Integer> picturesIds;
+
+
 
 
 }
