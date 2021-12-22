@@ -279,6 +279,15 @@
         or doctrine of the last things or of the end of the world.d</string>
 
 
+
+        <string name="hintText">Enter User Name</string>
+        <string name="heading">Content Provider In Android</string>
+        <string name="insertButtontext">Insert Data</string>
+        <string name="loadButtonText">Load Data</string>
+    <string name="result">Result</string>
+    <string name="heading2">Accesing data of Content Provider</string>
+
+
     <string-array name="banks_array">
 
         <item> Բանկ</item>

@@ -24,7 +24,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:ignore="AllowBackup">
+<provider
+    android:authorities="com.example.myapplication.content_provider"
+    android:name=".content_provider.MyContentProvider"
+    android:enabled="true"
+    android:exported="true">
 
+</provider>
 
         <activity
             android:name="com.example.myapplication.recycleView2.MainActivity"
@@ -56,7 +62,7 @@
 
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:name=".CoordinatorExampleActivity.CoordinatorActivity"
+            android:name=".content_provider.ProvidersMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
