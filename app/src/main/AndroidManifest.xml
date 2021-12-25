@@ -25,8 +25,8 @@
         android:theme="@style/Theme.MyApplication"
         tools:ignore="AllowBackup">
 <provider
-    android:authorities="com.example.myapplication.content_provider"
-    android:name=".content_provider.MyContentProvider"
+    android:authorities="com.demo.user.provider"
+    android:name="com.example.myapplication.content_provider.MyContentProvider"
     android:enabled="true"
     android:exported="true">
 
@@ -62,7 +62,7 @@
 
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:name=".content_provider.ProvidersMainActivity"
+            android:name=".accessingContentProvider.MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

@@ -1,44 +1,42 @@
 package com.example.myapplication.accessingContentProvider;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 
 import com.example.myapplication.R;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    Uri CONTENT_URI = Uri.parse("content://com.example.myapplication/content_provider");
-
-    AppCompatButton loadDataFromProvider;
+    Uri CONTENT_URI = Uri.parse("content://com.demo.user.provider/users");
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.load_provider);
+    }
 
-        loadDataFromProvider = findViewById(R.id.loadButton);
-        loadDataFromProvider.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                onClickShowDetails(view);
-            }
-        });
-
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        return true;
     }
 
     @SuppressLint({"Range", "SetTextI18n"})
     public void onClickShowDetails(View view) {
-        AppCompatTextView resultView = findViewById(R.id.provider_result);
+        AppCompatTextView resultView = findViewById(R.id.res);
 
-        Cursor cursor = getContentResolver().query(Uri.parse("content://com.example.myapplication/content_provider"),
+        Cursor cursor = getContentResolver().query(CONTENT_URI,
                 null, null, null, null);
 
         if (cursor.moveToFirst()) {
