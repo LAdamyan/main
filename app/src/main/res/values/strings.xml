@@ -286,6 +286,7 @@
         <string name="loadButtonText">Load Data</string>
     <string name="result">Result</string>
     <string name="heading2">Accesing data of Content Provider</string>
+    <string name="show_notifications">Show notifications</string>
 
 
     <string-array name="banks_array">

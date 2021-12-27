@@ -62,7 +62,7 @@
 
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:name=".accessingContentProvider.MainActivity2"
+            android:name=".notifications.NotificationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -70,6 +70,10 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".CoordinatorExampleActivity.CoordinatorActivity"
+            android:parentActivityName=".notifications.NotificationActivity" />
+
 
         <activity
             android:theme="@style/Theme.MaterialComponents.NoActionBar"
