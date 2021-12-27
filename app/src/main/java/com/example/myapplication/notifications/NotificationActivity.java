@@ -42,6 +42,7 @@ public class NotificationActivity extends AppCompatActivity {
        NotificationService notificationService = new NotificationService();
        Notification notification= notificationService.startActivityFromNotification(this,R.drawable.heart);
        notificationService.createNotificationChannel(this);
+       notificationService.createSecondNotificationChannel(this);
 
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
         notificationManagerCompat.notify(NOTIFICATION_ID,notification);

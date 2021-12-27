@@ -65,4 +65,5 @@ dependencies {
     def core_version = "1.6.0"
     implementation "androidx.core:core:$core_version"
 
+
 }

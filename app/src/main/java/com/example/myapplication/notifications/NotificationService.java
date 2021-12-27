@@ -15,14 +15,15 @@ import com.example.myapplication.NavigationView.NavigationDrawerActivity;
 
 public class NotificationService {
 
-    private static final String CHANNEL_ID = "channel_1";
+    private static final String CHANNEL_ID_1 = "channel_1";
+    private static final String CHANNEL_ID_2 = "channel_2";
 
     public Notification createNotification(int notificationSmallIcon,
                                            String textTitle,
                                            String textContent,
                                            Context context) {
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID_1)
                 .setSmallIcon(notificationSmallIcon)
                 .setContentTitle(textTitle)
                 .setContentText(textContent)
@@ -41,13 +42,29 @@ public class NotificationService {
             String description = "First Notification Channel Description";
 
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID_1, name, importance);
             channel.setDescription(description);
 
             NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
     }
+
+    public void createSecondNotificationChannel(Context context) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "Second Notification Channel";
+            String description = "Second Notification Channel Description";
+
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID_2, name, importance);
+            channel.setDescription(description);
+
+            NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
 
     public Notification startActivityFromNotification(
             Context context, int notificationSmallIcon) {
@@ -56,7 +73,7 @@ public class NotificationService {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID_1)
                 .setSmallIcon(notificationSmallIcon)
                 .setContentTitle("Notification from CoordinatorActivity")
                 .setContentText("Here is some documents about the latest updates....")
