@@ -287,6 +287,7 @@
     <string name="result">Result</string>
     <string name="heading2">Accesing data of Content Provider</string>
     <string name="show_notifications">Show notifications</string>
+    <string name="get_from_contacts">Get From Contacts</string>
 
 
     <string-array name="banks_array">
