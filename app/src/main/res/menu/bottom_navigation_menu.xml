@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/restaurants"
+        android:title="@string/restaurants"
+        android:icon="@drawable/silverware_fork_knife"/>
+
+    <item android:id="@+id/shops"
+        android:title="@string/shops"
+        android:icon="@drawable/ic_baseline_store_24"
+        />
+
+    <item android:id="@+id/carrefour"
+        android:title="@string/carrefour"
+        android:icon="@drawable/supermarket"/>
+
+    <item android:id="@+id/offers"
+        android:title="@string/offers"
+        android:icon="@drawable/ic_baseline_local_offer_24" />
+
+</menu>

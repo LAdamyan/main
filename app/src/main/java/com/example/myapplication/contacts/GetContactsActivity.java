@@ -1,30 +1,14 @@
 package com.example.myapplication.contacts;
 
-import static android.content.ContentValues.TAG;
-
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.ContentResolver;
-import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.ListView;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatEditText;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
-
 import com.example.myapplication.R;
-import com.example.myapplication.recycleView2.ListActivity;
 
 public class GetContactsActivity extends AppCompatActivity {
     ListView listView;
@@ -58,6 +42,7 @@ public class GetContactsActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+
     }
 }
 

@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/app_bar_main">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_container2"
+        android:id="@+id/bottom_nav_fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/bottom_navigation"/>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav_view"
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemIconSize="@dimen/twenty_dp"
-        app:itemTextColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@id/fragment_container2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_nav_fragment_container"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
+        app:menu="@menu/bottom_navigation_menu"
+        android:background="@color/purple_700"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/light_red"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
