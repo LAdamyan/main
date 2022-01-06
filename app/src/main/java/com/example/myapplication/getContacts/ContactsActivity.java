@@ -2,6 +2,7 @@ package com.example.myapplication.getContacts;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.ContentResolver;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
@@ -24,10 +25,9 @@ import java.util.ArrayList;
 
 public class ContactsActivity extends AppCompatActivity {
 
-    ContactAdapter contactAdapter ;
+    ContactAdapter contactAdapter = new ContactAdapter();
     AppCompatButton button;
     AppCompatTextView name, phoneNumber;
-    ArrayList<Contacts> contactsArrayList;
 
 
     @Override
@@ -38,14 +38,10 @@ public class ContactsActivity extends AppCompatActivity {
         name = findViewById(R.id.contacts_name);
         phoneNumber = findViewById(R.id.contacts_phone);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getContacts();
-            }
-        });
-
         initRecycleView();
+        ;
+
+
     }
 
     private void initRecycleView() {
@@ -53,16 +49,26 @@ public class ContactsActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.contacts_recycleView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
-        contactAdapter = new ContactAdapter(contactsArrayList,ContactsActivity.this);
         recyclerView.setAdapter(contactAdapter);
+        contactAdapter.setContacts(Contacts.getContacts());
 
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_CONTACTS,
-                Manifest.permission.READ_CONTACTS}, PackageManager.PERMISSION_GRANTED);
-
-    }
-
-    public void getContacts() {
-
-        
     }
 }
+
+   /*private void getContacts() {
+
+       ContentResolver contentResolver = getContentResolver();
+       Cursor cursor = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
+               null, null, null);
+       while (cursor.moveToNext()) {
+       }
+
+           @SuppressLint("Range")
+           String name  = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+           @SuppressLint("Range")
+           String number = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+
+*/
+
+        
+

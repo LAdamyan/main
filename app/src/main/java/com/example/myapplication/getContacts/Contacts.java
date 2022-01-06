@@ -16,9 +16,6 @@ public class Contacts {
         this.phoneNumber = phoneNumber;
     }
 
-    public Contacts() {
-
-    }
 
     public String getName() {
         return name;

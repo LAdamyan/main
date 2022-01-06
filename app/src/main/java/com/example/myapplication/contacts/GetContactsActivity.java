@@ -28,7 +28,6 @@ public class GetContactsActivity extends AppCompatActivity {
 
     public void getContacts() {
 
-
         Cursor cursor = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
                                                null, null, null, null);
         startManagingCursor(cursor);
