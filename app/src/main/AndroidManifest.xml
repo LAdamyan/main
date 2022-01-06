@@ -64,7 +64,7 @@
 
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:name=".NavigationView.NavigationDrawerActivity"
+            android:name=".getContacts.ContactsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

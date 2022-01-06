@@ -23,10 +23,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:itemIconSize="@dimen/twenty_dp"
-        app:itemTextColor="@color/black"
+        android:background="@color/light_blue3"
+        app:itemTextColor="@drawable/nav_item_color"
+        app:itemIconTint="@drawable/nav_item_color"
         app:layout_constraintBottom_toBottomOf="@id/fragment_container2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_navigation_menu" />
 
 

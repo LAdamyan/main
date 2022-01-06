@@ -1,5 +1,7 @@
 package com.example.myapplication.NavigationView;
 
+import static com.google.android.material.navigation.NavigationBarView.*;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,6 +13,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -26,8 +29,6 @@ public class NavigationDrawerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navigation_drawer);
 
-
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_view);
 
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -100,44 +101,47 @@ public class NavigationDrawerActivity extends AppCompatActivity {
             }
         });
 
+
+        loadFragment(new BottomFragmentOne());
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_view);
+
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-
-            FragmentManager fragmentManager = getSupportFragmentManager();
-
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+                   Fragment fragment;
+
                 switch (item.getItemId()) {
                     case R.id.restaurants:
-                        BottomFragmentOne bottomFragmentOne = new BottomFragmentOne();
-                        fragmentTransaction.replace(R.id.fragment_container2, bottomFragmentOne);
-
-                        break;
+                        fragment = new BottomFragmentOne();
+                        loadFragment(fragment);
+                        return true;
                     case R.id.shops:
-                        BottomFragmentTwo bottomFragmentTwo = new BottomFragmentTwo();
-                        fragmentTransaction.replace(R.id.fragment_container2, bottomFragmentTwo);
-
-                        break;
+                        fragment = new BottomFragmentTwo();
+                        loadFragment(fragment);
+                        return true;
                     case R.id.carrefour:
-                        BottomFragmentThree bottomFragmentThree = new BottomFragmentThree();
-                        fragmentTransaction.replace(R.id.fragment_container2, bottomFragmentThree);
-
-                        break;
+                        fragment = new BottomFragmentThree();
+                        loadFragment(fragment);
+                        return true;
                     case R.id.offers:
-                        BottomFragmentFour bottomFragmentFour = new BottomFragmentFour();
-                        fragmentTransaction.replace(R.id.fragment_container2, bottomFragmentFour);
+                        fragment = new BottomFragmentFour();
+                        loadFragment(fragment);
+                        return true;
 
-                        break;
                 }
-                fragmentTransaction.commit();
-
                 return false;
             }
+
         });
+    }
 
-}}
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container2, fragment);
+        fragmentTransaction.commit();
+    }
 
-
-
+}

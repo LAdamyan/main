@@ -144,6 +144,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/drawable/ic_baseline_local_offer_24.xml" value="0.2490740740740741" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/drawable/ic_baseline_store_24.xml" value="0.28541666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/drawable/image.xml" value="0.28541666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/drawable/nav_item_color.xml" value="0.15092592592592594" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/drawable/silverware_fork_knife.xml" value="0.28541666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/drawable/store_settings_outline.xml" value="0.28541666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/drawable/weather_night.xml" value="0.2942708333333333" />
@@ -158,6 +159,8 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/bottom_navigation_layout.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/chip_layout.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/contact_activity.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/contacts_recycleview.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/contacts_tem_layout.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/content_main.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/coordinator_example.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/desc_table.xml" value="0.278125" />
