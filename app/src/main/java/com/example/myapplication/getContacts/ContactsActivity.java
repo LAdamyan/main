@@ -1,5 +1,7 @@
 package com.example.myapplication.getContacts;
 
+import static com.example.myapplication.content_provider.MyContentProvider.CONTENT_URI;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.ContentResolver;
@@ -39,7 +41,7 @@ public class ContactsActivity extends AppCompatActivity {
         phoneNumber = findViewById(R.id.contacts_phone);
 
         initRecycleView();
-        ;
+       getContacts();
 
 
     }
@@ -50,25 +52,22 @@ public class ContactsActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(contactAdapter);
-        contactAdapter.setContacts(Contacts.getContacts());
+
 
     }
+
+    private void getContacts(){
+
+        Cursor cursor = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                null, null, null, null);
+
+        String displayName =  ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME;
+        String displayNumber =  ContactsContract.CommonDataKinds.Phone.NUMBER;
+
+         name.setText(displayName);
+         phoneNumber.setText(displayNumber);
+
+    }
+
+
 }
-
-   /*private void getContacts() {
-
-       ContentResolver contentResolver = getContentResolver();
-       Cursor cursor = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
-               null, null, null);
-       while (cursor.moveToNext()) {
-       }
-
-           @SuppressLint("Range")
-           String name  = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
-           @SuppressLint("Range")
-           String number = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-
-*/
-
-        
-

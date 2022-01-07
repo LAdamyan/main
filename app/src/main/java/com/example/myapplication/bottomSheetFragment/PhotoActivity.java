@@ -5,13 +5,13 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AddPhotoActivity extends AppCompatActivity {
+public class PhotoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        AddPhotoBottomDialogFragment addPhotoBottomDialogFragment = AddPhotoBottomDialogFragment.newInstance();
+        PhotoBottomDialogFragment addPhotoBottomDialogFragment = PhotoBottomDialogFragment.newInstance();
         addPhotoBottomDialogFragment.show(getSupportFragmentManager(),null);
     }
 }

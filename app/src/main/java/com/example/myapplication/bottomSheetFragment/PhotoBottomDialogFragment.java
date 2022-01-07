@@ -12,14 +12,14 @@ import androidx.appcompat.widget.AppCompatTextView;
 import com.example.myapplication.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
-public class AddPhotoBottomDialogFragment extends BottomSheetDialogFragment {
+public class PhotoBottomDialogFragment extends BottomSheetDialogFragment {
 
     AppCompatTextView camera;
     AppCompatTextView gallery;
     AppCompatTextView remove;
 
-    public static AddPhotoBottomDialogFragment newInstance() {
-        return new AddPhotoBottomDialogFragment();
+    public static PhotoBottomDialogFragment newInstance() {
+        return new PhotoBottomDialogFragment();
     }
 
     @Nullable
