@@ -41,7 +41,7 @@ public class ContactsActivity extends AppCompatActivity {
         phoneNumber = findViewById(R.id.contacts_phone);
 
         initRecycleView();
-       getContacts();
+        getContacts();
 
 
     }
@@ -53,21 +53,26 @@ public class ContactsActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(contactAdapter);
 
-
     }
 
     private void getContacts(){
 
-        Cursor cursor = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+        Cursor phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
                 null, null, null, null);
+        while (phones.moveToFirst()){
 
-        String displayName =  ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME;
-        String displayNumber =  ContactsContract.CommonDataKinds.Phone.NUMBER;
+        @SuppressLint("Range")
+        String displayName =  phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+        @SuppressLint("Range")
+        String displayNumber =  phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
-         name.setText(displayName);
+
+        name.setText(displayName);
          phoneNumber.setText(displayNumber);
-
+        }
+        phones.close();
     }
+
 
 
 }
