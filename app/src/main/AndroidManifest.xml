@@ -64,7 +64,7 @@
 
         <activity
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            android:name=".getContacts.ContactsActivity"
+            android:name=".shared_view_model.ViewModelActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

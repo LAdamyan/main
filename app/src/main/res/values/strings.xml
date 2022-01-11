@@ -291,6 +291,7 @@
     <string name="shops">Shops</string>
     <string name="carrefour">Carrefour</string>
     <string name="offers">Offers</string>
+    <string name="write_something">Write something</string>
 
 
     <string-array name="banks_array">
