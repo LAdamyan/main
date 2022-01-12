@@ -16,16 +16,5 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="@dimen/_200dp"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/fragment2_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/light_blue3"
-        android:text="@string/ok"
-        android:textColor="@color/white"
-        android:layout_marginTop="@dimen/twenty_dp"
-        app:layout_constraintTop_toBottomOf="@id/fragment2_editText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

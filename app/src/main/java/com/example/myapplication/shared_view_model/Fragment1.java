@@ -1,6 +1,9 @@
 package com.example.myapplication.shared_view_model;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -10,17 +13,14 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.example.myapplication.R;
 
 
 public class Fragment1 extends Fragment {
+
   private SharedViewModel viewModel;
-   private AppCompatEditText editText1;
-   private AppCompatButton button1;
+    private AppCompatEditText editText1;
+    private AppCompatButton button;
 
 
     @Override
@@ -30,12 +30,12 @@ public class Fragment1 extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_1, container, false);
 
         editText1 = view.findViewById(R.id.fragment1_editText);
-        button1 =view.findViewById(R.id.fragment1_button);
+        button = view.findViewById(R.id.fragment1_button);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             viewModel.setText(editText1.getText());
+                viewModel.setText(editText1.getText());
             }
         });
 

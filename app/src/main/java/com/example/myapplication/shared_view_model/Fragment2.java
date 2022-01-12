@@ -19,29 +19,19 @@ import com.example.myapplication.R;
 public class Fragment2 extends Fragment {
     private SharedViewModel viewModel;
     private AppCompatEditText editText2;
-    private AppCompatButton button2;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view =  inflater.inflate(R.layout.fragment_2, container, false);
-
         editText2 = view.findViewById(R.id.fragment2_editText);
-        button2=view.findViewById(R.id.fragment2_button);
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                viewModel.setText(editText2.getText());
-            }
-        });
         return view;
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         viewModel = new ViewModelProvider(getActivity()).get(SharedViewModel.class);
         viewModel.getText().observe(getViewLifecycleOwner(), new Observer<CharSequence>() {
             @Override

@@ -9,6 +9,7 @@ interface UserDao {
 
     @Transaction
     @Query("SELECT * FROM  User")
+
     public List<UserAndLibrary> getUsersAndLibraries();
 
 }
