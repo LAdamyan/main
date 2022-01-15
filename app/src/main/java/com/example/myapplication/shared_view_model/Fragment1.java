@@ -26,8 +26,14 @@ public class Fragment1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_1, container, false);
 
-        View view =  inflater.inflate(R.layout.fragment_1, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        viewModel = new ViewModelProvider(getActivity()).get(SharedViewModel.class);
 
         editText1 = view.findViewById(R.id.fragment1_editText);
         button = view.findViewById(R.id.fragment1_button);
@@ -36,21 +42,10 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 viewModel.setText(editText1.getText());
-            }
-        });
 
-        return view;
-
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        viewModel = new ViewModelProvider(getActivity()).get(SharedViewModel.class);
-        viewModel.getText().observe(getViewLifecycleOwner(), new Observer<CharSequence>() {
-            @Override
-            public void onChanged(CharSequence charSequence) {
-                editText1.setText(charSequence);
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .add(R.id.fragment_container_viewModel,new Fragment2())
+                        .commit();
             }
         });
 

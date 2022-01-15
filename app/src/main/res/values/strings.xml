@@ -292,6 +292,8 @@
     <string name="carrefour">Carrefour</string>
     <string name="offers">Offers</string>
     <string name="write_something">Write something</string>
+    <string name="tutorials_point">Tutorials Point</string>
+    <string name="widget">Widget</string>
 
 
     <string-array name="banks_array">
@@ -331,5 +333,8 @@
         <item> USD</item>
 
     </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 
 </resources>

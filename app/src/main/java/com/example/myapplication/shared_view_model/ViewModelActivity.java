@@ -16,7 +16,6 @@ public class ViewModelActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.fragment_container_viewModel,new Fragment1())
-                .add(R.id.fragment_container_viewModel,new Fragment2())
                 .commit();
     }
 }
