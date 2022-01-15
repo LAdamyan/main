@@ -41,30 +41,30 @@
             android:name=".content_provider.MyContentProvider"
             android:authorities="com.demo.user.provider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
 
         <activity
             android:name=".recycleView2.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".progressBar.SecondActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".progressBar.ThirdActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".intent.FourthActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".progressBar.FifthActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".recycleView2.ListActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
-            android:name=".shared_view_model.ViewModelActivity"
+            android:name=".motionLayout.MotionActivity"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
             <intent-filter>
@@ -79,21 +79,11 @@
         <activity
             android:name=".screenSlidePager.ScreenSlidePageActivity"
             android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.NoActionBar"></activity>
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
 
         <service android:name=".service.NewService" />
 
-        <receiver
-            android:name=".widget.ExampleAppWidgetProvider"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
 
-            <meta-data
-                android:name="android.widget.provider"
-                android:resource="@xml/mywidget" />
-        </receiver>
     </application>
 
 </manifest>
