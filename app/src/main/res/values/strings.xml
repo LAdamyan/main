@@ -88,7 +88,7 @@
     <string name="share" translatable="false">Share</string>
     <string name="choose_browser" translatable="false">Choose Browser</string>
     <string name="chooser_title" translatable="false">Choose Title</string>
-    <string name="_12_ktor_pizza" translatable="false"> Ktor Pizza</string>
+    <string name="ktor_pizza" translatable="false"> Ktor Pizza</string>
     <string name="_4_8" translatable="false">4.8</string>
     <string name="delivery_fee_800" translatable="false">Delivery Fee 800</string>
     <string name="min_order_fee_1400" translatable="false">Min Order Fee 1400</string>

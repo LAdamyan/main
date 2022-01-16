@@ -32,10 +32,10 @@
         app:layout_constraintTop_toBottomOf="@id/recycle_horizontal"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/_12ktor_pizza"
+        android:id="@+id/12ktor_pizza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/_12_ktor_pizza"
+        android:text="@string/ktor_pizza"
         android:textColor="@color/white"
         android:textSize="@dimen/twenty_sp"
         android:layout_marginEnd="@dimen/twenty_dp"
@@ -55,10 +55,10 @@
         android:gravity="center"
         android:layout_marginTop="@dimen/twenty_dp"
         android:drawableEnd="@drawable/ic_baseline_star_24"
-        app:layout_constraintStart_toEndOf="@id/_12ktor_pizza"
+        app:layout_constraintStart_toEndOf="@id/12ktor_pizza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/recycle_horizontal"
-        app:layout_constraintBottom_toBottomOf="@id/_12ktor_pizza"/>
+        app:layout_constraintBottom_toBottomOf="@id/12ktor_pizza"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/delivery800"
