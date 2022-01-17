@@ -6,14 +6,27 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
         <OnSwipe
             motion:touchAnchorId="@+id/view_button"
             motion:touchAnchorSide="right"
-            motion:dragDirection="dragRight"/>
+            motion:dragDirection="dragRight"
+            />
 
 
        <KeyFrameSet>
+           <KeyAttribute
+               android:rotation="-45"
+               android:scaleX="2"
+               android:scaleY="2"
+               motion:framePosition="20"
+               motion:motionTarget="@id/view_button" />
+           <KeyPosition
+               motion:framePosition="20"
+               motion:keyPositionType="pathRelative"
+               motion:motionTarget="@id/view_button"
+               motion:percentY="-0.3" />
        </KeyFrameSet>
     </Transition>
 
@@ -28,6 +41,9 @@
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"/>
+            <CustomAttribute
+                motion:attributeName="BackgroundColor"
+                motion:customColorValue="#D81B60" />
         </Constraint>
     </ConstraintSet>
 
@@ -42,6 +58,9 @@
         motion:layout_constraintBottom_toBottomOf="parent"
         motion:layout_constraintEnd_toEndOf="parent"
         motion:layout_constraintTop_toTopOf="parent" />
+            <CustomAttribute
+                motion:attributeName="BackgroundColor"
+                motion:customColorValue="#9999FF" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tutorials_point"
-        android:id="@+id/textView"
+        android:id="@+id/text_widget"
         android:layout_centerHorizontal="true"
         android:textColor="#ff3412ff"
         android:textSize="35sp" />
@@ -22,6 +22,6 @@
         android:id="@+id/widget_button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
-        android:layout_below="@+id/textView" />
+        android:layout_below="@+id/text_widget" />
 
 </RelativeLayout>

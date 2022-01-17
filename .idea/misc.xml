@@ -151,6 +151,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/activit1.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/activit3.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/activity2.xml" value="0.278125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/activity_main.xml" value="0.175" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/activity_main2.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/activity_provider.xml" value="0.22" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/alert1.xml" value="0.278125" />
@@ -178,8 +179,11 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/intent_types.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/load_provider.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/motion.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/motion2.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/motion_scene2.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/nav_header_main.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/navigation_drawer.xml" value="0.278125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/new_app_widget.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/notification_activity.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/notifications.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/layout/pizza_layout.xml" value="0.1" />
@@ -191,6 +195,8 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/menu/bottom_navitagion_menu.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/menu/menu_navigation.xml" value="0.278125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/menu/toolbar_menu.xml" value="0.278125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/xml/motion_scene2.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/xml/my_widget.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/main/app/src/main/res/xml/mywidget.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/Admin/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_2.xml" value="0.1398148148148148" />
       </map>
