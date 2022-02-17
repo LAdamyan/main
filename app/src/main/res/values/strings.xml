@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">FirstProject</string>
+    <string name="app_name">FirstProject</string>
     <string name="java" translatable="false">Java</string>
     <string name="android" translatable="false">Android</string>
     <string name="kotlin" translatable="false">Kotlin</string>
@@ -233,36 +233,36 @@
     <string name="services_in_android" translatable="false">Services in Android</string>
     <string name="start_the_service" translatable="false">Start the service</string>
     <string name="stop_the_service" translatable="false">Stop the service</string>
-    <string name="text1">Text1</string>
-    <string name="text_here">Text here</string>
-    <string name="add_photo">Add photo</string>
-    <string name="use_camera">Use Camera</string>
-    <string name="upload_from_gallery">Upload from Gallery</string>
-    <string name="remove_photo">Remove Photo</string>
-    <string name="page1">Page1</string>
-    <string name="nature">Nature</string>
-    <string name="bound_service">Bound service</string>
-    <string name="open_the_bottom_dialog">Open The Bottom Dialog</string>
-    <string name="filters">Filters</string>
-    <string name="reset_all">Reset all</string>
-    <string name="sort_by">Sort by</string>
-    <string name="date_newest_first">Date (newest first)</string>
-    <string name="date_oldest_first">Date (oldest first)</string>
-    <string name="bug_fix_confirmation">Bug Fix Confirmation</string>
-    <string name="task_type">Task type</string>
-    <string name="bug_reproductions">Bug Reproductions</string>
-    <string name="apply_filters">Apply Filters</string>
-    <string name="download">Download</string>
-    <string name="videofragment">VideoFragment</string>
-    <string name="homePageProfile">Profile</string>
-    <string name="home">Home</string>
-    <string name="retrieve">Retrieve</string>
+    <string name="text1" translatable="false">Text1</string>
+    <string name="text_here" translatable="false">Text here</string>
+    <string name="add_photo" translatable="false">Add photo</string>
+    <string name="use_camera" translatable="false">Use Camera</string>
+    <string name="upload_from_gallery" translatable="false">Upload from Gallery</string>
+    <string name="remove_photo" translatable="false">Remove Photo</string>
+    <string name="page1" translatable="false">Page1</string>
+    <string name="nature" translatable="false">Nature</string>
+    <string name="bound_service" translatable="false">Bound service</string>
+    <string name="open_the_bottom_dialog" translatable="false">Open The Bottom Dialog</string>
+    <string name="filters" translatable="false">Filters</string>
+    <string name="reset_all" translatable="false">Reset all</string>
+    <string name="sort_by" translatable="false">Sort by</string>
+    <string name="date_newest_first" translatable="false">Date (newest first)</string>
+    <string name="date_oldest_first" translatable="false">Date (oldest first)</string>
+    <string name="bug_fix_confirmation" translatable="false">Bug Fix Confirmation</string>
+    <string name="task_type" translatable="false">Task type</string>
+    <string name="bug_reproductions" translatable="false">Bug Reproductions</string>
+    <string name="apply_filters" translatable="false">Apply Filters</string>
+    <string name="download" translatable="false">Download</string>
+    <string name="videofragment" translatable="false">VideoFragment</string>
+    <string name="homePageProfile" translatable="false">Profile</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="retrieve" translatable="false">Retrieve</string>
 
-    <string name="_374_xxxxxxxxx">+374 XXXXXXXXX</string>
-    <string name="contacts">Contacts</string>
-    <string name="open_drawer">Open Drawer</string>
-    <string name="close_drawer">Close Drawer</string>
-    <string name="world_text">World \n In its most general sense, the term world refers to the totality of entities,
+    <string name="_374_xxxxxxxxx" translatable="false">+374 XXXXXXXXX</string>
+    <string name="contacts" translatable="false">Contacts</string>
+    <string name="open_drawer" translatable="false">Open Drawer</string>
+    <string name="close_drawer" translatable="false">Close Drawer</string>
+    <string name="world_text" translatable="false">World \n In its most general sense, the term world refers to the totality of entities,
         to the whole of reality or to everything that is.[1] The nature of the world has been conceptualized
         differently in different fields. Some conceptions see the world as unique while others talk of a .
         Some treat the world as one simple object while others analyze the world as a complex made up of many parts.
@@ -279,21 +279,21 @@
         or doctrine of the last things or of the end of the world.d</string>
 
 
-    <string name="hintText">Enter User Name</string>
-    <string name="heading">Content Provider In Android</string>
-    <string name="insertButtontext">Insert Data</string>
-    <string name="loadButtonText">Load Data</string>
-    <string name="result">Result</string>
-    <string name="heading2">Accesing data of Content Provider</string>
-    <string name="show_notifications">Show notifications</string>
-    <string name="get_from_contacts">Get From Contacts</string>
+    <string name="hintText" translatable="false">Enter User Name</string>
+    <string name="heading" translatable="false">Content Provider In Android</string>
+    <string name="insertButtontext" translatable="false">Insert Data</string>
+    <string name="loadButtonText" translatable="false">Load Data</string>
+    <string name="result" translatable="false">Result</string>
+    <string name="heading2" translatable="false">Accesing data of Content Provider</string>
+    <string name="show_notifications" translatable="false">Show notifications</string>
+    <string name="get_from_contacts" translatable="false">Get From Contacts</string>
 
-    <string name="shops">Shops</string>
-    <string name="carrefour">Carrefour</string>
-    <string name="offers">Offers</string>
-    <string name="write_something">Write something</string>
-    <string name="tutorials_point">Tutorials Point</string>
-    <string name="widget">Widget</string>
+    <string name="shops" translatable="false">Shops</string>
+    <string name="carrefour" translatable="false">Carrefour</string>
+    <string name="offers" translatable="false">Offers</string>
+    <string name="write_something" translatable="false">Write something</string>
+    <string name="tutorials_point" translatable="false">Tutorials Point</string>
+    <string name="widget" translatable="false">Widget</string>
 
 
     <string-array name="banks_array">
@@ -333,8 +333,8 @@
         <item> USD</item>
 
     </string-array>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
-    <string name="app_widget_description">This is an app widget description</string>
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="add_widget" translatable="false">Add widget</string>
+    <string name="app_widget_description" translatable="false">This is an app widget description</string>
 
 </resources>
